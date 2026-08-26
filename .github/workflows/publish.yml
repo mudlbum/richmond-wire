@@ -37,8 +37,21 @@ jobs:
 
       - name: Record who released each pending edition
         run: |
-          python3 scripts/release_pending.py --by "${{ github.actor }}"
-          echo "released=$(cat /tmp/released_count)" >> "$GITHUB_ENV"
+          # A pending edition becomes "approved" ONLY when it arrives through the
+          # review pull request. Any other route onto main -- the initial import,
+          # a direct push, a hand-made commit -- means nobody read the articles,
+          # so the edition stays pending and the site keeps saying it was not
+          # reviewed. Without this check the very first push to a new repo would
+          # silently claim an editor had read the day-one edition.
+          SUBJECT=$(git log -1 --pretty=%s)
+          if printf '%s' "$SUBJECT" | grep -qE '^Merge pull request .+ from .+/edition/'; then
+            python3 scripts/release_pending.py --by "${{ github.actor }}"
+            echo "released=$(cat /tmp/released_count)" >> "$GITHUB_ENV"
+          else
+            echo "Not an edition review merge: \"$SUBJECT\""
+            echo "Any pending edition stays unreviewed and is labelled as such."
+            echo "released=0" >> "$GITHUB_ENV"
+          fi
 
       - name: Commit the review record
         if: env.released != '0'

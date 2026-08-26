@@ -2,9 +2,16 @@
 """
 Promote every edition still marked "pending" to "approved".
 
-Called by the publish workflow. An edition can only be pending on main because a
-person merged its review pull request — the timeout path stamps "auto" on the
-branch before merging, so it never arrives here pending.
+Called by the publish workflow.
+
+This script is deliberately dumb: it promotes anything still marked "pending"
+and trusts its caller to have established that the edition arrived through the
+review pull request. publish.yml makes that check by inspecting the merge
+commit, because a pending edition can also reach main by an import or a direct
+push, and neither of those means anybody read it.
+
+The timeout path stamps "auto" on the branch before merging, so an edition
+released on the timer never arrives here pending.
 
 This script therefore refuses to touch anything that is not exactly "pending".
 That refusal is the safeguard: it is what makes "an editor read this" a claim the

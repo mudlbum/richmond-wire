@@ -1,9 +1,8 @@
 {
   "date": "2026-08-26",
   "review": {
-    "status": "approved",
+    "status": "pending",
     "recorded_at": "2026-08-26T17:29:53+00:00",
-    "reviewed_at": "26 August 2026",
-    "reviewed_by": "mudlbum"
+    "note": "Reset to pending: the earlier 'approved' stamp came from the initial repository import, not from anyone reading the edition."
   }
 }
