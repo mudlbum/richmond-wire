@@ -5,35 +5,125 @@
   "headline": "Serena Williams returns to Arthur Ashe, and admits she never expected to",
   "dek": "Paired with Carlos Alcaraz — himself back from a five-month wrist injury — Williams won a first-round mixed doubles match on the court where she said goodbye in 2022. They lost in the quarter-finals the next day. Both said the same thing afterwards: they were nervous.",
   "summary": "Serena Williams and Carlos Alcaraz won their opening US Open mixed doubles match on Tuesday before losing in Wednesday's quarter-finals. It was Williams's first appearance at Arthur Ashe Stadium since 2022.",
-  "tags": ["Tennis", "US Open", "Serena Williams", "Carlos Alcaraz"],
+  "tags": [
+    "Tennis",
+    "US Open",
+    "Serena Williams",
+    "Carlos Alcaraz"
+  ],
   "read_minutes": 4,
   "image": {
-    "queries": ["tennis stadium court night", "tennis racket net closeup"],
-    "alt": "A tennis court in a large stadium"
+    "queries": [
+      "tennis stadium court night",
+      "tennis racket net closeup"
+    ],
+    "alt": "A tennis court in a large stadium",
+    "provider": "pexels",
+    "pexels_id": 171568,
+    "query_used": "tennis stadium court night",
+    "url": "https://images.pexels.com/photos/171568/pexels-photo-171568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "thumb": "https://images.pexels.com/photos/171568/pexels-photo-171568.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "photographer": "Raj Tatavarthy",
+    "photographer_url": "https://www.pexels.com/@rajtatavarthy",
+    "page_url": "https://www.pexels.com/photo/people-sitting-on-bench-watching-tennis-event-on-field-during-daytime-171568/",
+    "illustrative": true
   },
   "body": [
-    {"type": "p", "text": "Serena Williams walked back onto Arthur Ashe Stadium on Tuesday for the first time since 2022, when she left it believing she was finished with the place. She was there for the US Open mixed doubles, partnered with Carlos Alcaraz, and the two of them beat Erin Routliffe of New Zealand and Lloyd Glasspool of Great Britain 5-3, 4-1 in the first round."},
-    {"type": "p", "text": "On Wednesday they lost in the quarter-finals to the fourth seeds, Belinda Bencic of Switzerland and Flavio Cobolli of Italy. In between, both halves of the pairing said more or less the same thing about how it had felt."},
-    {"type": "quote", "text": "It's always such an amazing place to be here. I never expected to be back on this court. It was just a really cool moment.", "cite": "Serena Williams, speaking to Yahoo Sports"},
-    {"type": "quote", "text": "I think everybody could see: I double-faulted on the first point. I was really, really nervous.", "cite": "Carlos Alcaraz, speaking to Bleacher Report"},
-    {"type": "h2", "text": "Two comebacks in one pairing"},
-    {"type": "p", "text": "Williams is 44 and turns 45 next month. She did not enter the singles draw this year, citing a knee injury sustained around Wimbledon; that wild card went to Sofia Kenin instead. She won 23 Grand Slam singles titles across a career that most people assumed had ended on this court four years ago."},
-    {"type": "p", "text": "Alcaraz is 23 and was returning from a wrist injury that kept him out for close to five months, costing him both the French Open and Wimbledon. He is a seven-time Grand Slam singles champion and the defending US Open men's champion, which is why his fitness was being watched as closely as Williams's presence."},
-    {"type": "quote", "text": "I was out for four months and a half, almost five months. I almost forget how it feels stepping on the court once again.", "cite": "Carlos Alcaraz, speaking to Yahoo Sports"},
-    {"type": "p", "text": "The two of them were among six wild-card pairs named for the event on August 22."},
-    {"type": "h2", "text": "The upset next door"},
-    {"type": "p", "text": "The same day, the top seeds went out in the first round. Henry Patten of Great Britain and Kateřina Siniaková of the Czech Republic beat Novak Djokovic and Aryna Sabalenka 1-4, 4-2, 10-2, finishing it with an ace from Siniaková on match point."},
-    {"type": "quote", "text": "We knew the same could happen in the second, and we played an amazing tiebreak. Kat acing Novak on match point was great.", "cite": "Henry Patten, speaking to Sky Sports"},
-    {"type": "h2", "text": "The format, briefly"},
-    {"type": "p", "text": "Since 2025 the US Open has run mixed doubles as a separate star-heavy event before the main draw, compressed into two or three days with shortened scoring — first to four games, a match tiebreak in place of a deciding set. It is why the scorelines above look unfamiliar, and it is why a 44-year-old three years out of full-time competition could realistically enter one."},
-    {"type": "p", "text": "Jannik Sinner, the men's world number one, withdrew from the entire 2026 US Open on August 21 with a right knee injury."},
-    {"type": "p", "text": "Williams and Alcaraz did not win the thing. That was never really the point of watching."}
+    {
+      "type": "p",
+      "text": "Serena Williams walked back onto Arthur Ashe Stadium on Tuesday for the first time since 2022, when she left it believing she was finished with the place. She was there for the US Open mixed doubles, partnered with Carlos Alcaraz, and the two of them beat Erin Routliffe of New Zealand and Lloyd Glasspool of Great Britain 5-3, 4-1 in the first round."
+    },
+    {
+      "type": "p",
+      "text": "On Wednesday they lost in the quarter-finals to the fourth seeds, Belinda Bencic of Switzerland and Flavio Cobolli of Italy. In between, both halves of the pairing said more or less the same thing about how it had felt."
+    },
+    {
+      "type": "quote",
+      "text": "It's always such an amazing place to be here. I never expected to be back on this court. It was just a really cool moment.",
+      "cite": "Serena Williams, speaking to Yahoo Sports"
+    },
+    {
+      "type": "quote",
+      "text": "I think everybody could see: I double-faulted on the first point. I was really, really nervous.",
+      "cite": "Carlos Alcaraz, speaking to Bleacher Report"
+    },
+    {
+      "type": "h2",
+      "text": "Two comebacks in one pairing"
+    },
+    {
+      "type": "p",
+      "text": "Williams is 44 and turns 45 next month. She did not enter the singles draw this year, citing a knee injury sustained around Wimbledon; that wild card went to Sofia Kenin instead. She won 23 Grand Slam singles titles across a career that most people assumed had ended on this court four years ago."
+    },
+    {
+      "type": "p",
+      "text": "Alcaraz is 23 and was returning from a wrist injury that kept him out for close to five months, costing him both the French Open and Wimbledon. He is a seven-time Grand Slam singles champion and the defending US Open men's champion, which is why his fitness was being watched as closely as Williams's presence."
+    },
+    {
+      "type": "quote",
+      "text": "I was out for four months and a half, almost five months. I almost forget how it feels stepping on the court once again.",
+      "cite": "Carlos Alcaraz, speaking to Yahoo Sports"
+    },
+    {
+      "type": "p",
+      "text": "The two of them were among six wild-card pairs named for the event on August 22."
+    },
+    {
+      "type": "h2",
+      "text": "The upset next door"
+    },
+    {
+      "type": "p",
+      "text": "The same day, the top seeds went out in the first round. Henry Patten of Great Britain and Kateřina Siniaková of the Czech Republic beat Novak Djokovic and Aryna Sabalenka 1-4, 4-2, 10-2, finishing it with an ace from Siniaková on match point."
+    },
+    {
+      "type": "quote",
+      "text": "We knew the same could happen in the second, and we played an amazing tiebreak. Kat acing Novak on match point was great.",
+      "cite": "Henry Patten, speaking to Sky Sports"
+    },
+    {
+      "type": "h2",
+      "text": "The format, briefly"
+    },
+    {
+      "type": "p",
+      "text": "Since 2025 the US Open has run mixed doubles as a separate star-heavy event before the main draw, compressed into two or three days with shortened scoring — first to four games, a match tiebreak in place of a deciding set. It is why the scorelines above look unfamiliar, and it is why a 44-year-old three years out of full-time competition could realistically enter one."
+    },
+    {
+      "type": "p",
+      "text": "Jannik Sinner, the men's world number one, withdrew from the entire 2026 US Open on August 21 with a right knee injury."
+    },
+    {
+      "type": "p",
+      "text": "Williams and Alcaraz did not win the thing. That was never really the point of watching."
+    }
   ],
   "sources": [
-    {"outlet": "usopen.org", "title": "Williams and Alcaraz, Navarro and Paul given 2026 US Open mixed doubles wild cards", "url": "https://www.usopen.org/en_US/news/articles/2026-08-22/williams_and_alcaraz_navarro_and_paul_given_2026_us_open_mixed_doubles_wild_cards.html", "note": "official tournament source"},
-    {"outlet": "Sky Sports", "title": "Serena Williams and Carlos Alcaraz exit US Open mixed doubles in quarter-finals; top seeds Novak Djokovic and Aryna Sabalenka out in first round", "url": "https://www.skysports.com/tennis/news/12110/13577085/serena-williams-and-carlos-alcaraz-exit-us-open-mixed-doubles-in-quarter-finals-top-seeds-novak-djokovic-and-aryna-sabalenka-out-in-first-round"},
-    {"outlet": "Yahoo Sports", "title": "Serena Williams, Carlos Alcaraz rally for dominant win in superstar mixed doubles pairing at US Open", "url": "https://sports.yahoo.com/tennis/breaking-news/article/serena-williams-carlos-alcaraz-rally-for-dominant-win-in-superstar-mixed-doubles-pairing-at-us-open-204210634.html"},
-    {"outlet": "ABC News (Australia)", "title": "Novak Djokovic and Aryna Sabalenka stunned, Serena Williams and Carlos Alcaraz triumph in US Open mixed doubles", "url": "https://www.abc.net.au/news/2026-08-26/tennis-djokovic-and-sabalenka-lose-us-open-mixed-doubles/107078416"},
-    {"outlet": "Bleacher Report", "title": "Serena Williams, Carlos Alcaraz 1st-Round Win Highlights US Open Mixed Doubles Day 1 Bracket Results", "url": "https://bleacherreport.com/articles/25486394-serena-williams-carlos-alcaraz-1st-round-win-highlights-us-open-mixed-doubles-day-1-bracket-results"}
+    {
+      "outlet": "usopen.org",
+      "title": "Williams and Alcaraz, Navarro and Paul given 2026 US Open mixed doubles wild cards",
+      "url": "https://www.usopen.org/en_US/news/articles/2026-08-22/williams_and_alcaraz_navarro_and_paul_given_2026_us_open_mixed_doubles_wild_cards.html",
+      "note": "official tournament source"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Serena Williams and Carlos Alcaraz exit US Open mixed doubles in quarter-finals; top seeds Novak Djokovic and Aryna Sabalenka out in first round",
+      "url": "https://www.skysports.com/tennis/news/12110/13577085/serena-williams-and-carlos-alcaraz-exit-us-open-mixed-doubles-in-quarter-finals-top-seeds-novak-djokovic-and-aryna-sabalenka-out-in-first-round"
+    },
+    {
+      "outlet": "Yahoo Sports",
+      "title": "Serena Williams, Carlos Alcaraz rally for dominant win in superstar mixed doubles pairing at US Open",
+      "url": "https://sports.yahoo.com/tennis/breaking-news/article/serena-williams-carlos-alcaraz-rally-for-dominant-win-in-superstar-mixed-doubles-pairing-at-us-open-204210634.html"
+    },
+    {
+      "outlet": "ABC News (Australia)",
+      "title": "Novak Djokovic and Aryna Sabalenka stunned, Serena Williams and Carlos Alcaraz triumph in US Open mixed doubles",
+      "url": "https://www.abc.net.au/news/2026-08-26/tennis-djokovic-and-sabalenka-lose-us-open-mixed-doubles/107078416"
+    },
+    {
+      "outlet": "Bleacher Report",
+      "title": "Serena Williams, Carlos Alcaraz 1st-Round Win Highlights US Open Mixed Doubles Day 1 Bracket Results",
+      "url": "https://bleacherreport.com/articles/25486394-serena-williams-carlos-alcaraz-1st-round-win-highlights-us-open-mixed-doubles-day-1-bracket-results"
+    }
   ]
 }
