@@ -230,6 +230,7 @@ figcaption .imgcredit{display:block; margin-top:3px}
 }
 .box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
 .box--warn{background:var(--warn-bg); border-color:var(--warn-rule)}
+.box--followup{border-left:3px solid var(--accent)}
 .box--sources ol{margin:0; padding-left:1.2em; font-family:var(--sans); font-size:.83rem}
 .box--sources li{margin-bottom:.6em; color:var(--ink-2)}
 .box--sources a{overflow-wrap:anywhere}

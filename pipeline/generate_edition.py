@@ -36,6 +36,9 @@ ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
 PROMPT_FILE = Path(__file__).resolve().parent / "editorial_prompt.md"
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from coverage import coverage_brief, article_text, tokens, jaccard  # noqa: E402
+
 API_URL = "https://api.anthropic.com/v1/messages"
 API_VERSION = "2023-06-01"
 MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-sonnet-4-5")
@@ -184,6 +187,12 @@ def main() -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
     template = PROMPT_FILE.read_text(encoding="utf-8")
 
+    # Hand every beat the same picture of what has run recently. Beats are
+    # researched in separate calls, so without this each one is blind both to the
+    # archive and to what its siblings are filing this morning.
+    recent = coverage_brief(days=14)
+    print(f"Prior coverage briefing: {len(recent.splitlines())} line(s)")
+
     collected: list[dict] = []
     for beat_key in [b.strip() for b in args.beats.split(",") if b.strip()]:
         beat = BEATS.get(beat_key)
@@ -195,7 +204,8 @@ def main() -> int:
                   .replace("{DATE}", day)
                   .replace("{BEAT_NAME}", beat["name"])
                   .replace("{BEAT_BRIEF}", beat["brief"])
-                  .replace("{COUNT}", str(beat["count"])))
+                  .replace("{COUNT}", str(beat["count"]))
+                  .replace("{RECENT_COVERAGE}", recent))
         try:
             raw = call_claude(prompt, api_key)
             articles = extract_json_array(raw)
@@ -209,8 +219,19 @@ def main() -> int:
                 sys.stderr.write(f"  ! dropped {a.get('slug', '?')}: "
                                  f"{'; '.join(problems)}\n")
                 continue
+            # Cheap in-run check so a later beat cannot re-file an earlier beat's
+            # story. pipeline/dedupe.py does the thorough pass against the archive.
+            sig = tokens(article_text(a))
+            clash = next((c for c in collected
+                          if jaccard(sig, c["_sig"]) >= 0.42), None)
+            if clash:
+                sys.stderr.write(f"  ! dropped {a.get('slug', '?')}: same story as "
+                                 f"{clash.get('slug', '?')} filed by an earlier "
+                                 f"beat this run\n")
+                continue
             a["date"] = day
             a["_beat"] = beat_key
+            a["_sig"] = sig
             collected.append(a)
             print(f"  ✓ {a['category']}: {a['headline'][:70]}")
 
@@ -225,6 +246,7 @@ def main() -> int:
     for i, a in enumerate(collected, start=1):
         a["rank"] = i
         a.pop("_beat", None)
+        a.pop("_sig", None)
 
     if args.dry_run:
         print(json.dumps(collected, ensure_ascii=False, indent=2)[:4000])

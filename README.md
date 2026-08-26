@@ -18,7 +18,9 @@ python3 build.py --serve    # build and serve at http://localhost:8000
  09:30 UTC  propose-edition.yml
      ↓
  generate_edition.py   5 beats × 2 stories, Claude API with web search
-     ↓                 each story verified against 2+ independent outlets
+     ↓                 each beat is shown the last 14 days of coverage first
+ dedupe.py             drops anything already published, and any story two
+     ↓                 beats filed twice this morning
  validate.py           automated gate — hard failures are quarantined
      ↓                 (fewer than 3 survivors → no edition proposed at all)
  fetch_images.py       Pexels photo per story, honest attribution
@@ -47,6 +49,55 @@ out. You can read it in the GitHub app on your phone.
 - **Delete a file in the PR** → that story is dropped, the rest publishes.
 - **Close the PR** → nothing publishes that day.
 - **Do nothing for 12 hours** → it publishes, labelled as unreviewed.
+
+### No repeats
+
+Readers come back daily, so filing the same story twice is the fastest way to look
+like an unattended machine. Three layers stop it:
+
+1. **Before writing.** Every beat is handed the last 14 days of headlines and told
+   not to file them again. `pipeline/coverage.py --days 14` prints exactly what the
+   researcher sees.
+2. **Within the run.** Beats research independently, so two can reach the same
+   story on a busy morning. The second one is dropped as it arrives.
+3. **Against the archive.** `pipeline/dedupe.py` compares every candidate to the
+   past three weeks on two axes — content-word overlap and whether they cite the
+   same specific source articles. Numbers are deliberately ignored: a toll moving
+   from 8 to 22 is exactly when two stories ARE the same one.
+
+Dropped articles go to `content/<day>/_duplicates/` and are listed in the review
+digest, so you can see what was filtered and disagree with it.
+
+### Follow-ups are allowed; rewrites are not
+
+Developing stories legitimately continue. The distinction the code enforces is
+whether the article carries new facts, which it cannot measure — so instead it
+requires the article to *declare* the continuation:
+
+```json
+"follow_up": {
+  "of": "nepal-rasuwa-flash-flood-bhote-koshi",
+  "whats_new": "A commission of inquiry has been appointed, with a 45-day deadline."
+}
+```
+
+That declaration is rendered on the page as a "This continues an earlier story" box
+with a link back and the what-changed line, so it costs something to claim falsely.
+
+A declared follow-up whose text is still ~72% the same as the earlier article is
+dropped anyway — that is a rewrite wearing a follow-up label. Tested behaviour:
+
+| Case | Text overlap | Outcome |
+| --- | --- | --- |
+| Same story re-filed, reworded headline | 98% | dropped |
+| Same story, *declared* a follow-up | 98% | dropped — rewrite, not development |
+| Real development, declared | 66% | **kept**, renders the follow-up box |
+| Same development, not declared | 66% | dropped |
+| Two beats filing one story in one edition | 87% | second one dropped |
+| Genuinely different story | 10% | kept |
+
+Tune the thresholds in `pipeline/coverage.py` (`DUP_TEXT`, `DUP_SOURCE`,
+`REBUILD`, `WINDOW_DAYS`) if the wire runs too tight or too loose.
 
 ### Why the labelling is not optional
 
@@ -90,6 +141,8 @@ static/                        stylesheet, favicon, consent script
 pipeline/
   editorial_prompt.md          the rules the writing model is held to
   generate_edition.py          research + write, one call per beat
+  coverage.py                  what we have published; similarity scoring
+  dedupe.py                    the no-repeats gate
   validate.py                  the editorial gate
   fetch_images.py              Pexels fetch with attribution rules
 scripts/
@@ -130,17 +183,21 @@ Repository **Settings → Pages → Build and deployment → Source: GitHub Acti
 | --- | --- | --- |
 | Secret | `ANTHROPIC_API_KEY` | console.anthropic.com |
 | Secret | `PEXELS_API_KEY` | pexels.com/api — free |
-| Secret | `SMTP_HOST` | `smtp.gmail.com` for Gmail |
-| Secret | `SMTP_PORT` | `587` |
-| Secret | `SMTP_USER` | the sending address |
-| Secret | `SMTP_PASS` | a Gmail **app password**, not your account password |
-| Secret | `DIGEST_TO` | where the review digest goes |
+| Secret *(optional)* | `SMTP_HOST` | `smtp.gmail.com` for Gmail |
+| Secret *(optional)* | `SMTP_PORT` | `587` |
+| Secret *(optional)* | `SMTP_USER` | the sending address |
+| Secret *(optional)* | `SMTP_PASS` | a Gmail **app password**, not your account password |
+| Secret *(optional)* | `DIGEST_TO` | where the review digest goes |
 | Variable | `ANTHROPIC_MODEL` | optional; check the current model list and set it |
 
-Gmail app passwords need 2-Step Verification switched on, then are created at
-myaccount.google.com → Security → App passwords. The digest email is a convenience:
-if SMTP is unset or the send fails, the pipeline carries on and the pull request is
-still there.
+**The five SMTP secrets are optional.** Without them the pipeline runs exactly the
+same and simply skips the email. You still find out an edition is waiting, because
+the review pull request is assigned to you — GitHub sends its own notification for
+that — and the Actions run summary carries the link and the counts.
+
+Add them later if you want the full digest in your inbox. Gmail app passwords need
+2-Step Verification switched on, then are created at myaccount.google.com →
+Security → App passwords.
 
 **Actions also needs permission to open pull requests:** Settings → Actions → General
 → Workflow permissions → tick "Allow GitHub Actions to create and approve pull
@@ -288,6 +345,8 @@ the article's body recording what changed — that is what
 ## Local checks
 
 ```bash
+python3 pipeline/coverage.py --stats                          # what is published
+python3 pipeline/dedupe.py content/2026-08-26 --dry-run      # repeats check
 python3 pipeline/validate.py content/2026-08-26               # automated gate
 python3 pipeline/validate.py content/2026-08-26 --check-links # + fetch every source
 python3 scripts/review_digest.py content/2026-08-26 --format terminal   # read it

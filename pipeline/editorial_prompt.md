@@ -9,6 +9,32 @@ Produce **{COUNT} articles** from this beat, drawn from the last 48 hours.
 
 ---
 
+## What we have already published
+
+{RECENT_COVERAGE}
+
+### The rule on repeats
+
+Readers come back daily. Filing the same story twice wastes their time and makes
+the site look automated, which it is. So:
+
+- **Do not file a story already listed above.** Find a different one. A thinner
+  edition of genuinely new stories beats a full one that repeats yesterday.
+- A developing story may be covered again **only if something has actually
+  changed** — a figure reconciled by an authority, an outcome decided, an inquiry
+  opened, a party responding for the first time. "More detail has emerged" is not
+  a change. Neither is a fresh round-up of the same facts.
+- When you do cover a development, the article must:
+  - lead with **what is new**, not with a recap;
+  - carry a `follow_up` object naming the earlier story and stating what changed;
+  - cite **at least one source published since** the earlier article.
+- An automated check compares every article against the archive. A repeat that is
+  not declared as a follow-up is deleted before anyone reads it, and so is a
+  "follow-up" that turns out to be the earlier article reworded. Both waste the
+  slot. Pick a different story instead.
+
+---
+
 ## Non-negotiable rules
 
 These are not style preferences. An article that breaks one of them must not be
@@ -79,6 +105,10 @@ after, no markdown fences. Each object:
   "dek": "One or two sentences under the headline adding the next most important thing.",
   "summary": "One sentence, max 40 words, for the homepage card and meta description.",
   "tags": ["3-5 short topic tags"],
+  "follow_up": {
+    "of": "slug-of-the-earlier-article",
+    "whats_new": "One or two sentences on what changed since it. Required, specific, and checkable."
+  },
   "image": {
     "queries": ["two or three stock-photo search phrases"],
     "alt": "Literal description of what such a photo would show"
@@ -105,6 +135,10 @@ after, no markdown fences. Each object:
 - Include at least one verbatim `quote` block where a good one exists.
 - Where figures are contested or provisional, say so in the body text itself.
 - The `uncertain` array is important, not decorative. Fill it honestly.
+- Include `follow_up` **only** when the story genuinely continues one listed above.
+  Omit the field entirely for a story we have not covered. Never add it
+  speculatively to get past the duplicate check — the check compares the text, and
+  a declared follow-up that is mostly the earlier article is dropped anyway.
 
 ### Image queries
 

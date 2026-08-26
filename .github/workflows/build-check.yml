@@ -24,6 +24,15 @@ jobs:
             python3 pipeline/validate.py "$d" || fail=1
           done
           exit $fail
+      - name: Check the archive for duplicates
+        run: |
+          # --dry-run: report only. A hand-edited follow-up should not be deleted
+          # by CI; this surfaces the problem for a person to judge.
+          for d in content/*/; do
+            [ -d "$d" ] || continue
+            python3 pipeline/dedupe.py "$d" --dry-run
+          done
+
       - name: Build
         run: python3 build.py
       - name: Check internal links resolve

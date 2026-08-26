@@ -65,6 +65,14 @@ jobs:
             python3 pipeline/generate_edition.py --date "${{ steps.d.outputs.date }}"
           fi
 
+      - name: Drop anything we have already published
+        if: steps.exists.outputs.skip == 'false'
+        run: |
+          # Runs BEFORE the editorial gate so duplicates never reach the reviewer.
+          # Quarantines into content/<day>/_duplicates/ rather than deleting, so
+          # the digest can show what was filtered and why.
+          python3 pipeline/dedupe.py "content/${{ steps.d.outputs.date }}"
+
       - name: Automated editorial gate
         id: gate
         if: steps.exists.outputs.skip == 'false'
@@ -118,12 +126,39 @@ jobs:
 
           python3 scripts/review_digest.py "content/$DATE" --out /tmp/digest.md
 
+          # --assignee @me puts it in your "Assigned to you" list and makes
+          # GitHub send its own notification, which is what tells you the edition
+          # is waiting when the email digest is not configured.
           PR_URL=$(gh pr create \
             --base main --head "$BRANCH" \
             --title "Review: edition of $DATE (${{ steps.gate.outputs.count }} stories)" \
-            --body-file /tmp/digest.md)
+            --body-file /tmp/digest.md \
+            --assignee "${{ github.repository_owner }}")
           echo "url=$PR_URL" >> "$GITHUB_OUTPUT"
           echo "Review PR: $PR_URL"
+
+      - name: Put the review link on the run summary
+        if: steps.exists.outputs.skip == 'false' && steps.gate.outputs.abort == 'false'
+        run: |
+          DATE="${{ steps.d.outputs.date }}"
+          HOLD=$(python3 -c "import json; print(json.load(open('site.json'))['editorial']['hold_hours'])")
+          DUPES=$(ls -1 "content/$DATE/_duplicates"/*.json 2>/dev/null | wc -l)
+          REJECTS=$(ls -1 "content/$DATE/_rejected"/*.json 2>/dev/null | wc -l)
+          {
+            echo "## Edition of $DATE is waiting for review"
+            echo ""
+            echo "**[Open the review pull request](${{ steps.pr.outputs.url }})**"
+            echo ""
+            echo "| | |"
+            echo "|---|---|"
+            echo "| Stories awaiting your review | ${{ steps.gate.outputs.count }} |"
+            echo "| Dropped as already published | $DUPES |"
+            echo "| Dropped for failing verification | $REJECTS |"
+            echo "| Publishes automatically in | ${HOLD}h |"
+            echo ""
+            echo "Merge the pull request to publish it and record it as editor-approved."
+            echo "If the window expires it publishes anyway, labelled as not reviewed."
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Email the digest
         if: steps.exists.outputs.skip == 'false' && steps.gate.outputs.abort == 'false'
@@ -134,5 +169,7 @@ jobs:
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           DIGEST_TO: ${{ secrets.DIGEST_TO }}
         run: |
+          # Never fails the run: if SMTP is unset or the send errors, the pull
+          # request is still there and GitHub has already notified the assignee.
           python3 scripts/send_digest.py "content/${{ steps.d.outputs.date }}" \
             --pr-url "${{ steps.pr.outputs.url }}"

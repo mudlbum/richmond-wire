@@ -42,14 +42,22 @@ def load(day_dir: Path) -> tuple[list[dict], list[dict], dict]:
         a = json.loads(jf.read_text(encoding="utf-8"))
         a["_file"] = jf.name
         arts.append(a)
-    q = day_dir / "_rejected"
-    if q.is_dir():
+    for sub, label in (("_rejected", "failed verification"),
+                       ("_duplicates", "already published")):
+        q = day_dir / sub
+        if not q.is_dir():
+            continue
         for jf in sorted(q.glob("*.json")):
             try:
                 a = json.loads(jf.read_text(encoding="utf-8"))
             except json.JSONDecodeError:
                 a = {"headline": jf.name, "sources": [], "body": []}
             a["_file"] = jf.name
+            a["_why"] = label
+            dup = a.get("_duplicate_of") or {}
+            if dup:
+                a["_why"] = (f"already published {dup.get('prior_day','')} — "
+                             f"{dup.get('reason','')}")
             rejected.append(a)
     arts.sort(key=lambda x: x.get("rank", 99))
     return arts, rejected, meta
@@ -167,12 +175,16 @@ def _markdown(day: str, arts: list[dict], rejected: list[dict], hold: int,
         L.append("")
 
     if rejected:
-        L.append(f"## Dropped by the automated gate ({len(rejected)})")
+        L.append(f"## Dropped before you saw them ({len(rejected)})")
         L.append("")
-        L.append("These did not reach you. Listed so you can see what was filtered.")
+        L.append("Filtered automatically — either they failed source verification or "
+                 "they repeated a story we have already published. Listed so the "
+                 "filtering is visible to you rather than silent.")
         L.append("")
         for a in rejected:
             L.append(f"- `{a['_file']}` — {a.get('headline', '(unparseable)')}")
+            if a.get("_why"):
+                L.append(f"  - _{a['_why']}_")
         L.append("")
     return "\n".join(L)
 
@@ -233,8 +245,11 @@ def to_html(day: str, arts: list[dict], rejected: list[dict], hold: int,
             for s in a.get("sources", [])) + "</p>")
 
     if rejected:
-        P.append(f"<h2>Dropped by the automated gate ({len(rejected)})</h2><ul>"
-                 + "".join(f"<li>{E(a.get('headline', a['_file']))}</li>" for a in rejected)
+        P.append(f"<h2>Dropped before you saw them ({len(rejected)})</h2><ul>"
+                 + "".join(f"<li>{E(a.get('headline', a['_file']))}"
+                           + (f"<br><small>{E(a.get('_why',''))}</small>"
+                              if a.get('_why') else "")
+                           + "</li>" for a in rejected)
                  + "</ul>")
     P.append("</div>")
     return "\n".join(P)

@@ -233,6 +233,24 @@ def estimate_reading(a: dict) -> int:
     return max(1, round(words / 220))
 
 
+def link_follow_ups(articles: list[dict]) -> None:
+    """Point each follow-up at the article it continues.
+
+    An unresolvable slug is dropped rather than rendered as a dead link: a
+    'previously' box that goes nowhere is worse than none."""
+    by_slug = {a["slug"]: a for a in articles}
+    for a in articles:
+        fu = a.get("follow_up") or {}
+        prior = by_slug.get(fu.get("of", ""))
+        if prior and prior is not a:
+            fu["_path"] = prior["path"]
+            fu["_headline"] = prior["headline"]
+            fu["_date"] = short_date(prior["_date"])
+        elif fu:
+            sys.stderr.write(f"  ! {a['slug']}: follow_up points at unknown slug "
+                             f"{fu.get('of','')!r}; rendering without a link\n")
+
+
 def editions_of(articles: list[dict]) -> dict[dt.date, list[dict]]:
     by_day: dict[dt.date, list[dict]] = {}
     for a in articles:
@@ -564,6 +582,26 @@ def render_body(blocks: list[dict], site: dict, inject_ad_after: int = 3) -> str
     return "\n".join(out)
 
 
+def render_follow_up(a: dict) -> str:
+    """Say plainly that this continues an earlier story, and what changed.
+
+    The newswire's duplicate check lets a repeat story through only when it
+    declares this. Showing the declaration to readers is what keeps that from
+    being a private formality."""
+    fu = a.get("follow_up") or {}
+    whats_new = fu.get("whats_new", "")
+    if not whats_new:
+        return ""
+    if fu.get("_path"):
+        link = (f'<a href="{E(fu["_path"])}">{E(fu["_headline"])}</a>'
+                f' ({E(fu.get("_date", ""))})')
+    else:
+        link = "an earlier edition"
+    return (f'<div class="box box--followup"><h3>This continues an earlier story</h3>'
+            f'<p>We previously reported {link}. '
+            f'<strong>What has changed since:</strong> {inline(whats_new)}</p></div>')
+
+
 def render_sources(a: dict) -> str:
     items = ""
     for s in a["sources"]:
@@ -663,6 +701,7 @@ def build_article(site: dict, a: dict, edition: list[dict]) -> None:
   </div>
   {render_figure(a)}
   <div class="article-body">
+    {render_follow_up(a)}
     {render_body(a['body'], site)}
     {render_uncertain(a)}
     {render_sources(a)}
@@ -1120,6 +1159,7 @@ def main() -> int:
     if not articles:
         sys.stderr.write("No articles found in content/. Nothing to build.\n")
         return 1
+    link_follow_ups(articles)
     by_day = editions_of(articles)
 
     if DIST.exists():
