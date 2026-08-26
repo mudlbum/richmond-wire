@@ -1,7 +1,9 @@
 {
   "date": "2026-08-26",
   "review": {
-    "status": "pending",
-    "recorded_at": "2026-08-26T14:34:44+00:00"
+    "status": "approved",
+    "recorded_at": "2026-08-26T17:29:53+00:00",
+    "reviewed_at": "26 August 2026",
+    "reviewed_by": "mudlbum"
   }
 }
