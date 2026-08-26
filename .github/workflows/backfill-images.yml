@@ -21,6 +21,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: backfill-images
@@ -29,6 +31,8 @@ concurrency:
 jobs:
   attach:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -95,16 +99,40 @@ jobs:
           PY
 
       - name: Commit the images
+        id: commit
         run: |
           git config user.name  "newswire-bot"
           git config user.email "actions@users.noreply.github.com"
           git add content/
           if git diff --staged --quiet; then
             echo "Nothing changed — every article already had a photograph."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             # Subject deliberately does NOT look like an edition review merge, so
             # publish.yml will not mistake this for editorial approval.
             git commit -m "Attach Pexels photographs to ${{ github.event.inputs.date }}"
             git push
-            echo "Committed. The publish workflow will redeploy the site."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # This job deploys the site itself rather than leaving it to publish.yml.
+      # GitHub deliberately does not trigger workflows from pushes made with the
+      # default GITHUB_TOKEN, so a commit from here fires nothing: without this
+      # the photographs would sit in the repository, correctly committed, while
+      # the live site kept showing the old gradients.
+      - name: Upload the rebuilt site
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: attach
+    if: needs.attach.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
