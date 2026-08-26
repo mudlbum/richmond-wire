@@ -1,0 +1,92 @@
+{
+  "rank": 10,
+  "slug": "la-tomatina-bunol-2026",
+  "category": "culture",
+  "headline": "Twenty thousand people, 165 tonnes of tomatoes, one hour, no winner",
+  "dek": "La Tomatina returned to Buñol on Wednesday. Nobody competes, nothing is commemorated, and roughly four in ten of the people covered in tomato pulp have flown in from another country to be there.",
+  "summary": "The Spanish town of Buñol held its annual La Tomatina festival on Wednesday, with more than 20,000 participants and around 165 tonnes of overripe tomatoes in an hour-long street food fight.",
+  "tags": [
+    "Spain",
+    "Festivals",
+    "La Tomatina"
+  ],
+  "read_minutes": 3,
+  "image": {
+    "queries": [
+      "tomatoes crate market red",
+      "spanish town square narrow street"
+    ],
+    "alt": "Crates of ripe tomatoes"
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "On the last Wednesday of August, as it does every year, the town of Buñol near Valencia filled its narrow streets with more than 20,000 people and roughly 165 tonnes of overripe tomatoes, and let them get on with it."
+    },
+    {
+      "type": "p",
+      "text": "La Tomatina lasts about an hour. It begins, by tradition, with someone attempting to climb a greased pole to reach a ham at the top, and ends on a blast that stops the throwing. There is one significant rule: squash the tomato before you throw it. That has been enforced for years for the obvious reason."
+    },
+    {
+      "type": "p",
+      "text": "There is no prize, no winner, no team, no scoreboard, and nothing being commemorated. It is not religious and it is not political. Roughly 40 per cent of recent participants have been international visitors, who pay a €15 entry fee — about $17.50 — and travel a considerable distance for the privilege of being hit with fruit by strangers."
+    },
+    {
+      "type": "quote",
+      "text": "I feel really great, actually. It's the best festival that I ever had, and I enjoy a lot here.",
+      "cite": "Romail Khokhar, 27, from Mumbai, attending for a third time, speaking to the Associated Press"
+    },
+    {
+      "type": "h2",
+      "text": "How it started"
+    },
+    {
+      "type": "p",
+      "text": "In 1945, some young people in Buñol's town square got into a scuffle that involved a vegetable stall. It repeated the following year. It was banned periodically during the Franco dictatorship in the 1950s, reinstated afterwards, and eventually broadcast on national television, which is how a local argument became an international destination."
+    },
+    {
+      "type": "p",
+      "text": "It has since been copied in Florida, London, Amsterdam, Colombia and India. The strong Indian contingent at the original is widely attributed to the 2011 film *Zindagi Na Milegi Dobara*, which featured the festival — one of the more traceable cases of a movie redirecting global tourism to a specific hour in a specific Spanish town."
+    },
+    {
+      "type": "p",
+      "text": "Buñol now caps attendance and charges non-residents to enter, largely to keep the numbers manageable. The Associated Press reported that police used pepper spray to disperse one section of the crowd during this year's event."
+    },
+    {
+      "type": "h2",
+      "text": "Why it belongs in a news digest"
+    },
+    {
+      "type": "p",
+      "text": "Most of what we publish involves consequences. This does not. Twenty thousand people from dozens of countries travelled to a small town to spend an hour throwing food at each other, achieved nothing, and went home happy. That is a reasonable thing for the world to do on a Wednesday in August, and it is worth reading about alongside everything else."
+    },
+    {
+      "type": "p",
+      "text": "The town is hosed down afterwards. The acidity of the tomatoes, according to long-standing local lore, leaves the cobblestones cleaner than they started."
+    }
+  ],
+  "sources": [
+    {
+      "outlet": "Al Jazeera",
+      "title": "Photos: Thousands join Spain's La Tomatina festival for epic tomato battle",
+      "url": "https://www.aljazeera.com/gallery/2026/8/26/photos-thousands-join-spains-la-tomatina-festival-for-epic-tomato-battle"
+    },
+    {
+      "outlet": "Associated Press (via WRAL)",
+      "title": "The epic La Tomatina food fight draws thousands to a small Spanish town",
+      "url": "https://www.wral.com/news/ap/91b97-the-epic-la-tomatina-food-fight-draws-thousands-to-a-small-spanish-town/"
+    },
+    {
+      "outlet": "Reuters",
+      "title": "LIVE: La Tomatina tomato fight festival returns",
+      "url": "https://www.facebook.com/Reuters/videos/live-la-tomatina-tomato-fight-festival-returns/2000733653648513/",
+      "note": "live video coverage"
+    },
+    {
+      "outlet": "Spain.info",
+      "title": "La Tomatina tomato festival, Buñol — 26/08/2026",
+      "url": "https://www.spain.info/en/calendar/la-tomatina/",
+      "note": "Spanish national tourism board"
+    }
+  ]
+}

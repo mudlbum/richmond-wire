@@ -1,0 +1,112 @@
+{
+  "rank": 7,
+  "slug": "apple-mac-mini-m6-2nm-chip",
+  "category": "technology",
+  "headline": "Apple's new Mac mini carries its first 2-nanometre chip — and another price rise",
+  "dek": "The M6 is a manufacturing milestone. The $899 starting price is $300 above where this product line sat two years ago, and every performance figure so far comes from Apple's own lab.",
+  "summary": "Apple announced a redesigned Mac mini on Tuesday built around the M6, its first 2-nanometre chip, alongside an M5 Pro model. It starts at $899, ships September 22, and all published benchmarks are Apple's own.",
+  "tags": [
+    "Apple",
+    "Semiconductors",
+    "Consumer technology"
+  ],
+  "read_minutes": 4,
+  "image": {
+    "queries": [
+      "computer chip macro silicon",
+      "minimalist desktop computer setup"
+    ],
+    "alt": "Close-up of a computer processor on a circuit board"
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "Apple announced a new Mac mini on Tuesday in two configurations: one built on the M6, the company's first chip manufactured on a 2-nanometre process, and one on the M5 Pro. Pre-orders opened the same day; general availability is September 22."
+    },
+    {
+      "type": "p",
+      "text": "The 2-nanometre milestone is the genuinely notable part. Smaller manufacturing processes pack more transistors into the same space and generally use less power for the same work, and the chip industry has been working toward this node for years. This is the first time it has appeared in a mainstream consumer desktop."
+    },
+    {
+      "type": "h2",
+      "text": "What is in the boxes"
+    },
+    {
+      "type": "p",
+      "text": "The M6 configuration has a 12-core CPU — two \"super\" cores, four performance cores and six efficiency cores — a 12-core GPU with neural accelerators in each core, a dual 16-core Neural Engine, 16GB of unified memory as standard (up to 32GB), and 170GB/s of memory bandwidth. The predecessor M4 model had a 10-core CPU and a 10-core GPU."
+    },
+    {
+      "type": "p",
+      "text": "The M5 Pro configuration goes up to an 18-core CPU and a 20-core GPU with third-generation ray tracing, up to 64GB of unified memory, and 307GB/s of bandwidth."
+    },
+    {
+      "type": "p",
+      "text": "Both add Wi-Fi 7, Bluetooth 6 and 2.5Gb Ethernet as standard, with 10Gb configurable. The M6 model has Thunderbolt 4; the M5 Pro has Thunderbolt 5."
+    },
+    {
+      "type": "h2",
+      "text": "The performance claims, and who made them"
+    },
+    {
+      "type": "p",
+      "text": "Apple says the M6 is up to 40 per cent faster than the M4 in multithreaded CPU work and up to four times faster at AI tasks, and that the M5 Pro processes large language models up to 8.5 times faster than the M2 Pro."
+    },
+    {
+      "type": "p",
+      "text": "Every one of those figures comes from Apple's own testing, disclosed in the footnotes of its press release. No independent reviewer had published benchmarks at the time of announcement. That is normal for a launch day and it is also the reason to treat the numbers as marketing until someone outside the company measures them — particularly the power-efficiency and thermal claims, which is where a new manufacturing node either delivers or does not."
+    },
+    {
+      "type": "quote",
+      "text": "Mac mini has always been our most versatile Mac… we're taking this versatility even further.",
+      "cite": "Johny Srouji, Apple's Chief Hardware Officer"
+    },
+    {
+      "type": "h2",
+      "text": "The price line"
+    },
+    {
+      "type": "p",
+      "text": "The M6 model starts at $899 for 256GB of storage and 16GB of memory. The M5 Pro model starts at $1,699."
+    },
+    {
+      "type": "p",
+      "text": "The $899 figure is $100 above the outgoing base price and roughly 50 per cent above the $599 that the M4 Mac mini launched at in 2024. Apple discontinued that $599 tier earlier in 2026, replacing it with a $799 one. Several outlets covering the launch — Macworld among them — framed the increase as a pattern rather than a one-off. The Mac mini has historically been the cheapest way into a Mac, and it is drifting away from that role."
+    },
+    {
+      "type": "box",
+      "title": "How to read a launch-day spec sheet",
+      "items": [
+        "Core counts, memory, bandwidth and ports are verifiable facts — Apple would not misstate them.",
+        "Percentage performance claims are the manufacturer's own, measured on workloads the manufacturer chose.",
+        "Efficiency and heat under sustained load are the things a new process node is supposed to improve, and the things only independent testing reveals."
+      ]
+    }
+  ],
+  "uncertain": [
+    "Every performance multiplier quoted above. None had been verified by independent third-party benchmarking at the time of writing.",
+    "Real-world power efficiency and thermal behaviour of the 2nm M6 outside Apple's own test conditions."
+  ],
+  "sources": [
+    {
+      "outlet": "Apple Newsroom",
+      "title": "Apple unveils powerful Mac mini with M6 and M5 Pro",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-unveils-powerful-mac-mini-with-m6-and-m5-pro/",
+      "note": "primary source; company press release"
+    },
+    {
+      "outlet": "TechCrunch",
+      "title": "Apple's latest Mac Mini runs on a new M6 chip, and starts at $899",
+      "url": "https://techcrunch.com/2026/08/25/apples-latest-mac-mini-runs-on-a-new-m6-chip-and-starts-at-899/"
+    },
+    {
+      "outlet": "9to5Mac",
+      "title": "Apple announces new Mac mini, here's everything new",
+      "url": "https://9to5mac.com/2026/08/25/apple-announces-new-mac-mini-heres-everything-new/"
+    },
+    {
+      "outlet": "Macworld",
+      "title": "Apple launches new M6 Mac mini with another price hike",
+      "url": "https://www.macworld.com/article/3220063/apple-launches-new-m6-mac-mini-with-another-price-hike.html"
+    }
+  ]
+}

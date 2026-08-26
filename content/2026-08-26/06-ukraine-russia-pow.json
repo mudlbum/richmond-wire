@@ -1,0 +1,123 @@
+{
+  "rank": 6,
+  "slug": "ukraine-russia-prisoner-exchange-belarus",
+  "category": "society",
+  "headline": "Ten Ukrainian soldiers listed as missing come home in a prisoner exchange through Belarus",
+  "dek": "Two had been missing since 2024, eight since 2025. For their families, this was the first confirmation they were alive — the second exchange in under a week.",
+  "summary": "Ukraine and Russia each released ten prisoners of war on Monday in a Belarus-mediated exchange. Ukrainian officials said two of the returning servicemen had been listed missing since 2024 and eight since 2025.",
+  "tags": [
+    "Ukraine",
+    "Russia",
+    "Belarus",
+    "Prisoners of war"
+  ],
+  "read_minutes": 4,
+  "image": {
+    "queries": [
+      "sunrise empty road horizon",
+      "open sky clouds dawn"
+    ],
+    "alt": "An empty road stretching toward the horizon at sunrise"
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "Ukraine and Russia exchanged ten prisoners of war each on Monday, in a swap carried out on Belarusian territory in the Gomel region. It was a small exchange by the standards of this war. What made it notable was who came back."
+    },
+    {
+      "type": "p",
+      "text": "Of the ten Ukrainian servicemen returned, two had been officially listed as missing in action since 2024 and eight since 2025, according to Ukraine's Coordination Headquarters for the Treatment of Prisoners of War. Their families had not had confirmation they were alive. They were soldiers and sailors of Ukraine's Armed Forces and National Guard who had fought in the Donetsk sector."
+    },
+    {
+      "type": "quote",
+      "text": "Today, as part of a special stage of the exchange, we are bringing back 10 of our warriors — through Belarus.",
+      "cite": "Volodymyr Zelensky, President of Ukraine"
+    },
+    {
+      "type": "p",
+      "text": "\"It's very important that we managed to bring them back,\" Zelensky added, in remarks carried by The Moscow Times."
+    },
+    {
+      "type": "h2",
+      "text": "How it was arranged"
+    },
+    {
+      "type": "p",
+      "text": "Belarus provided neutral ground for the handover at Novaya Guta, in the Gomel region, with medical and ambulance teams staged nearby. Belarusian President Alexander Lukashenko authorised the operation."
+    },
+    {
+      "type": "p",
+      "text": "It came less than a week after a much larger exchange on August 19, in which each side released 103 prisoners in a swap mediated by the United Arab Emirates. Exchanges through 2026 have run through a rotating set of intermediaries — Belarus, the UAE and others — which is itself worth noting: even in a war with no political settlement in sight, this particular channel has kept functioning."
+    },
+    {
+      "type": "h2",
+      "text": "What we could not confirm"
+    },
+    {
+      "type": "p",
+      "text": "We want to be straightforward about the sourcing on this one, because it is thinner than we would like. Russia's Ministry of Defence had not issued its own confirmation at the time of reporting. Corroboration on the Russian and Belarusian side came through state media — TASS and BelTA — which we have used only for the logistics of where and how the exchange happened, not for its terms. Ukrainian-side detail comes from the president's office, Ukrinform and Interfax-Ukraine. We did not find direct coverage of this specific exchange from Reuters, the Associated Press, the BBC or AFP, all of which have covered the wider pattern of 2026 exchanges extensively, including the August 19 swap."
+    },
+    {
+      "type": "p",
+      "text": "No independent international body — the International Committee of the Red Cross, for instance — was cited as having verified this exchange in any of the reporting we reviewed. That absence does not mean the exchange did not happen; it means the confirmation you are reading rests on the accounts of the parties involved."
+    },
+    {
+      "type": "h2",
+      "text": "What happens to twenty families"
+    },
+    {
+      "type": "p",
+      "text": "The mechanics of a prisoner exchange are dry. The consequence is not. In Ukraine, families of missing servicemen have described years of waiting on occasional letters relayed through mediators, with a soldier's official status moving — if it moves at all — from \"missing\" to \"confirmed held\" to \"returned.\" On Monday, ten of those files moved to the last category, and ten Russian families received their own people back. The date was Ukraine's Independence Day."
+    },
+    {
+      "type": "p",
+      "text": "Russian state media has reported that another, larger exchange is being prepared. That report has not been independently confirmed, and no date has been announced by either government."
+    },
+    {
+      "type": "box",
+      "title": "A note on names",
+      "text": "No returned prisoner or family member is named here. None was named in the reporting we relied on either, which is the correct handling."
+    }
+  ],
+  "uncertain": [
+    "Independent verification of the exchange by a neutral body such as the ICRC. None was cited in any source reviewed.",
+    "Formal confirmation from Russia's Ministry of Defence.",
+    "The health and condition of those returned, which was not disclosed.",
+    "Whether the larger exchange reported by Russian state media as being prepared has been agreed."
+  ],
+  "sources": [
+    {
+      "outlet": "The Moscow Times",
+      "title": "Ukraine Returns 10 Missing Soldiers in 'Special' Exchange With Russia",
+      "url": "https://www.themoscowtimes.com/2026/08/24/ukraine-returns-10-missing-soldiers-in-special-exchange-with-russia-a93567"
+    },
+    {
+      "outlet": "Ukrinform",
+      "title": "Ten Ukrainian service members return home via Belarus in special exchange – Zelensky",
+      "url": "https://www.ukrinform.net/rubric-society/4157186-ten-ukrainian-service-members-return-home-via-belarus-in-special-exchange-zelensky.html",
+      "note": "Ukrainian state news agency"
+    },
+    {
+      "outlet": "Interfax-Ukraine",
+      "title": "Zelenskyy: Ukraine returns 10 MIA POWs via Belarus",
+      "url": "https://en.interfax.com.ua/news/general/1195637.html"
+    },
+    {
+      "outlet": "TASS",
+      "title": "Russia, Ukraine hold 'ten-for-ten' prisoner swap in Belarus",
+      "url": "https://tass.com/world/2177027",
+      "note": "Russian state media; used for logistics only"
+    },
+    {
+      "outlet": "The Jerusalem Post",
+      "title": "Russia and Ukraine swap 103 prisoners of war each amid war",
+      "url": "https://www.jpost.com/international/internationalrussia-ukraine-war/article-906017",
+      "note": "the earlier August 19 exchange"
+    },
+    {
+      "outlet": "Kyiv Post",
+      "title": "Russia, Ukraine Preparing Another 'Quite Big' POW Exchange, Russian State Media Says",
+      "url": "https://www.kyivpost.com/post/83133"
+    }
+  ]
+}

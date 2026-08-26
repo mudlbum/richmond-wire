@@ -1,0 +1,134 @@
+{
+  "rank": 8,
+  "slug": "depression-hippocampus-new-neurons-study",
+  "category": "science",
+  "headline": "In depressed brains, the making of new neurons appears to stall halfway",
+  "dek": "A study of post-mortem tissue found that neuron production in the hippocampus does not stop in people with major depression — it gets stuck partway through. The finding is a map, not a medicine.",
+  "summary": "A peer-reviewed study in Nature Medicine analysed roughly 495,000 brain cells and found that in people with major depressive disorder, new neuron formation in the hippocampus stalls at an intermediate stage. It is observational and does not establish cause.",
+  "tags": [
+    "Neuroscience",
+    "Depression",
+    "Medical research"
+  ],
+  "read_minutes": 5,
+  "image": {
+    "queries": [
+      "laboratory microscope research",
+      "scientist analysing data screen"
+    ],
+    "alt": "A researcher working at a microscope in a laboratory"
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "The adult human brain makes new neurons in a region called the hippocampus — a seahorse-shaped structure involved in memory, learning and the regulation of mood. How much of this happens in adults has been argued over for years. A study published on August 21 in Nature Medicine adds unusually detailed human evidence to a related question: what that process looks like in people who had depression."
+    },
+    {
+      "type": "p",
+      "text": "The answer the researchers report is more specific than \"less of it.\" The process appears to start and then stall."
+    },
+    {
+      "type": "h2",
+      "text": "What they did"
+    },
+    {
+      "type": "p",
+      "text": "The team, led by Maura Dupont, professor of psychiatry at Columbia University Irving Medical Center, built what they describe as the largest multiomic atlas of the adult human hippocampus assembled so far, working with post-mortem brain tissue. They analysed roughly 495,000 individual cell nuclei from the hippocampus, identifying 31 distinct cell clusters, and combined four techniques: single-nucleus RNA sequencing, chromatin accessibility analysis, spatial transcriptomics and proteomics."
+    },
+    {
+      "type": "p",
+      "text": "The tissue came from 30 donors after quality filtering — 11 who had major depressive disorder and 19 who did not."
+    },
+    {
+      "type": "h2",
+      "text": "What they found"
+    },
+    {
+      "type": "p",
+      "text": "In the donors with depression, there was a higher proportion of early-stage neural stem cells but a lower proportion of neuroblasts, which are a later step on the path from stem cell to working neuron. The pipeline was not shut off at the start. It was backing up in the middle."
+    },
+    {
+      "type": "p",
+      "text": "The researchers also found broader molecular disruption across the hippocampal circuit — changes in genes governing neural connections, cellular energy, inflammation and cellular stress — suggesting the neurogenesis finding sits inside a wider picture rather than standing alone."
+    },
+    {
+      "type": "quote",
+      "text": "This paper, excitingly, is the first to show at single-cell resolution exactly where in the process things appear to be awry.",
+      "cite": "Amelia Eisch, University of Pennsylvania, who was not involved in the study, speaking to Nature"
+    },
+    {
+      "type": "h2",
+      "text": "What it does not show"
+    },
+    {
+      "type": "p",
+      "text": "This is the part that gets lost when a study like this is summarised badly, so we are going to be plain about it."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "**It does not show that stalled neurogenesis causes depression.** This is an observational analysis of donated tissue. It establishes that the two occur together in the brains examined. Causation could run either way, or both could follow from something else.",
+        "**The sample is small.** Eleven donors with depression is typical for post-mortem neuroscience and still small. Findings at this scale need replication.",
+        "**One region was examined.** Depression involves multiple brain regions; the hippocampus is one.",
+        "**No treatment was tested.** No drug, therapy or intervention was trialled. The researchers noted \"potentially druggable pathways\" — a direction for future work, not a result.",
+        "**It is not clinical guidance.** Nothing here changes what any patient should do."
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The paper's own language is appropriately hedged: it describes stalled neurogenesis as a potential contributor to the cognitive difficulties associated with depression, and notes that its role in humans had been unclear before this work. Evgenia Salta of the Netherlands Institute for Neuroscience, an outside expert, told Nature that more investigation is needed into how and when the disruption occurs over the course of the illness."
+    },
+    {
+      "type": "h2",
+      "text": "Why it still matters"
+    },
+    {
+      "type": "p",
+      "text": "The idea that reduced neuron growth contributes to depression — the neurogenesis hypothesis — has circulated in the research literature for more than two decades, largely on the strength of animal studies. Human evidence at single-cell resolution is genuinely new, and knowing which step of a process fails is the kind of thing that makes a treatment target findable, eventually."
+    },
+    {
+      "type": "p",
+      "text": "Existing antidepressants do not work for everyone who takes them, and the reasons are poorly understood. Research like this is aimed squarely at that gap. It is early-stage, it is a description of a mechanism rather than a cure, and any therapy arising from it would be years away. That is still progress worth reporting accurately."
+    },
+    {
+      "type": "p",
+      "text": "The work was funded by the US National Institutes of Health and the Bill Herrlinger Research Foundation."
+    },
+    {
+      "type": "box",
+      "title": "If this is close to home",
+      "variant": "warn",
+      "text": "This article describes laboratory research, not medical advice. If you are dealing with depression, a qualified clinician is the right person to talk to about treatment — nothing in this study changes that."
+    }
+  ],
+  "uncertain": [
+    "Whether impaired neurogenesis contributes to depression, results from it, or shares a common cause with it. The study design cannot distinguish these.",
+    "Whether the finding applies to depression broadly or only to certain subtypes.",
+    "Whether restoring neurogenesis would improve symptoms in living patients. This was not tested and remains untested."
+  ],
+  "sources": [
+    {
+      "outlet": "Nature Medicine",
+      "title": "Dysregulated adult hippocampal neurogenesis in major depressive disorders",
+      "url": "https://www.nature.com/articles/s41591-026-04571-8",
+      "note": "primary source; peer-reviewed research article"
+    },
+    {
+      "outlet": "Nature",
+      "title": "The brain struggles to make new neurons in people with depression",
+      "url": "https://www.nature.com/articles/d41586-026-02661-8",
+      "note": "news coverage with independent expert comment"
+    },
+    {
+      "outlet": "Columbia University Irving Medical Center",
+      "title": "Depression Stalls Formation of New Brain Cells",
+      "url": "https://www.cuimc.columbia.edu/news/depression-stalls-formation-new-brain-cells",
+      "note": "institutional release"
+    },
+    {
+      "outlet": "Medical Xpress",
+      "title": "New brain cell formation stalls in adults with depression, study shows",
+      "url": "https://medicalxpress.com/news/2026-08-brain-cell-formation-stalls-adults.html"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+name: Publish
+
+# Stage 3 of 3. Runs when content lands on main — which happens either because a
+# person merged the review pull request, or because the review window expired and
+# release-on-timeout merged it.
+#
+# The distinction matters: this workflow decides what the site TELLS READERS about
+# whether a human read the edition. It never invents approval. An edition already
+# stamped "auto" keeps that stamp; only a "pending" edition arriving on main —
+# which can only happen via a human merge — becomes "approved".
+
+on:
+  push:
+    branches: [main]
+    paths: ["content/**", "pages/**", "static/**", "build.py", "site.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Record who released each pending edition
+        run: |
+          python3 scripts/release_pending.py --by "${{ github.actor }}"
+          echo "released=$(cat /tmp/released_count)" >> "$GITHUB_ENV"
+
+      - name: Commit the review record
+        if: env.released != '0'
+        run: |
+          git config user.name  "newswire-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add content/
+          if git diff --staged --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "Record editorial approval"
+            git push
+          fi
+
+      - name: Validate every edition
+        run: |
+          fail=0
+          for d in content/*/; do
+            [ -d "$d" ] || continue
+            python3 pipeline/validate.py "$d" || fail=1
+          done
+          exit $fail
+
+      - name: Build
+        run: python3 build.py
+
+      - name: Check links and required pages
+        run: python3 scripts/check_links.py
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

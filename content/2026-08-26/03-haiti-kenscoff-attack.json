@@ -1,0 +1,44 @@
+{
+  "rank": 3,
+  "slug": "haiti-kenscoff-gang-attack-toll",
+  "category": "world",
+  "headline": "Gang raid on the hills above Port-au-Prince leaves at least 47 dead and more than 50 taken",
+  "dek": "The attack on Kenscoff is the latest in a pattern that has emptied whole neighbourhoods of Haiti's capital. The UN Secretary-General called the security situation alarming; Haiti's government promised its authority would be restored.",
+  "summary": "At least 47 people were killed and more than 50 kidnapped in a gang raid on the Kenscoff area above Port-au-Prince over the weekend, according to Haitian and UN officials. The toll rose sharply as bodies were recovered.",
+  "tags": ["Haiti", "Port-au-Prince", "United Nations", "Security"],
+  "read_minutes": 5,
+  "image": {
+    "queries": ["caribbean hillside town aerial", "united nations flags building"],
+    "alt": "Hillside settlement above a Caribbean city"
+  },
+  "body": [
+    {"type": "p", "text": "Gunmen raided Kenscoff, an area in the hills above Port-au-Prince, over the weekend. At least 47 people were killed and more than 50 were kidnapped, according to Haitian officials and the United Nations. The initial toll reported on Monday was around 30; it rose as bodies were recovered."},
+    {"type": "p", "text": "The attack has been attributed to a faction led by a man known as \"Izo 2,\" part of the broader Viv Ansanm gang alliance, which the United States has designated a foreign terrorist organisation. Associated Press reporting says 22 victims were executed inside a church compound, that 25 homes were burned, and that two government employees were among the dead. Al Jazeera's separately reported account gives the same overall toll but describes a figure of 22 as injured rather than killed in a church — a discrepancy neither outlet has reconciled, and one we are not going to resolve by picking the more dramatic version."},
+    {"type": "p", "text": "Both accounts report that a 16-year-old kidnapping victim was raped, escaped, and was reunited with her family."},
+    {"type": "p", "text": "Haiti's National Police Director, Vladimir Paraison, ordered an investigation and the deployment of additional specialised units. Al Jazeera reported that the gang leader had directed a threat at him personally."},
+    {"type": "quote", "text": "It is an obligation to protect the civilian population.", "cite": "Vladimir Paraison, Director General of the Haitian National Police, via the Associated Press"},
+    {"type": "h2", "text": "The pattern behind it"},
+    {"type": "p", "text": "Kenscoff has been attacked repeatedly. A United Nations mission report covering earlier assaults on the same heights between January and March 2025 documented 262 deaths and mass displacement in that area alone. What happened this weekend is not an aberration in Haiti's capital; it is the continuation of something."},
+    {"type": "p", "text": "Wire reporting citing UN humanitarian tracking puts gang control at roughly 70 per cent of Port-au-Prince, with about 1.5 million people displaced nationwide and more than 3,050 killed between January and June 2026. Kidnappings were reported to have risen roughly 40 per cent in the second quarter."},
+    {"type": "p", "text": "Haiti has had no elected president and no functioning parliament for years. A transitional council governs alongside a police force backed by a UN-authorised multinational security mission led by Kenya. The country is nominally working toward its first general election in more than a decade — a process that each of these offensives threatens."},
+    {"type": "h2", "text": "The response"},
+    {"type": "p", "text": "UN Secretary-General António Guterres condemned the attack."},
+    {"type": "quote", "text": "The relentless gang attacks on communities and the loss of lives underscore the alarming security conditions in Haiti.", "cite": "António Guterres, UN Secretary-General, via the Associated Press"},
+    {"type": "p", "text": "The office of Haiti's prime minister said: \"The government's authority will be restored, without weakness and without delay.\" Whether the police and the multinational mission have the capacity to make that true in Kenscoff specifically has not been demonstrated, and no additional international deployment to the area had been confirmed as of Wednesday."},
+    {"type": "box", "title": "A note on names", "text": "This article names public officials only. The victims of this attack, including the teenager referenced above, are not named here and are not identified in the reporting we relied on."}
+  ],
+  "uncertain": [
+    "The final death toll, which rose from about 30 to 47 within roughly 48 hours and may be revised again.",
+    "Whether the figure of 22 refers to people executed in a church, as AP reports, or people injured, as Al Jazeera reports.",
+    "The fate and location of the more than 50 people kidnapped.",
+    "Whether the UN-backed multinational security mission has deployed to Kenscoff since the attack.",
+    "The exact night of the attack. Reporting places it on either the evening of August 23 or August 24."
+  ],
+  "sources": [
+    {"outlet": "Al Jazeera", "title": "Haiti gang raid death toll rises to 47 as more than 50 kidnapped, says UN", "url": "https://www.aljazeera.com/news/2026/8/26/at-least-47-killed-50-kidnapped-in-grisly-gang-raid-in-haiti-says-un"},
+    {"outlet": "NPR / Associated Press", "title": "More than 50 kidnapped as violent gang attack in Haiti leaves 47 dead", "url": "https://www.npr.org/2026/08/26/nx-s1-5944787/50-kidnapped-haiti-gang-attack-47-dead"},
+    {"outlet": "The Haitian Times", "title": "New gang attack in Haiti's Kenscoff kills at least 30 people", "url": "https://haitiantimes.com/2026/08/24/new-gang-attack-in-haitis-kenscoff-kills-at-least-30-people/", "note": "earlier toll"},
+    {"outlet": "The Globe and Mail", "title": "Gang attack in Haitian town of Kenscoff leaves at least 30 dead", "url": "https://www.theglobeandmail.com/world/article-gang-attack-haiti-kenscoff-port-au-prince/"},
+    {"outlet": "United Nations in Haiti (BINUH)", "title": "At least 262 people killed over two months' brutal attacks, Kenscoff Heights, Port-au-Prince", "url": "https://haiti.un.org/en/292260-least-262-people-killed-over-two-months-brutal-attacks-kenscoff-heights-port-au-prince", "note": "background on earlier attacks"}
+  ]
+}

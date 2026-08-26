@@ -1,0 +1,30 @@
+name: Build check
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["README.md", "docs/**"]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate all editions
+        run: |
+          fail=0
+          for d in content/*/; do
+            [ -d "$d" ] || continue
+            echo "── $d"
+            python3 pipeline/validate.py "$d" || fail=1
+          done
+          exit $fail
+      - name: Build
+        run: python3 build.py
+      - name: Check internal links resolve
+        run: python3 scripts/check_links.py

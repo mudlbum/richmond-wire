@@ -1,0 +1,82 @@
+{
+  "name": "Richmond International Newswire",
+  "short_name": "Richmond Newswire",
+  "tagline": "Ten stories from the world, every day.",
+  "description": "An independent daily digest of ten international news stories — verified against multiple reliable sources, written plainly, and free of partisan framing.",
+  "url": "https://mudlbum.github.io/richmond-wire",
+  "locale": "en",
+  "timezone": "America/Toronto",
+  "publisher": {
+    "name": "Richmond International Newswire",
+    "legal_name": "Richmond International Newswire",
+    "location": "Richmond Hill, Ontario, Canada",
+    "email": "editor@example.com",
+    "corrections_email": "corrections@example.com",
+    "privacy_email": "privacy@example.com"
+  },
+  "adsense": {
+    "enabled": false,
+    "publisher_id": "ca-pub-XXXXXXXXXXXXXXXX",
+    "slots": {
+      "leaderboard": "0000000000",
+      "in_article": "0000000000",
+      "sidebar": "0000000000"
+    },
+    "consent_mode": "self",
+    "_consent_mode_help": "'self' = the built-in banner gates ad loading; use only where a certified CMP is not required. 'google_cmp' = you have configured Google's Funding Choices / Privacy & messaging CMP, which is MANDATORY for serving personalised ads to visitors in the EEA, the UK or Switzerland."
+  },
+  "analytics": {
+    "enabled": false,
+    "provider": "none"
+  },
+  "categories": [
+    {
+      "slug": "world",
+      "name": "World",
+      "blurb": "Conflict, diplomacy and the machinery of international affairs."
+    },
+    {
+      "slug": "economy",
+      "name": "Economy",
+      "blurb": "Trade, markets, prices and the cost of living, worldwide."
+    },
+    {
+      "slug": "technology",
+      "name": "Technology",
+      "blurb": "Hardware, software, and the systems reshaping daily life."
+    },
+    {
+      "slug": "science",
+      "name": "Science",
+      "blurb": "Research, medicine, space and the natural world."
+    },
+    {
+      "slug": "sport",
+      "name": "Sport",
+      "blurb": "Competition and achievement across the globe."
+    },
+    {
+      "slug": "culture",
+      "name": "Culture",
+      "blurb": "Art, heritage, festivals and the things people gather for."
+    },
+    {
+      "slug": "environment",
+      "name": "Environment",
+      "blurb": "Climate, disasters, energy and the living planet."
+    },
+    {
+      "slug": "society",
+      "name": "Society",
+      "blurb": "Health, education, communities and human interest."
+    }
+  ],
+  "editorial": {
+    "review_mode": "hold_then_publish",
+    "hold_hours": 12,
+    "_review_mode_help": "'hold_then_publish' = each edition is held in an open pull request for hold_hours. Merging the PR marks it editor-approved. If the window expires it publishes anyway, marked as NOT reviewed. 'hold_until_approved' = the same, but an unapproved edition never publishes. 'publish_immediately' = no gate at all. The public wording on every article changes to match whichever mode is set AND what actually happened to that edition.",
+    "reviewer_credit": "the editor",
+    "_reviewer_credit_help": "How the reviewer is described on approved articles. Keep it accurate — use a role, or a real name if you want to be named. Never a job title nobody holds."
+  },
+  "_url_help": "Full public base of the site. A path after the host (e.g. /richmond-wire) is treated as a base path and prefixed onto every internal link, the sitemap and the feed. Point a custom domain here later and the base path disappears on its own."
+}

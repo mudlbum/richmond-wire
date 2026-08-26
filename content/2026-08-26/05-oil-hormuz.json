@@ -1,0 +1,120 @@
+{
+  "rank": 5,
+  "slug": "oil-prices-fall-iran-oman-hormuz-talks",
+  "category": "economy",
+  "headline": "Oil falls for a third day as Iran and Oman talk about reopening the Strait of Hormuz",
+  "dek": "Brent slid to about $86.69 a barrel on hopes of a navigable Gulf. A tanker was struck by a projectile near the strait the same week, and analysts warn that talks are not the same thing as ships moving.",
+  "summary": "Brent crude fell to around $86.69 a barrel on Wednesday, a third consecutive daily decline, after Iran and Oman opened talks on a temporary shipping corridor and mine-clearing in the Strait of Hormuz.",
+  "tags": [
+    "Oil",
+    "Strait of Hormuz",
+    "Iran",
+    "Energy prices"
+  ],
+  "read_minutes": 5,
+  "image": {
+    "queries": [
+      "oil tanker ship sea aerial",
+      "crude oil pipeline industrial"
+    ],
+    "alt": "An oil tanker at sea seen from above"
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "Oil fell for a third straight session on Wednesday. Brent crude traded at about $86.69 a barrel and West Texas Intermediate at about $80.61, according to Reuters-sourced reporting. Reuters' Morning Bid column described Brent as down more than two per cent, on course for its largest weekly drop since June."
+    },
+    {
+      "type": "p",
+      "text": "The reason was diplomatic rather than economic. Iran and Oman have opened talks on establishing what has been described as a joint temporary navigational corridor through the Strait of Hormuz, and on cooperating to clear mines from the waterway."
+    },
+    {
+      "type": "quote",
+      "text": "Markets were cheered by news that talks have resumed between Oman and Iran about how to make the Gulf navigable again — at least temporarily.",
+      "cite": "Mike Dolan, Reuters Morning Bid"
+    },
+    {
+      "type": "h2",
+      "text": "The gap between the talks and the water"
+    },
+    {
+      "type": "p",
+      "text": "The market's optimism sits uneasily beside what is actually happening in the strait. On Tuesday, an oil tanker was struck by an unidentified projectile and disabled roughly nine nautical miles north-east of Ash Shishah, Oman, near the entrance to the waterway, according to UK Maritime Trade Operations reporting cited by Benzinga."
+    },
+    {
+      "type": "p",
+      "text": "Traffic remains close to frozen. The ship-tracking firm Windward recorded a single vessel — a Barbados-flagged gas carrier — entering the strait on Tuesday, and no outbound tanker traffic at all in that 24-hour window."
+    },
+    {
+      "type": "p",
+      "text": "President Donald Trump said that all mines in the international waters of the Strait of Hormuz had been removed or detonated, and warned of \"zero tolerance\" for any new ones. The United States also moved this week to tighten sanctions on Iran's oil trade, even as the market focused on the prospect of de-escalation."
+    },
+    {
+      "type": "p",
+      "text": "Analysts at ING were direct about the distance still to travel."
+    },
+    {
+      "type": "quote",
+      "text": "Any agreement between these two parties does not mean we will see normalisation in oil flows through the key chokepoint.",
+      "cite": "Warren Patterson and Ewa Manthey, ING commodity strategists"
+    },
+    {
+      "type": "p",
+      "text": "Their view is that American sanctions relief would likely have to come first."
+    },
+    {
+      "type": "h2",
+      "text": "Nobody agrees how much oil is moving"
+    },
+    {
+      "type": "p",
+      "text": "One of the more striking features of this story is that there is no settled figure for how much oil currently passes through the strait. United States officials have cited 8 to 9 million barrels a day. Ship-tracking data cited by ING analysts suggests the real figure over extended periods has been closer to 2 to 6 million. That is not a rounding difference; it is a disagreement about whether the world's most important oil chokepoint is half-working or barely working."
+    },
+    {
+      "type": "h2",
+      "text": "What it means at the pump"
+    },
+    {
+      "type": "p",
+      "text": "Crude prices feed into fuel, shipping, manufacturing inputs and heating costs, so a sustained fall would eventually show up in household budgets worldwide. The operative word is sustained. Three days of decline in a market that has spent months pricing in a risk premium is a mood, not a trend — and a tanker was still being hit by a projectile while the diplomats talked."
+    },
+    {
+      "type": "box",
+      "title": "Background",
+      "text": "The Strait of Hormuz has been effectively restricted for months amid the 2026 Iran conflict. A staged ceasefire process began in April 2026 and a broader 60-day ceasefire was signed in June, but crossings have remained limited since."
+    }
+  ],
+  "uncertain": [
+    "Whether the Iran–Oman talks produce an implemented agreement, and on what timeline.",
+    "How much oil is actually flowing through the strait. Official US estimates and independent tanker-tracking data differ by a factor of two or more.",
+    "Whether the United States will ease sanctions on Iran, which ING analysts describe as a precondition for genuine normalisation.",
+    "Who fired the projectile that disabled a tanker near the strait on Tuesday."
+  ],
+  "sources": [
+    {
+      "outlet": "Reuters (via OilPrice.com)",
+      "title": "Oil Prices Fall as Iran-Oman Talks Fuel Hopes of Strait Reopening",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Fall-as-Iran-Oman-Talks-Fuel-Hopes-of-Strait-Reopening.html"
+    },
+    {
+      "outlet": "Reuters",
+      "title": "Morning Bid: Falling oil calms nervy markets",
+      "url": "https://finance.yahoo.com/markets/articles/morning-bid-falling-oil-calms-103319409.html"
+    },
+    {
+      "outlet": "Benzinga",
+      "title": "Iran Restarts Strait of Hormuz Talks With Oman While Trump Says All Mines Have Been Cleared",
+      "url": "https://www.benzinga.com/news/politics/26/08/61425372/iran-oman-strait-hormuz-talks-trump-mines-cleared-brent"
+    },
+    {
+      "outlet": "Bloomberg",
+      "title": "Oil Extends Declines as Iran, Oman Push Talks to Reopen Hormuz",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-25/latest-oil-market-news-and-analysis-for-aug-26"
+    },
+    {
+      "outlet": "CNBC",
+      "title": "Iran and Oman prepare Hormuz deal as U.S. holds back on secondary sanctions",
+      "url": "https://www.cnbc.com/2026/08/26/us-iran-war-trump-hormuz.html"
+    }
+  ]
+}

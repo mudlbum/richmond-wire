@@ -1,0 +1,106 @@
+{
+  "rank": 4,
+  "slug": "un-condemns-israel-evacuation-threat-gaza-kites",
+  "category": "world",
+  "headline": "UN human rights office calls Israeli threat to clear areas over kite launches \"outrageous\"",
+  "dek": "Israel's prime minister and defence minister warned that populations would be evacuated from areas where kites, balloons or drones are launched. Israel says any airborne object from Gaza is a potential weapon; the UN says the response is disproportionate.",
+  "summary": "Israel's leadership threatened to evacuate Gaza areas from which kites, balloons or drones are launched toward Israel. The UN human rights office called the threat outrageous. Israeli strikes tied to the episode reportedly killed three people.",
+  "tags": [
+    "Israel",
+    "Gaza",
+    "United Nations",
+    "Ceasefire"
+  ],
+  "read_minutes": 5,
+  "image": {
+    "queries": [
+      "united nations building exterior geneva",
+      "paper kite sky silhouette"
+    ],
+    "alt": "The exterior of a United Nations building"
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "On Sunday, August 23, Israeli Prime Minister Benjamin Netanyahu and Defence Minister Israel Katz issued a joint warning: if the launching of kites, balloons and drones toward Israel does not stop, the military will intensify strikes on those responsible and evacuate populations from the areas the launches come from. This week the United Nations human rights office called that threat outrageous."
+    },
+    {
+      "type": "p",
+      "text": "Two separate questions are tangled together here. One is what an airborne object crossing from Gaza should be treated as. The other is what may lawfully be done to a civilian population in response — which is the part the UN objected to."
+    },
+    {
+      "type": "h2",
+      "text": "Israel's position"
+    },
+    {
+      "type": "p",
+      "text": "Israeli officials describe airborne objects crossing from Gaza as a threat that has to be treated as such regardless of what it looks like. Katz, quoted by the Times of Israel, put it in exactly those terms: \"A balloon is treated like a kite, and a kite is treated like a drone — with or without explosives.\" Netanyahu directed the military to \"strike it, strike those operating it, strike the place from which it was launched.\""
+    },
+    {
+      "type": "p",
+      "text": "The immediate trigger, according to the Times of Israel, was at least four kites flown from Gaza toward Kibbutz Nahal Oz over the preceding weekend. Those kites were reported as non-incendiary. The broader context is that incendiary kites were used from Gaza during the border protests of 2018 and caused significant fires in Israeli farmland, which is why Israeli officials treat the category rather than the individual object."
+    },
+    {
+      "type": "h2",
+      "text": "The UN's position"
+    },
+    {
+      "type": "p",
+      "text": "The objection from the UN Office of the High Commissioner for Human Rights is not about whether kites should be intercepted. It is about the proposed consequence — moving a civilian population out of an area because of what was launched from it. Forced transfer of a civilian population is a serious matter under international humanitarian law, and threatening it in response to children's kites is what the spokesperson was reacting to."
+    },
+    {
+      "type": "quote",
+      "text": "On the threat of expulsion due to children's kite flying, I hope we can all agree that this is outrageous.",
+      "cite": "Ravina Shamdasani, spokesperson for the UN Office of the High Commissioner for Human Rights"
+    },
+    {
+      "type": "h2",
+      "text": "What has happened on the ground"
+    },
+    {
+      "type": "p",
+      "text": "The Times of Israel reported that Israeli strikes on Sunday killed three people in Gaza, including a four-year-old boy killed by shrapnel in az-Zawayda. One strike, according to that report, targeted a man the Israeli military identified as a Hamas arms-production commander."
+    },
+    {
+      "type": "p",
+      "text": "Local \"popular committees\" in Gaza urged parents to stop their children flying kites, citing the risk. Kite-flying has been a common childhood pastime in Gaza for decades."
+    },
+    {
+      "type": "p",
+      "text": "Cumulative casualty figures for the period since the October 2025 ceasefire took effect vary considerably depending on the source and the date of the count. Al Jazeera has reported more than 1,280 Palestinians killed since then, a figure drawing on Gaza health ministry counts. UN figures published earlier in 2026 cited a smaller number of deaths the organisation had independently verified out of a larger number reported. Both are real numbers measuring different things — reported deaths and UN-verified deaths — and neither is current as of today."
+    },
+    {
+      "type": "box",
+      "title": "Why this article does not pick a side",
+      "text": "Both governments and both institutions here are making claims that serve their positions, and the underlying facts — whether the kites were incendiary, how many people have died since the ceasefire — are contested or unverified. Our standard is to set out each position, name who is asserting it, and mark clearly what has not been established. Readers can follow the source links and weigh it themselves."
+    }
+  ],
+  "uncertain": [
+    "Whether Israel has carried out any evacuation under this threat, or whether it remains a stated warning.",
+    "Whether every kite recovered was non-incendiary. Israeli officials have implied some could carry explosives; no such finding has been reported.",
+    "The reconciled Palestinian death toll in Gaza since the October 2025 ceasefire. Figures differ by source, by date, and by whether they count reported or independently verified deaths.",
+    "Whether any of the strikes described were independently verified by a party other than the outlets reporting them."
+  ],
+  "sources": [
+    {
+      "outlet": "Al Jazeera",
+      "title": "'Outrageous': UN condemns Israeli threat to expel Gaza residents over kites",
+      "url": "https://www.aljazeera.com/news/2026/8/26/un-rejects-israels-threat-to-expel-gaza-residents-over-kite-flying"
+    },
+    {
+      "outlet": "The Times of Israel",
+      "title": "IDF told to act forcefully against Gaza kites; 3 reported killed in Israeli strikes",
+      "url": "https://www.timesofisrael.com/idf-told-to-act-forcefully-against-gaza-kites-one-reported-killed-in-israeli-airstrike/"
+    },
+    {
+      "outlet": "RTÉ",
+      "title": "Israel threat on Gazan children's kites 'outrageous' - UN",
+      "url": "https://www.rte.ie/news/2026/0825/1589142-israel-threat-on-gazan-childrens-kites-outrageous-un/"
+    },
+    {
+      "outlet": "Daily Sabah",
+      "title": "Israel threatens to expel Gazans over children's kites, UN cries foul",
+      "url": "https://www.dailysabah.com/world/mid-east/israel-threatens-to-expel-gazans-over-childrens-kites-un-cries-foul"
+    }
+  ]
+}

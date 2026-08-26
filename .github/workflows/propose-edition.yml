@@ -1,0 +1,138 @@
+name: Propose edition
+
+# Stage 1 of 3. Researches and writes the day's edition, then opens a pull request
+# for review. This workflow NEVER publishes. Publishing happens on merge.
+
+on:
+  schedule:
+    # 09:30 UTC = 05:30 America/Toronto (EDT). GitHub's scheduler is best-effort
+    # and can run late under load.
+    - cron: "30 9 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Edition date (YYYY-MM-DD). Blank = today (UTC)."
+        required: false
+      beats:
+        description: "Comma-separated beats, or blank for all."
+        required: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: propose-edition
+  cancel-in-progress: false
+
+jobs:
+  propose:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Resolve edition date
+        id: d
+        run: |
+          DATE="${{ github.event.inputs.date }}"
+          if [ -z "$DATE" ]; then DATE=$(date -u +%F); fi
+          echo "date=$DATE" >> "$GITHUB_OUTPUT"
+          echo "branch=edition/$DATE" >> "$GITHUB_OUTPUT"
+
+      - name: Skip if this edition already exists on main
+        id: exists
+        run: |
+          if [ -d "content/${{ steps.d.outputs.date }}" ]; then
+            echo "Edition already published. Nothing to propose."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Research and write the edition
+        if: steps.exists.outputs.skip == 'false'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+        run: |
+          BEATS="${{ github.event.inputs.beats }}"
+          if [ -n "$BEATS" ]; then
+            python3 pipeline/generate_edition.py --date "${{ steps.d.outputs.date }}" --beats "$BEATS"
+          else
+            python3 pipeline/generate_edition.py --date "${{ steps.d.outputs.date }}"
+          fi
+
+      - name: Automated editorial gate
+        id: gate
+        if: steps.exists.outputs.skip == 'false'
+        run: |
+          # Quarantines any article failing a hard rule. The reviewer still sees
+          # what was dropped, in the digest.
+          python3 pipeline/validate.py "content/${{ steps.d.outputs.date }}" \
+            --check-links --quarantine
+          COUNT=$(ls -1 "content/${{ steps.d.outputs.date }}"/*.json 2>/dev/null \
+                  | grep -v edition.json | wc -l)
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          if [ "$COUNT" -lt 3 ]; then
+            echo "Only $COUNT stories survived verification — not worth a review round."
+            echo "abort=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "abort=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Attach Pexels photographs
+        if: steps.exists.outputs.skip == 'false' && steps.gate.outputs.abort == 'false'
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: python3 pipeline/fetch_images.py "content/${{ steps.d.outputs.date }}"
+
+      - name: Mark the edition as awaiting review
+        if: steps.exists.outputs.skip == 'false' && steps.gate.outputs.abort == 'false'
+        run: |
+          python3 scripts/stamp_review.py "content/${{ steps.d.outputs.date }}" \
+            --status pending
+
+      - name: Confirm it builds before asking anyone to read it
+        if: steps.exists.outputs.skip == 'false' && steps.gate.outputs.abort == 'false'
+        run: python3 build.py && python3 scripts/check_links.py
+
+      - name: Open the review pull request
+        id: pr
+        if: steps.exists.outputs.skip == 'false' && steps.gate.outputs.abort == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          DATE="${{ steps.d.outputs.date }}"
+          BRANCH="${{ steps.d.outputs.branch }}"
+
+          git config user.name  "newswire-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add "content/$DATE"
+          git commit -m "Edition of $DATE — awaiting review"
+          git push -u origin "$BRANCH" --force
+
+          python3 scripts/review_digest.py "content/$DATE" --out /tmp/digest.md
+
+          PR_URL=$(gh pr create \
+            --base main --head "$BRANCH" \
+            --title "Review: edition of $DATE (${{ steps.gate.outputs.count }} stories)" \
+            --body-file /tmp/digest.md)
+          echo "url=$PR_URL" >> "$GITHUB_OUTPUT"
+          echo "Review PR: $PR_URL"
+
+      - name: Email the digest
+        if: steps.exists.outputs.skip == 'false' && steps.gate.outputs.abort == 'false'
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          DIGEST_TO: ${{ secrets.DIGEST_TO }}
+        run: |
+          python3 scripts/send_digest.py "content/${{ steps.d.outputs.date }}" \
+            --pr-url "${{ steps.pr.outputs.url }}"
