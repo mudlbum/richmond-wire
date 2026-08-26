@@ -18,42 +18,16 @@
   --note-bg:#f5f2eb;
   --warn-bg:#fdf6e7;
   --warn-rule:#e3c98a;
+  /* The newswire renders light for every reader, regardless of their OS
+     setting. color-scheme keeps native controls, scrollbars and form widgets
+     light too — without it a dark-mode visitor gets a light page with dark
+     scrollbars and grey-on-grey inputs. */
+  color-scheme: light;
   --maxw:1180px;
   --measure:38rem;
   --serif: "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
   --sans: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --mono: ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
-}
-
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#14151a;
-    --bg-elev:#1b1d24;
-    --bg-sunk:#101116;
-    --ink:#eceef3;
-    --ink-2:#c2c7d2;
-    --ink-3:#8d94a3;
-    --rule:#2c2f39;
-    --rule-strong:#3d414d;
-    --accent:#e08585;
-    --accent-ink:#eb9a9a;
-    --link:#8fb4ff;
-    --link-visited:#c0a8f0;
-    --flag:#eceef3;
-    --tag-bg:#24272f;
-    --note-bg:#1d1f27;
-    --warn-bg:#26210f;
-    --warn-rule:#5c4d22;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#14151a; --bg-elev:#1b1d24; --bg-sunk:#101116;
-  --ink:#eceef3; --ink-2:#c2c7d2; --ink-3:#8d94a3;
-  --rule:#2c2f39; --rule-strong:#3d414d;
-  --accent:#e08585; --accent-ink:#eb9a9a;
-  --link:#8fb4ff; --link-visited:#c0a8f0; --flag:#eceef3;
-  --tag-bg:#24272f; --note-bg:#1d1f27;
-  --warn-bg:#26210f; --warn-rule:#5c4d22;
 }
 
 *{box-sizing:border-box}

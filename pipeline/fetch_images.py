@@ -67,6 +67,26 @@ def api_get(url: str, key: str) -> dict:
         return json.loads(r.read().decode("utf-8"))
 
 
+def key_works(key: str) -> tuple[bool, str]:
+    """Check the credential once, loudly.
+
+    Without this a wrong or expired key produces ten quiet per-query failures and
+    an edition that silently falls back to gradients — which looks like "the
+    images are broken" rather than "the key is wrong"."""
+    q = urllib.parse.urlencode({"query": "sky", "per_page": 1})
+    try:
+        api_get(f"{API}?{q}", key)
+        return True, ""
+    except urllib.error.HTTPError as e:
+        if e.code in (401, 403):
+            return False, (f"Pexels rejected the API key (HTTP {e.code}). Check the "
+                           f"PEXELS_API_KEY secret — it should be the key from "
+                           f"pexels.com/api, with no quotes or stray spaces.")
+        return False, f"Pexels returned HTTP {e.code} on a test request."
+    except Exception as e:  # noqa: BLE001
+        return False, f"Could not reach the Pexels API ({type(e).__name__}: {e})."
+
+
 def search(query: str, key: str, *, orientation: str = "landscape") -> dict | None:
     q = urllib.parse.urlencode(
         {"query": query, "per_page": 12, "orientation": orientation, "size": "medium"})
@@ -111,9 +131,21 @@ def main() -> int:
     key = os.environ.get("PEXELS_API_KEY", "").strip()
     if not key:
         print("PEXELS_API_KEY not set — every article will use a section graphic.")
+        print("This is a supported mode, not an error: the site builds fine "
+              "without photographs.")
         return 0
 
+    ok, why = key_works(key)
+    if not ok:
+        sys.stderr.write(f"{why}\n")
+        sys.stderr.write("Refusing to continue: silently producing an edition of "
+                         "gradients would look like a design choice rather than a "
+                         "broken credential.\n")
+        return 1
+    print("Pexels API key accepted.")
+
     changed = 0
+    fell_back = 0
     for jf in sorted(day_dir.glob("*.json")):
         if jf.name == "edition.json":
             continue
@@ -125,12 +157,14 @@ def main() -> int:
         query = choose_query(article)
         if not query:
             print(f"  · {jf.name}: no safe query — section graphic")
+            fell_back += 1
             continue
 
         photo = search(query, key)
         time.sleep(0.4)  # be polite to the API
         if not photo:
             print(f"  · {jf.name}: no result for {query!r} — section graphic")
+            fell_back += 1
             continue
 
         src = photo.get("src", {})
@@ -152,7 +186,13 @@ def main() -> int:
         changed += 1
         print(f"  ✓ {jf.name}: {query!r} → {photo.get('photographer')}")
 
-    print(f"Attached {changed} photograph(s).")
+    print(f"\nAttached {changed} photograph(s); {fell_back} article(s) kept a "
+          f"section graphic.")
+    if changed == 0 and fell_back:
+        sys.stderr.write("No photographs were attached at all. The key works, so "
+                         "this is a query problem — check the image.queries in the "
+                         "article JSON.\n")
+        return 1
     return 0
 
 

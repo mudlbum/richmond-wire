@@ -1,0 +1,110 @@
+name: Attach images to an edition
+
+# Run this by hand for an edition that has no photographs.
+#
+# The daily pipeline fetches images as part of "Propose edition", so editions
+# produced that way already have them. An edition created any other way — the
+# day-one content that shipped with the repo, or anything hand-written — has the
+# search queries but nothing has fetched against them, so every article falls
+# back to a section graphic. This workflow fills that gap without regenerating
+# the writing.
+#
+# Safe to re-run: articles that already have a photograph are skipped.
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Edition date (YYYY-MM-DD), or 'all' for every edition."
+        required: true
+        default: "all"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: backfill-images
+  cancel-in-progress: false
+
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Check the key is configured
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: |
+          if [ -z "$PEXELS_API_KEY" ]; then
+            echo "::error::PEXELS_API_KEY is not set. Add it under"
+            echo "::error::Settings → Secrets and variables → Actions, then re-run."
+            exit 1
+          fi
+          echo "PEXELS_API_KEY is present."
+
+      - name: Attach photographs
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: |
+          set -e
+          TARGET="${{ github.event.inputs.date }}"
+          if [ "$TARGET" = "all" ]; then
+            for d in content/*/; do
+              [ -d "$d" ] || continue
+              echo "── $d"
+              python3 pipeline/fetch_images.py "$d"
+            done
+          else
+            if [ ! -d "content/$TARGET" ]; then
+              echo "::error::content/$TARGET does not exist."
+              exit 1
+            fi
+            python3 pipeline/fetch_images.py "content/$TARGET"
+          fi
+
+      - name: Confirm it still builds
+        run: |
+          python3 build.py
+          python3 scripts/check_links.py
+
+      - name: Report what was attached
+        run: |
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import glob, json, os
+          rows, withp, total = [], 0, 0
+          for f in sorted(glob.glob("content/*/*.json")):
+              if f.endswith("edition.json"):
+                  continue
+              a = json.load(open(f, encoding="utf-8"))
+              img = a.get("image") or {}
+              total += 1
+              if img.get("url"):
+                  withp += 1
+                  rows.append(f"| {os.path.basename(f)} | {img.get('photographer','?')} "
+                              f"| `{img.get('query_used','')}` |")
+              else:
+                  rows.append(f"| {os.path.basename(f)} | _section graphic_ | |")
+          print(f"## {withp} of {total} articles now carry a photograph\n")
+          print("| article | photographer | query used |")
+          print("|---|---|---|")
+          print("\n".join(rows))
+          PY
+
+      - name: Commit the images
+        run: |
+          git config user.name  "newswire-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add content/
+          if git diff --staged --quiet; then
+            echo "Nothing changed — every article already had a photograph."
+          else
+            # Subject deliberately does NOT look like an edition review merge, so
+            # publish.yml will not mistake this for editorial approval.
+            git commit -m "Attach Pexels photographs to ${{ github.event.inputs.date }}"
+            git push
+            echo "Committed. The publish workflow will redeploy the site."
+          fi
