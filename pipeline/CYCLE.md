@@ -1,23 +1,29 @@
 # The standing order for one publishing cycle
 
-This is what the scheduled Claude session does every two hours. It is kept in the
-repository, not in the scheduled task, so it can be changed here without
-rebuilding the schedule.
+This is what the scheduled cloud routine does every two hours. It is kept in the
+repository, not in the routine, so it can be changed here without rebuilding the
+schedule.
 
-Repository: `C:\Users\mudlb\GitHub\richmond-wire`
+Repository: `mudlbum/richmond-wire`
 Live site: https://mudlbum.github.io/richmond-wire/
 
 ---
 
-## Which shell
+## Where the cycle runs
 
-Run every command **on the Windows machine**, through Desktop Commander
-(`start_process`, shell `cmd`), from the repository directory.
+This runs as a **cloud routine**. The repository is already cloned into the
+session's working directory, and the routine has push access because
+`mudlbum/richmond-wire` is in its repository list. Use the normal shell, from the
+checkout. There is no Windows machine in a cloud run, and no Desktop Commander —
+do not go looking for one.
 
-The Linux-side `device_bash` shell can read and write the same files, but it
-**cannot push**: the GitHub credentials live in Windows Credential Manager, and a
-push from there fails with `could not read Username for 'https://github.com'`.
-Use it for reading if you like; do the cycle on Windows.
+If you are instead running on the editor's own machine with Desktop Commander
+available, work in `C:\Users\mudlb\GitHub\richmond-wire` through the Windows
+`cmd` shell, which has GitHub Desktop's credentials. Do not use the Linux
+`device_bash` shell for the push: it can read and write the same files, but the
+push fails there with `could not read Username for 'https://github.com'`.
+
+Either way the steps below are identical apart from the path.
 
 ---
 
@@ -26,7 +32,7 @@ Use it for reading if you like; do the cycle on Windows.
 ### 1. Get the brief
 
 ```
-cd /d C:\Users\mudlb\GitHub\richmond-wire && git pull --rebase --autostash && python pipeline\brief.py
+git pull --rebase --autostash && python pipeline/brief.py
 ```
 
 That prints the whole brief: the editorial rules, the beat for this hour, and
@@ -61,7 +67,7 @@ casualty or disaster story that has no entries in it.
 ### 4. Publish
 
 ```
-cd /d C:\Users\mudlb\GitHub\richmond-wire && python scripts\publish_cycle.py drafts.json
+python scripts/publish_cycle.py drafts.json
 ```
 
 That files the stories into today's edition, drops anything the archive already
@@ -83,8 +89,10 @@ Then confirm the deploy at https://github.com/mudlbum/richmond-wire/actions.
 | Every story was dropped as a duplicate | Nothing to publish. Say so and stop. Do not lower the bar to fill the slot. |
 | A story failed the editorial gate | It is quarantined in `content/<day>/_rejected/`. The rest published. Do not edit the gate to get a story through. |
 | `git pull` hit a conflict | Actions commits photographs to `content/`. Take the remote version of any `content/**` file and re-run the cycle. |
-| `git push` was rejected | Re-run step 4; the pull at the start of it will fix a stale clone. |
-| The machine was asleep and a cycle was missed | Just run the next one. A missing hour needs no catching up. |
+| `git push` was rejected as stale | Re-run step 4; the pull at the start of it will fix a stale clone. |
+| `git push` was refused by the git proxy | The routine's repository list does not include this repo. Nothing you can do from inside the run — report it and stop. |
+| `git push` to `main` was refused because the branch carries someone else's commits | `main` carries `newswire-bot` commits from the photograph step. Report it and stop; the fix is a repository change, not something to work around. |
+| A cycle was missed | Just run the next one. A missing hour needs no catching up. |
 
 ## What never happens
 
