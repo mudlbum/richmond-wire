@@ -17,7 +17,16 @@
       "medical supplies shelves",
       "hospital corridor empty"
     ],
-    "alt": "Laboratory glassware on a bench in a research laboratory."
+    "alt": "Laboratory glassware on a bench in a research laboratory.",
+    "provider": "pexels",
+    "pexels_id": 8533087,
+    "query_used": "laboratory glassware",
+    "url": "https://images.pexels.com/photos/8533087/pexels-photo-8533087.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "thumb": "https://images.pexels.com/photos/8533087/pexels-photo-8533087.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
+    "photographer": "Artem Podrez",
+    "photographer_url": "https://www.pexels.com/@artempodrez",
+    "page_url": "https://www.pexels.com/photo/vials-with-liquids-in-holder-8533087/",
+    "illustrative": true
   },
   "body": [
     {
