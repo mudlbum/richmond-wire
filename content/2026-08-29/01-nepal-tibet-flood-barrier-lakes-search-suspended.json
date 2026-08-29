@@ -1,0 +1,109 @@
+{
+  "slug": "nepal-tibet-flood-barrier-lakes-search-suspended",
+  "category": "environment",
+  "headline": "Barrier lakes and a new flood warning stall the search on the Nepal-China border",
+  "dek": "Nepal's confirmed toll has passed 570 with more than 1,900 people unaccounted for. Searching was halted on both sides of the border on Friday when a lake dammed by flood debris began to spill.",
+  "summary": "Rescue teams on the Nepal-China border were pulled back on Friday by the risk of a second flood from debris-dammed lakes, as Nepal's confirmed death toll passed 570 and about 1,900 people remained missing.",
+  "tags": [
+    "Nepal",
+    "Tibet",
+    "floods",
+    "glaciers",
+    "disaster response"
+  ],
+  "follow_up": {
+    "of": "nepal-rasuwa-flash-flood-bhote-koshi",
+    "whats_new": "Three days on, the danger has changed shape. Lakes dammed by flood debris began to overflow, forcing both Nepal and China to suspend searching on Friday afternoon, and Nepal's Flood Forecasting Division issued a fresh alert for rising water on the Bhote Koshi. Nepal has also turned down offers of foreign search-and-rescue teams."
+  },
+  "image": {
+    "queries": [
+      "himalayan river valley landscape",
+      "glacier ice mountain",
+      "muddy river debris"
+    ],
+    "alt": "A silt-laden river running through a steep, high-altitude valley."
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "Search teams working the flooded valleys on the Nepal-China border were ordered back from the water on Friday afternoon, three days after a wall of ice, rock and meltwater came down the Bhote Koshi. The flood left behind pools of water dammed by its own debris, and one of them began to overflow. Nepal suspended its operations at about 4pm local time; Chinese teams on the Tibetan side had stopped shortly before. Searching resumed overnight, and by Saturday morning Nepal's Flood Forecasting Division had issued a new alert for rising water on the same river."
+    },
+    {
+      "type": "p",
+      "text": "Nepal Police put the confirmed number of dead at 553 late on Friday, a figure that had risen to 579 by Saturday morning. The Natural Disaster Risk Reduction and Management Authority listed 1,924 people as unaccounted for, 517 of them foreign visitors. Both numbers are provisional and are being revised several times a day. Some reporting on Friday still carried a lower count of 482 bodies recovered and more than 1,400 missing, which is what happens when recovery teams and central authorities are counting at different speeds in a place where the roads are gone."
+    },
+    {
+      "type": "h2",
+      "text": "The second danger"
+    },
+    {
+      "type": "p",
+      "text": "The immediate hazard is no longer the original flood but what it built. When a debris flow of that size stops moving, it can block a river channel and pond water behind it. The dam is loose rock and ice, it is not engineered, and it can fail without warning. That is why teams were pulled out on Friday rather than kept working through the afternoon, and it is the reason the alert issued on Saturday matters more than a weather forecast normally would."
+    },
+    {
+      "type": "p",
+      "text": "Nepal has declined outside help with the search itself, while accepting money and relief supplies. Its foreign ministry said the country's own security agencies were carrying out the operation."
+    },
+    {
+      "type": "quote",
+      "text": "The offer for help is natural. Our security agencies are doing the search-and-rescue operation. For now we don't require such help.",
+      "cite": "Lok Bahadur Chhetri, spokesperson for Nepal's Ministry of Foreign Affairs, via ABC News"
+    },
+    {
+      "type": "h2",
+      "text": "Who is missing"
+    },
+    {
+      "type": "p",
+      "text": "The valley is a trekking route and a pilgrimage road, so the missing are not only local. India's foreign ministry has said about 320 Indian nationals are unaccounted for, many of them pilgrims travelling to Mount Kailash. Australia's Department of Foreign Affairs and Trade listed 38 Australians as missing, one of whom has since contacted family. On the Tibetan side, Chinese authorities have reported five deaths and more than 550 people missing, and state media said hundreds of evacuees had been moved out of the disaster zone."
+    },
+    {
+      "type": "p",
+      "text": "Nepal's army said it had brought out 350 people trapped in a road tunnel. The Nepal Tourism Board counted 121 tourists rescued, including 80 Indian citizens."
+    },
+    {
+      "type": "h2",
+      "text": "What is reaching people"
+    },
+    {
+      "type": "p",
+      "text": "The Red Cross estimates 93,000 people have been affected and need assistance. The World Health Organization said six health facilities in the affected districts had been damaged and eight health workers were missing, which thins out care in exactly the places where injured people are being brought in. Australia has committed A$5 million, split between the World Food Programme, Australian aid agencies and the Emergency Action Alliance. The European Union has pledged EUR 2 million."
+    },
+    {
+      "type": "p",
+      "text": "On the cause, the United States Geological Survey has attributed the flood to a glacial collapse: a large mass of ice separating from a Himalayan glacier and carrying rock and ice down into the river below. Satellite imagery reviewed since Wednesday supports that reading. Nepali authorities have not issued a final determination of their own, and no formal inquiry has been announced."
+    },
+    {
+      "type": "p",
+      "text": "By deaths confirmed so far, this is the worst disaster in Nepal since the 2015 earthquake."
+    }
+  ],
+  "uncertain": [
+    "The death toll and the number of missing are provisional and have been revised upward repeatedly. Counts published a few hours apart currently differ by around a hundred dead and several hundred missing.",
+    "There is no confirmed count of how many of the missing are alive. The figures include people cut off by destroyed roads as well as people believed dead.",
+    "The stability of the debris-dammed lakes is not known. Whether the search can continue uninterrupted depends on it.",
+    "The glacial collapse explanation comes from the US Geological Survey and satellite analysis. Nepali and Chinese authorities have not published their own formal finding on the cause.",
+    "Nepal has declined foreign search-and-rescue teams. Whether that position changes as the search lengthens is not clear."
+  ],
+  "sources": [
+    {
+      "outlet": "ABC News (Australia)",
+      "title": "Nepal-Tibet floods live updates: Death toll rises as rescuers work through flood devastation - as it happened",
+      "url": "https://www.abc.net.au/news/2026-08-28/nepal-tibet-floods-live-updates/107086974",
+      "note": "figures attributed to Nepal Police, NDRRMA, WHO and named foreign ministries"
+    },
+    {
+      "outlet": "The Manila Times",
+      "title": "HEADLINES: New flood risks slow Nepal, Tibet rescue | August 29, 2026",
+      "url": "https://www.manilatimes.net/2026/08/29/podcasts/headlines-new-flood-risks-slow-nepal-tibet-rescue-august-29-2026/2414133"
+    },
+    {
+      "outlet": "CNN",
+      "title": "August 28, 2026 - About 2,500 still missing after catastrophic flooding at Nepal-China border",
+      "url": "https://www.cnn.com/2026/08/28/world/live-news/nepal-china-flood"
+    }
+  ],
+  "date": "2026-08-29",
+  "published_at": "2026-08-29T11:09:15+00:00",
+  "rank": 1
+}

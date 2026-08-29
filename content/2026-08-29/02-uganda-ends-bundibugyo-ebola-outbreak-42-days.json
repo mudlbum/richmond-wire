@@ -1,0 +1,116 @@
+{
+  "slug": "uganda-ends-bundibugyo-ebola-outbreak-42-days",
+  "category": "society",
+  "headline": "Uganda declares its Ebola outbreak over after 42 days without a new case",
+  "dek": "Twenty people were infected and two died in an outbreak declared in May. The far larger epidemic of the same virus in the Democratic Republic of the Congo is still running.",
+  "summary": "Uganda's Ebola outbreak is over after 42 days with no new cases, the World Health Organization said. Twenty people were infected and two died; the much larger outbreak in DR Congo continues.",
+  "tags": [
+    "Uganda",
+    "Ebola",
+    "public health",
+    "WHO",
+    "Africa"
+  ],
+  "image": {
+    "queries": [
+      "laboratory glassware",
+      "medical supplies shelves",
+      "hospital corridor empty"
+    ],
+    "alt": "Laboratory glassware on a bench in a research laboratory."
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "Uganda's Ebola outbreak has been declared over. The World Health Organization's regional office for Africa said the country had completed a 42-day countdown, running from 16 July to 27 August, without a single new case. The announcement was carried by international outlets from 26 August."
+    },
+    {
+      "type": "p",
+      "text": "The outbreak was declared on 15 May. WHO's figures put it at 20 confirmed cases in total: 15 of them imported, five acquired within Uganda. Eighteen people recovered and two died. More than 800 contacts were traced and monitored, and the last patient was discharged from care on 16 July, which is the date the countdown began."
+    },
+    {
+      "type": "quote",
+      "text": "Uganda has demonstrated that with decisive action, Ebola outbreaks can be brought under control quickly.",
+      "cite": "Tedros Adhanom Ghebreyesus, WHO Director-General, via WHO Regional Office for Africa"
+    },
+    {
+      "type": "h2",
+      "text": "Why 42 days"
+    },
+    {
+      "type": "p",
+      "text": "The number is not arbitrary. Forty-two days is twice the maximum incubation period of the virus, so a country that has gone that long without a new case has passed two full windows in which an undetected infection would have been expected to appear. It is the standard WHO applies everywhere, and it is why an outbreak is never declared over on the day the last patient walks out of hospital."
+    },
+    {
+      "type": "h2",
+      "text": "The outbreak next door"
+    },
+    {
+      "type": "p",
+      "text": "Most of Uganda's cases were imported, and the place they were imported from has not had the same result. The Democratic Republic of the Congo is dealing with the largest recorded outbreak of the Bundibugyo species of Ebola. WHO data as of 1 August listed 3,748 confirmed cases, 1,657 deaths and 708 recoveries. Aid organisations working in the affected provinces have said the true size may be larger than the confirmed count, because cases in remote areas go unrecorded."
+    },
+    {
+      "type": "p",
+      "text": "There is no licensed vaccine or treatment for the Bundibugyo species. The vaccines that worked in earlier epidemics were built against a different one. The first vaccine trials aimed specifically at Bundibugyo began on 24 July in the United Kingdom, with a second starting in Canada the same week; both are at the animal-model stage. Separately, a trial of an oral preventive medicine for high-risk contacts is running in Ituri province, led by the DRC's National Institute for Biomedical Research with international partners, and has enrolled more than 25 patients."
+    },
+    {
+      "type": "quote",
+      "text": "Despite ongoing efforts, there are still no proven safe and efficacious treatment, preventive or vaccination options for the Bundibugyo species.",
+      "cite": "Vasee Moorthy, acting lead of WHO's R&D Blueprint for epidemics, via UN News"
+    },
+    {
+      "type": "p",
+      "text": "Moorthy said results from the trials were likely to be several months away. Nothing that starts in an animal model this summer reaches a clinic in the DRC this year."
+    },
+    {
+      "type": "h2",
+      "text": "What Uganda did"
+    },
+    {
+      "type": "p",
+      "text": "Without a vaccine to fall back on, the containment was done the older way: find every person an infected patient came near, watch them for three weeks, and isolate anyone who develops symptoms. Doing that for more than 800 contacts, across a border with heavy traffic, is the whole of the achievement here."
+    },
+    {
+      "type": "quote",
+      "text": "Ending an Ebola outbreak is an important milestone, but the lasting achievement is a stronger ability to protect people from future health threats.",
+      "cite": "Dr Mohamed Janabi, WHO Regional Director for Africa, via WHO Regional Office for Africa"
+    },
+    {
+      "type": "p",
+      "text": "Uganda's health ministry has said the country should now be treated as open. Its permanent secretary, Diana Atwine, told reporters that Ugandans should be free to travel to any country. The risk of another imported case does not disappear while the DRC outbreak continues, and both governments have said cross-border surveillance stays in place."
+    }
+  ],
+  "uncertain": [
+    "Reports of the declaration appeared on 26 August, while WHO's regional office describes the 42-day countdown as ending on 27 August. The one-day gap between the two is not explained in the material available.",
+    "Some outlets described the Uganda outbreak as Sudan virus disease. WHO's regional office names it as Bundibugyo virus, and that is what this article follows.",
+    "The DR Congo case and death figures are confirmed counts as of 1 August and are widely described as an undercount. The real size of that outbreak is not known.",
+    "Whether the Bundibugyo vaccine trials will produce a usable vaccine, and when, is not established. Both are at the animal-model stage."
+  ],
+  "sources": [
+    {
+      "outlet": "WHO Regional Office for Africa",
+      "title": "Uganda ends Ebola outbreak following completion of 42-day countdown",
+      "url": "https://www.afro.who.int/countries/uganda/news/uganda-ends-ebola-outbreak-following-completion-42-day-countdown",
+      "note": "primary source"
+    },
+    {
+      "outlet": "Al Jazeera",
+      "title": "World Health Organization says Ebola outbreak in Uganda is over",
+      "url": "https://www.aljazeera.com/news/2026/8/26/world-health-organization-says-ebola-outbreak-in-uganda-is-over"
+    },
+    {
+      "outlet": "Euronews",
+      "title": "WHO declares Uganda Ebola-free after 42 days without new cases",
+      "url": "https://www.euronews.com/health/2026/08/27/who-declares-uganda-ebola-free-after-42-days-without-new-cases"
+    },
+    {
+      "outlet": "UN News",
+      "title": "New Ebola vaccine trial launches as outbreak spreads in DR Congo",
+      "url": "https://news.un.org/en/story/2026/08/1168072",
+      "note": "DR Congo figures and vaccine trial detail"
+    }
+  ],
+  "date": "2026-08-29",
+  "published_at": "2026-08-29T11:09:15+00:00",
+  "rank": 2
+}
