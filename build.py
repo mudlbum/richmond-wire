@@ -186,6 +186,21 @@ def load_edition_meta(day_dir: Path) -> dict:
     return meta
 
 
+def order_key(a: dict) -> str:
+    """Where an article sits within its day. Newest first.
+
+    The wire files stories every two hours, so within one day the interesting
+    order is when each was published, not which beat produced it. Stories carry
+    `published_at`; anything older than that field sorts underneath them, by
+    rank, so the editions that pre-date the two-hourly wire still read in the
+    order they were written. A sortable string keeps both in one key, and "!"
+    sorts below the "2" that begins every ISO timestamp."""
+    when = str(a.get("published_at") or "")
+    if when:
+        return when
+    return f"!{max(0, 99 - int(a.get('rank', 99))):02d}"
+
+
 def load_articles(site: dict) -> list[dict]:
     articles: list[dict] = []
     if not CONTENT.exists():
@@ -216,11 +231,12 @@ def load_articles(site: dict) -> list[dict]:
             a["slug"] = a.get("slug") or slugify(a["headline"])
             a["path"] = f"/{d.year}/{d.month:02d}/{d.day:02d}/{a['slug']}/"
             a["rank"] = int(a.get("rank", 99))
+            a["_order"] = order_key(a)
             a["_review"] = edition_meta["review"]
             a["read_minutes"] = a.get("read_minutes") or estimate_reading(a)
             articles.append(a)
 
-    articles.sort(key=lambda x: (x["_date"], -x["rank"]), reverse=True)
+    articles.sort(key=lambda x: (x["_date"], x["_order"]), reverse=True)
     return articles
 
 
@@ -256,7 +272,7 @@ def editions_of(articles: list[dict]) -> dict[dt.date, list[dict]]:
     for a in articles:
         by_day.setdefault(a["_date"], []).append(a)
     for day in by_day:
-        by_day[day].sort(key=lambda x: x["rank"])
+        by_day[day].sort(key=lambda x: x["_order"], reverse=True)
     return dict(sorted(by_day.items(), reverse=True))
 
 

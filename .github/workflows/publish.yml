@@ -1,13 +1,15 @@
 name: Publish
 
-# Stage 3 of 3. Runs when content lands on main — which happens either because a
-# person merged the review pull request, or because the review window expired and
-# release-on-timeout merged it.
+# What happens after the wire files a story.
 #
-# The distinction matters: this workflow decides what the site TELLS READERS about
-# whether a human read the edition. It never invents approval. An edition already
-# stamped "auto" keeps that stamp; only a "pending" edition arriving on main —
-# which can only happen via a human merge — becomes "approved".
+# The desk runs on the editor's machine every two hours: it researches, writes,
+# de-duplicates and gates the stories, then pushes them here. This workflow takes
+# it from there — photographs, build, deploy.
+#
+# It also decides what the site TELLS READERS about whether a human read an
+# edition. It never invents approval. A direct push from the wire leaves the day
+# marked unreviewed, and every article on it says so. Only a merge of an
+# `edition/*` review branch can promote a pending edition to "approved".
 
 on:
   push:
@@ -37,24 +39,40 @@ jobs:
 
       - name: Record who released each pending edition
         run: |
-          # A pending edition becomes "approved" ONLY when it arrives through the
-          # review pull request. Any other route onto main -- the initial import,
-          # a direct push, a hand-made commit -- means nobody read the articles,
-          # so the edition stays pending and the site keeps saying it was not
-          # reviewed. Without this check the very first push to a new repo would
-          # silently claim an editor had read the day-one edition.
+          # A pending edition becomes "approved" ONLY when it arrives through a
+          # review pull request. Any other route onto main -- the two-hourly
+          # wire, a direct push, a hand-made commit -- means nobody read the
+          # articles, so the edition stays unreviewed and the site keeps saying
+          # so. Without this check the wire's own pushes would silently claim an
+          # editor had read them.
           SUBJECT=$(git log -1 --pretty=%s)
           if printf '%s' "$SUBJECT" | grep -qE '^Merge pull request .+ from .+/edition/'; then
             python3 scripts/release_pending.py --by "${{ github.actor }}"
-            echo "released=$(cat /tmp/released_count)" >> "$GITHUB_ENV"
           else
             echo "Not an edition review merge: \"$SUBJECT\""
             echo "Any pending edition stays unreviewed and is labelled as such."
-            echo "released=0" >> "$GITHUB_ENV"
           fi
 
-      - name: Commit the review record
-        if: env.released != '0'
+      - name: Attach photographs to anything that has none
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+        run: |
+          # The desk runs on a machine with no Pexels key, so stories arrive with
+          # search queries and no photograph. This is where they get one.
+          # fetch_images.py skips any article that already has an image, so this
+          # only ever calls the API for what is genuinely new.
+          if [ -z "$PEXELS_API_KEY" ]; then
+            echo "::warning::PEXELS_API_KEY is not set — every article will fall"
+            echo "::warning::back to a section graphic. Add it under Settings →"
+            echo "::warning::Secrets and variables → Actions."
+            exit 0
+          fi
+          for d in content/*/; do
+            [ -d "$d" ] || continue
+            python3 pipeline/fetch_images.py "$d"
+          done
+
+      - name: Commit the review record and any new photographs
         run: |
           git config user.name  "newswire-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -62,7 +80,9 @@ jobs:
           if git diff --staged --quiet; then
             echo "Nothing to commit."
           else
-            git commit -m "Record editorial approval"
+            # The subject deliberately does not look like an edition review
+            # merge, so the step above will never read this as approval.
+            git commit -m "Attach photographs and record review state"
             git push
           fi
 
@@ -80,6 +100,27 @@ jobs:
 
       - name: Check links and required pages
         run: python3 scripts/check_links.py
+
+      - name: Report what went live
+        run: |
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import glob, json, os, collections
+          days = collections.Counter()
+          photos = 0
+          total = 0
+          for f in sorted(glob.glob("content/*/*.json")):
+              if f.endswith("edition.json"):
+                  continue
+              a = json.load(open(f, encoding="utf-8"))
+              total += 1
+              days[os.path.basename(os.path.dirname(f))] += 1
+              if (a.get("image") or {}).get("url"):
+                  photos += 1
+          latest = max(days) if days else "—"
+          print(f"## {total} articles live across {len(days)} day(s)\n")
+          print(f"- Today's edition (`{latest}`): **{days.get(latest, 0)}** stories")
+          print(f"- Photographs attached: **{photos}** of {total}")
+          PY
 
       - uses: actions/upload-pages-artifact@v3
         with:

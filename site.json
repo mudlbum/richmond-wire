@@ -1,8 +1,8 @@
 {
   "name": "Richmond International Newswire",
   "short_name": "Richmond Newswire",
-  "tagline": "Ten stories from the world, every day.",
-  "description": "An independent daily digest of ten international news stories — verified against multiple reliable sources, written plainly, and free of partisan framing.",
+  "tagline": "World news, filed every two hours.",
+  "description": "An independent international news wire — new stories every two hours, verified against multiple reliable sources, written plainly, and free of partisan framing.",
   "url": "https://mudlbum.github.io/richmond-wire",
   "locale": "en",
   "timezone": "America/Toronto",
@@ -72,7 +72,7 @@
     }
   ],
   "editorial": {
-    "review_mode": "hold_then_publish",
+    "review_mode": "publish_immediately",
     "hold_hours": 12,
     "_review_mode_help": "'hold_then_publish' = each edition is held in an open pull request for hold_hours. Merging the PR marks it editor-approved. If the window expires it publishes anyway, marked as NOT reviewed. 'hold_until_approved' = the same, but an unapproved edition never publishes. 'publish_immediately' = no gate at all. The public wording on every article changes to match whichever mode is set AND what actually happened to that edition.",
     "reviewer_credit": "the editor",

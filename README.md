@@ -1,134 +1,94 @@
 # Richmond International Newswire
 
-A static news site that publishes ten verified international stories a day,
-automatically, with every source named and linked.
+A static news site that files verified international stories **every two hours**,
+around the clock, with every source named and linked.
 
-No dependencies. Python 3.11+ standard library only.
+No dependencies. Python 3.11+ standard library only. No API key: the research and
+writing are done by a Claude session on your own machine, on a schedule, using
+your subscription rather than metered API credits.
 
 ```
-python3 build.py            # build dist/
-python3 build.py --serve    # build and serve at http://localhost:8000
+python build.py            # build dist/
+python build.py --serve    # build and serve at http://localhost:8000
 ```
 
 ---
 
-## How a day works
+## How a cycle works
+
+Twelve times a day, on the even hour (UTC), a scheduled Claude task wakes up on
+your computer and runs one cycle:
 
 ```
- 09:30 UTC  propose-edition.yml
+ every 2 hours, on your machine
      ↓
- generate_edition.py   5 beats × 2 stories, Claude API with web search
-     ↓                 each beat is shown the last 14 days of coverage first
- dedupe.py             drops anything already published, and any story two
-     ↓                 beats filed twice this morning
- validate.py           automated gate — hard failures are quarantined
-     ↓                 (fewer than 3 survivors → no edition proposed at all)
- fetch_images.py       Pexels photo per story, honest attribution
+ pipeline/brief.py        assembles the brief: the editorial rules, the beat for
+     ↓                    this hour, and the last 14 days of headlines to avoid
+ the desk researches      web search + reading real sources, two stories,
+     ↓                    written to a drafts JSON file
+ scripts/publish_cycle.py ────────────────────────────────────────────────┐
+     ↓                                                                    │
+     ├─ file_stories.py   structural gate, timestamps, numbers them into  │
+     │                    content/<today>/ next to earlier cycles         │
+     ├─ dedupe.py         drops anything the archive already covered      │
+     ├─ validate.py       editorial gate; hard failures are quarantined   │
+     ├─ build.py          proves the site still builds before pushing     │
+     └─ git commit && push ───────────────────────────────────────────────┘
      ↓
- opens a PULL REQUEST  edition stamped "pending" · full digest in the PR body
-     ↓                 + the same digest emailed to you
-     │
-     ├─── you merge it ──────────→ publish.yml stamps "approved" → builds → deploys
-     │                             every article says an editor read it
-     │
-     └─── 12 hours pass ─────────→ release-on-timeout.yml stamps "auto", merges
-                                   → publish.yml builds → deploys
-                                   every article says NO editor read it,
-                                   and the edition carries a warning box
+ GitHub Actions · publish.yml
+     ↓
+ fetch_images.py          a Pexels photograph per new story, honest attribution
+     ↓                    (this is where the Pexels key lives, not on your machine)
+ build + deploy           the new stories are live within a couple of minutes
 ```
 
-### The review gate
+A cycle that finds nothing worth filing pushes nothing. That is a correct
+outcome, not a failure — see *No repeats* below.
 
-An edition never publishes straight from the generator. It lands in a pull request
-first, with a readable digest: every headline, the full text, the source domains,
-what each article flags as unconfirmed, and a list of what the automated gate threw
-out. You can read it in the GitHub app on your phone.
+### The beat rotation
 
-- **Merge** → published and recorded as editor-approved.
-- **Edit a file in the PR, then merge** → your version publishes.
-- **Delete a file in the PR** → that story is dropped, the rest publishes.
-- **Close the PR** → nothing publishes that day.
-- **Do nothing for 12 hours** → it publishes, labelled as unreviewed.
+Two stories a cycle would cover one topic to death if every cycle chased the same
+news. So each slot is handed a different beat, and a full day covers all of them:
 
-### No repeats
+| UTC | Beat | UTC | Beat |
+| --- | --- | --- | --- |
+| 00:00 | World | 12:00 | World |
+| 02:00 | Sport & culture | 14:00 | Economy |
+| 04:00 | Technology & science | 16:00 | Technology & science |
+| 06:00 | World | 18:00 | Environment & society |
+| 08:00 | Economy | 20:00 | Sport & culture |
+| 10:00 | Environment & society | 22:00 | Economy |
 
-Readers come back daily, so filing the same story twice is the fastest way to look
-like an unattended machine. Three layers stop it:
+The rotation lives in `ROTATION` at the top of `pipeline/brief.py`. Change it
+there and the schedule follows.
 
-1. **Before writing.** Every beat is handed the last 14 days of headlines and told
-   not to file them again. `pipeline/coverage.py --days 14` prints exactly what the
-   researcher sees.
-2. **Within the run.** Beats research independently, so two can reach the same
-   story on a busy morning. The second one is dropped as it arrives.
-3. **Against the archive.** `pipeline/dedupe.py` compares every candidate to the
-   past three weeks on two axes — content-word overlap and whether they cite the
-   same specific source articles. Numbers are deliberately ignored: a toll moving
-   from 8 to 22 is exactly when two stories ARE the same one.
+### Nothing claims a review that did not happen
 
-Dropped articles go to `content/<day>/_duplicates/` and are listed in the review
-digest, so you can see what was filtered and disagree with it.
+There is no review gate any more: stories go live as they are filed. So every
+article says exactly that — *"No human read this article before it went live"* —
+and each day carries an **Unreviewed edition** box until you say otherwise.
 
-### Follow-ups are allowed; rewrites are not
+When you have read a day, stamp it:
 
-Developing stories legitimately continue. The distinction the code enforces is
-whether the article carries new facts, which it cannot measure — so instead it
-requires the article to *declare* the continuation:
-
-```json
-"follow_up": {
-  "of": "nepal-rasuwa-flash-flood-bhote-koshi",
-  "whats_new": "A commission of inquiry has been appointed, with a 45-day deadline."
-}
+```powershell
+cd $env:USERPROFILE\GitHub\richmond-wire
+git pull
+python scripts\stamp_review.py content\2026-08-29 --status approved --by "Dave"
+git add content && git commit -m "Record editorial approval" && git push
 ```
 
-That declaration is rendered on the page as a "This continues an earlier story" box
-with a link back and the what-changed line, so it costs something to claim falsely.
+Do that at the **end** of a day, not during it: filing new stories resets the day
+to unreviewed, because the banner speaks for every story on the page and stories
+filed at 22:00 were not in the ones you read at noon.
 
-A declared follow-up whose text is still ~72% the same as the earlier article is
-dropped anyway — that is a rewrite wearing a follow-up label. Tested behaviour:
+Only ever stamp a day you actually read. That line is a claim to your readers, and
+the whole design exists to keep it true.
 
-| Case | Text overlap | Outcome |
-| --- | --- | --- |
-| Same story re-filed, reworded headline | 98% | dropped |
-| Same story, *declared* a follow-up | 98% | dropped — rewrite, not development |
-| Real development, declared | 66% | **kept**, renders the follow-up box |
-| Same development, not declared | 66% | dropped |
-| Two beats filing one story in one edition | 87% | second one dropped |
-| Genuinely different story | 10% | kept |
+### If you would rather review first
 
-Tune the thresholds in `pipeline/coverage.py` (`DUP_TEXT`, `DUP_SOURCE`,
-`REBUILD`, `WINDOW_DAYS`) if the wire runs too tight or too loose.
-
-### Why the labelling is not optional
-
-You chose auto-publish so the daily cadence survives your busy days. The cost is that
-some articles reach readers unread, so the site cannot make a blanket claim that
-everything is reviewed — that claim would be false on exactly the days it matters
-most, and a false statement about editorial process is its own problem under Google's
-publisher policies quite apart from being dishonest.
-
-So the wording is **per edition**, driven by `content/<day>/edition.json`:
-
-| `review.status` | What the site says |
-| --- | --- |
-| `approved` | "Read and approved by the editor before publication" |
-| `auto` | "Published on the review timer, NOT read by an editor" + a warning box on the edition |
-| missing / unreadable | treated as unreviewed — never as approved |
-
-`scripts/release_pending.py` will only ever promote a `pending` edition. The timeout
-path stamps `auto` **on the branch, before merging**, so an unreviewed edition
-arrives on main already labelled and cannot be upgraded. Do not reorder those steps.
-
-### Turning the timer off
-
-If you would rather miss a day than publish unread:
-
-1. Comment out the `schedule:` block in `.github/workflows/release-on-timeout.yml`.
-2. Set `editorial.review_mode` to `"hold_until_approved"` in `site.json`.
-
-Editions then wait indefinitely, and the footer wording changes to "No article is
-published until an editor has read and released it." That claim then holds, because
-the mechanism makes it hold.
+Set `editorial.review_mode` back to `"hold_until_approved"` in `site.json` and
+stop the scheduled task from pushing (`--no-push` in the cycle command). Stories
+then accumulate locally and go live only when you push them yourself.
 
 ## Layout
 
@@ -139,22 +99,23 @@ content/YYYY-MM-DD/*.json      one file per article; the archive lives here
 pages/*.md                     about, contact, privacy, cookies, terms, standards
 static/                        stylesheet, favicon, consent script
 pipeline/
-  editorial_prompt.md          the rules the writing model is held to
-  generate_edition.py          research + write, one call per beat
+  editorial_prompt.md          the rules the writing desk is held to
+  brief.py                     assembles one cycle's brief: rules + beat + archive
+  file_stories.py              turns a cycle's drafts into filed articles
   coverage.py                  what we have published; similarity scoring
   dedupe.py                    the no-repeats gate
   validate.py                  the editorial gate
   fetch_images.py              Pexels fetch with attribution rules
 scripts/
-  review_digest.py             the PR body / email digest a human actually reads
-  send_digest.py               emails it (plain smtplib, no third-party action)
+  publish_cycle.py             one cycle end to end: file → dedupe → gate → push
   stamp_review.py              writes review status into edition.json
-  release_pending.py           promotes pending → approved on merge
+  review_digest.py             a readable digest of a day, for reviewing offline
+  send_digest.py               emails it (plain smtplib, no third-party action)
+  release_pending.py           promotes pending → approved on a review-PR merge
   check_links.py               post-build link and metadata check
 .github/workflows/
-  propose-edition.yml          09:30 UTC — research, verify, open the review PR
-  release-on-timeout.yml       hourly — merge anything past the 12-hour window
-  publish.yml                  on merge to main — record, build, deploy
+  publish.yml                  on push to main — photographs, build, deploy
+  backfill-images.yml          manual — attach photographs to an older edition
   build-check.yml              on push/PR — validate and build
 dist/                          build output (git-ignored)
 ```
@@ -181,27 +142,20 @@ Repository **Settings → Pages → Build and deployment → Source: GitHub Acti
 
 | Kind | Name | Where to get it |
 | --- | --- | --- |
-| Secret | `ANTHROPIC_API_KEY` | console.anthropic.com |
 | Secret | `PEXELS_API_KEY` | pexels.com/api — free |
 | Secret *(optional)* | `SMTP_HOST` | `smtp.gmail.com` for Gmail |
 | Secret *(optional)* | `SMTP_PORT` | `587` |
 | Secret *(optional)* | `SMTP_USER` | the sending address |
 | Secret *(optional)* | `SMTP_PASS` | a Gmail **app password**, not your account password |
-| Secret *(optional)* | `DIGEST_TO` | where the review digest goes |
-| Variable | `ANTHROPIC_MODEL` | optional; check the current model list and set it |
+| Secret *(optional)* | `DIGEST_TO` | where a daily digest would go |
 
-**The five SMTP secrets are optional.** Without them the pipeline runs exactly the
-same and simply skips the email. You still find out an edition is waiting, because
-the review pull request is assigned to you — GitHub sends its own notification for
-that — and the Actions run summary carries the link and the counts.
+**There is no `ANTHROPIC_API_KEY` any more.** The writing happens in a Claude
+session on your own machine, so nothing here calls a paid API. `PEXELS_API_KEY` is
+the only secret the pipeline needs, and it is used by Actions rather than by your
+computer.
 
-Add them later if you want the full digest in your inbox. Gmail app passwords need
-2-Step Verification switched on, then are created at myaccount.google.com →
-Security → App passwords.
-
-**Actions also needs permission to open pull requests:** Settings → Actions → General
-→ Workflow permissions → tick "Allow GitHub Actions to create and approve pull
-requests".
+**The SMTP secrets are optional** and unused by the two-hourly wire. They exist for
+`scripts/send_digest.py` if you ever want a day mailed to you.
 
 Without `PEXELS_API_KEY` the site still builds — every article falls back to a
 generated section graphic.
@@ -216,9 +170,16 @@ While you are in there, change the three email addresses under `publisher`. They
 appear on the contact, privacy and corrections pages, and Google checks that a
 contact route exists.
 
-### 5. Run one edition by hand first
+### 5. Run one cycle by hand first
 
-Actions → **Daily edition** → Run workflow. Watch it before trusting the cron.
+Ask Claude on your desktop to run a cycle now, or run the mechanical half yourself
+against a drafts file you have written:
+
+```powershell
+python scripts\publish_cycle.py drafts.json --no-push   # everything but the push
+```
+
+Watch one complete cycle before trusting the schedule.
 
 ---
 
@@ -345,12 +306,14 @@ the article's body recording what changed — that is what
 ## Local checks
 
 ```bash
-python3 pipeline/coverage.py --stats                          # what is published
-python3 pipeline/dedupe.py content/2026-08-26 --dry-run      # repeats check
-python3 pipeline/validate.py content/2026-08-26               # automated gate
-python3 pipeline/validate.py content/2026-08-26 --check-links # + fetch every source
-python3 scripts/review_digest.py content/2026-08-26 --format terminal   # read it
-python3 build.py && python3 scripts/check_links.py            # build + link audit
+python pipeline/coverage.py --stats                           # what is published
+python pipeline/brief.py                                     # this hour's brief
+python pipeline/file_stories.py drafts.json --dry-run        # what would be filed
+python pipeline/dedupe.py content/2026-08-29 --dry-run       # repeats check
+python pipeline/validate.py content/2026-08-29                # automated gate
+python pipeline/validate.py content/2026-08-29 --check-links  # + fetch every source
+python scripts/review_digest.py content/2026-08-29 --format terminal   # read a day
+python build.py && python scripts/check_links.py              # build + link audit
 ```
 
 To see how an edition looks in each review state before you trust the pipeline:
