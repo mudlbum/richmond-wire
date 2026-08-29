@@ -1,0 +1,112 @@
+{
+  "slug": "meta-closes-smart-glasses-recording-light-loophole",
+  "category": "technology",
+  "headline": "Meta closes a loophole that let its smart glasses keep recording with the light covered",
+  "dek": "The camera will now cut out if the capture light is blocked part-way through a recording. Meta's vice-president for augmented reality said further updates are likely to be needed.",
+  "summary": "Meta is rolling out an update that stops its smart glasses recording if the capture light is covered mid-way through, closing a gap left by a check that previously ran only at the start.",
+  "tags": [
+    "Meta",
+    "Smart glasses",
+    "Privacy",
+    "Wearables"
+  ],
+  "image": {
+    "queries": [
+      "eyeglasses folded on a plain wooden table",
+      "close-up of a small camera lens",
+      "green indicator light on an electronic device"
+    ],
+    "alt": "A pair of thick-rimmed eyeglasses resting on a plain table, with a small camera lens visible at one corner of the frame."
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "Meta has begun rolling out a software update for its camera-equipped smart glasses that stops a recording if the small light meant to show bystanders the camera is running gets covered up. The company announced the change on Threads on Friday, and several technology outlets reported it the same day."
+    },
+    {
+      "type": "p",
+      "text": "The glasses already refused to *begin* a recording while the light was obscured. The check simply did not run again afterwards. That left a straightforward way around the safeguard: start filming with the light visible, then put a finger, a sticker or a piece of tape over it. Instructions for doing exactly that had been circulating on social media."
+    },
+    {
+      "type": "h2",
+      "text": "What the update changes"
+    },
+    {
+      "type": "p",
+      "text": "Under the new behaviour, the glasses watch the light for as long as the camera is running rather than only at the moment recording starts. If the light is blocked during a recording, the camera stops."
+    },
+    {
+      "type": "quote",
+      "text": "The camera will now stop working if the light is covered during a recording.",
+      "cite": "Alex Himel, Meta vice-president for augmented reality, via Engadget and 9to5Google"
+    },
+    {
+      "type": "p",
+      "text": "Reports differ slightly on how Himel's role is described — Engadget and 9to5Google give it as vice-president for augmented reality, Android Authority as vice-president of wearables. Android Central reported the update applies to Ray-Ban Meta, Oakley Meta and Meta AI glasses. None of the outlets gave a software version number or a date by which every pair will have the update; Meta described it only as starting to roll out."
+    },
+    {
+      "type": "h2",
+      "text": "Not the first patch of its kind"
+    },
+    {
+      "type": "p",
+      "text": "This is the second time this year Meta has tightened the same safeguard. An earlier mandatory update disabled the camera outright on glasses where the capture light had been damaged or permanently obscured — a response to physical tampering rather than to a gap in the software's logic. Engadget reported that inexpensive stickers sold to defeat the light had been part of the reason for that change."
+    },
+    {
+      "type": "p",
+      "text": "Android Central reported that Meta says several businesses offering to tamper with the light have since shut down, and that the company has removed accounts and instructional posts from its own platforms. That account comes from Meta and has not been independently verified."
+    },
+    {
+      "type": "h2",
+      "text": "Why the light matters"
+    },
+    {
+      "type": "p",
+      "text": "The capture light is the only signal a bystander gets. Camera glasses look like ordinary eyewear, and the person in front of them has no other way to tell whether they are being filmed. Regulators in several jurisdictions have treated a visible, reliable recording indicator as the minimum condition for selling wearable cameras at all, which is why a defeat that costs nothing and takes a second matters more than its technical simplicity suggests."
+    },
+    {
+      "type": "p",
+      "text": "Himel acknowledged that the work is not finished. He said, in the post carried by Engadget, that a small number of people try to get around the protections, and that the effort they have to go to shows the safeguards are doing something — while adding that further updates will likely be needed."
+    },
+    {
+      "type": "h2",
+      "text": "What is not settled"
+    },
+    {
+      "type": "p",
+      "text": "Neither Meta nor any of the outlets that covered the change has said how the detection works in practice — whether, for instance, it distinguishes a deliberately covered light from one obscured by a coat sleeve or a strand of hair, and what happens to a recording that is cut short. No independent testing of the update had been published at the time of writing."
+    }
+  ],
+  "uncertain": [
+    "The exact software version and the schedule for reaching all devices have not been published.",
+    "How the glasses detect that the light is covered, and how the fix behaves in ordinary situations such as a sleeve brushing the frame, has not been described by Meta.",
+    "Meta's job title for Alex Himel is reported differently by different outlets — vice-president for augmented reality in some, vice-president of wearables in others.",
+    "Meta's statement that businesses selling tampering services have closed comes from the company and has not been independently confirmed.",
+    "No independent test of whether the new check can itself be circumvented had been published at the time of writing."
+  ],
+  "sources": [
+    {
+      "outlet": "Engadget",
+      "title": "Meta is closing a loophole that allowed people to record with their smart glasses' light covered",
+      "url": "https://www.engadget.com/2245776/meta-closing-loophole-that-allowed-people-to-record-with-smart-glasses-light-covered/"
+    },
+    {
+      "outlet": "Android Authority",
+      "title": "Meta fixes distressingly obvious smart glasses recording LED loophole",
+      "url": "https://www.androidauthority.com/meta-smart-glasses-recording-led-fix-3704164/"
+    },
+    {
+      "outlet": "9to5Google",
+      "title": "Meta Ray-Ban smart glasses will kill another privacy LED loophole",
+      "url": "https://9to5google.com/2026/08/28/meta-ray-ban-smart-glasses-privacy-led-loophole-update/"
+    },
+    {
+      "outlet": "Android Central",
+      "title": "Meta just closed another loophole that could let its smart glasses record discreetly",
+      "url": "https://www.androidcentral.com/apps-software/meta/meta-just-closed-another-loophole-that-could-let-its-smart-glasses-record-discreetly"
+    }
+  ],
+  "date": "2026-08-29",
+  "published_at": "2026-08-29T19:29:27+00:00",
+  "rank": 3
+}

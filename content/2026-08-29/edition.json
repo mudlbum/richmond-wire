@@ -1,11 +1,10 @@
 {
   "date": "2026-08-29",
-  "count": 2,
-  "last_filed_at": "2026-08-29T11:09:15+00:00",
+  "count": 5,
+  "last_filed_at": "2026-08-29T19:29:27+00:00",
   "review": {
-    "status": "approved",
-    "recorded_at": "2026-08-29T13:03:00+00:00",
-    "reviewed_at": "29 August 2026",
-    "reviewed_by": "Dave Lee"
+    "status": "unreviewed",
+    "recorded_at": "2026-08-29T19:29:27+00:00",
+    "note": "Filed automatically by the two-hourly wire; no editor has read these stories."
   }
 }
