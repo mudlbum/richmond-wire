@@ -52,12 +52,18 @@ news. So each slot is handed a different beat, and a full day covers all of them
 
 | UTC | Beat | UTC | Beat |
 | --- | --- | --- | --- |
-| 00:00 | World | 12:00 | World |
-| 02:00 | Sport & culture | 14:00 | Economy |
-| 04:00 | Technology & science | 16:00 | Technology & science |
-| 06:00 | World | 18:00 | Environment & society |
-| 08:00 | Economy | 20:00 | Sport & culture |
-| 10:00 | Environment & society | 22:00 | Economy |
+| 00:00 | World | 12:00 | Technology & science |
+| 02:00 | Technology & science | 14:00 | Environment & society |
+| 04:00 | Environment & society | 16:00 | Economy |
+| 06:00 | Economy | 18:00 | Sport & culture |
+| 08:00 | Sport & culture | 20:00 | World |
+| 10:00 | World | 22:00 | Technology & science |
+
+Over a day that is three world cycles, three technology and science, and two
+each of the rest — the wire leads on world news, which is what it is for. The
+beat is picked from the hour rather than a fixed timetable, so the rotation still
+covers everything if the schedule drifts onto odd hours or you change the
+interval.
 
 The rotation lives in `ROTATION` at the top of `pipeline/brief.py`. Change it
 there and the schedule follows.

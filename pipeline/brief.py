@@ -70,24 +70,20 @@ BEATS = {
     },
 }
 
-# Twelve cycles a day, one every two hours (UTC). The rotation is deliberately
-# not a plain repeat of the five beats: it front-loads world and economy during
-# the hours when most of the world's newsrooms are filing, and gives sport and
-# culture the slots where their results actually land.
-ROTATION = {
-    0:  "world",        2:  "sportculture", 4:  "techsci",
-    6:  "world",        8:  "economy",      10: "envsociety",
-    12: "world",        14: "economy",      16: "techsci",
-    18: "envsociety",   20: "sportculture", 22: "economy",
-}
+# Twelve cycles a day, one every two hours. Two stories a cycle would flog one
+# topic to death if every cycle chased the same news, so each slot is handed a
+# different beat and a full day covers all of them.
+#
+# The rotation is keyed on the hour modulo five rather than a fixed timetable,
+# so it still cycles through every beat if the schedule drifts onto odd hours or
+# runs at some other interval. Over the twelve even hours of a day that works out
+# at world 3, technology & science 3, and two each of the rest — the wire leads
+# on world news, which is what it is for.
+ORDER = ["world", "economy", "techsci", "sportculture", "envsociety"]
 
 
 def beat_for(hour: int) -> str:
-    # Any odd or off-schedule hour falls back to the slot below it.
-    for h in range(hour, -1, -1):
-        if h in ROTATION:
-            return ROTATION[h]
-    return "world"
+    return ORDER[hour % len(ORDER)]
 
 
 def main() -> int:
