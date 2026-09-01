@@ -1,0 +1,130 @@
+{
+  "slug": "iran-strikes-bases-in-jordan-and-uae-after-us-hits-launchers-in-hormuz",
+  "category": "world",
+  "headline": "Iran strikes bases in Jordan and the UAE after a US raid in the Strait of Hormuz",
+  "dek": "Jordan says it shot down eight missiles and the UAE says it intercepted drones over its waters. It is the first exchange between Washington and Tehran since a pause that had held since 29 July.",
+  "summary": "Iran launched missiles and drones at bases in Jordan and the UAE on Monday after a US strike on rocket launchers on Larak Island, ending a month-long lull.",
+  "tags": [
+    "Iran",
+    "Jordan",
+    "United Arab Emirates",
+    "Strait of Hormuz",
+    "Diplomacy"
+  ],
+  "image": {
+    "queries": [
+      "air defence radar antenna against sky",
+      "oil tanker sailing through narrow strait aerial",
+      "empty desert airfield runway at dawn"
+    ],
+    "alt": "A rotating radar antenna mounted on a mast, silhouetted against an open sky"
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "Iran fired missiles and drones at military bases in Jordan and the United Arab Emirates early on Monday, hours after United States forces struck Iranian rocket launchers on Larak Island in the Strait of Hormuz. It is the first significant exchange between the two countries since 29 July, according to NPR, which reported that the intervening pause followed an order by President Donald Trump after discussions with Gulf leaders."
+    },
+    {
+      "type": "p",
+      "text": "US Central Command said its forces had taken *\"limited, precise action against IRGC minelaying forces posing an imminent threat in the Strait of Hormuz\"*, as quoted by Al Jazeera. The US military said the launchers on Larak Island were preparing to fire munitions carrying naval mines into the waterway, through which a large share of the world's seaborne oil passes."
+    },
+    {
+      "type": "h2",
+      "text": "What each side says happened"
+    },
+    {
+      "type": "p",
+      "text": "Iran's account came mainly through its own state broadcasters. The Irish Times, carrying agency copy, reported that Iran's army said it had attacked the UAE's Al Minhad air base with drones early on Monday, and that the Islamic Revolutionary Guard Corps separately launched a missile-and-drone attack on US air bases in Jordan. Al Jazeera named the Jordanian targets as the King Hussein and Al Azraq bases and described the UAE attack as involving dozens of drones. Iran said the bases had been used to support the Larak Island strike."
+    },
+    {
+      "type": "p",
+      "text": "The IRGC claimed the attacks destroyed repair and technical infrastructure and aircraft deployment areas at the bases, and said it had brought down a long-range American MQ-9 drone over the Strait of Hormuz. None of those claims has been confirmed by the United States, Jordan or the UAE, and Richmond International Newswire has seen no independent verification of them."
+    },
+    {
+      "type": "p",
+      "text": "The two host governments described smaller effects. Jordan's military said it intercepted eight missiles after they entered the kingdom's airspace and destroyed them before they caused damage; it did not say whether anything else got through. The UAE denied that its territory had been hit at all, saying instead that it had intercepted drones over its territorial waters that had been launched from Iran. That is a direct contradiction of Iran's account, and it is unresolved."
+    },
+    {
+      "type": "p",
+      "text": "Iran's armed forces said the American strike on Larak Island killed military personnel and civilians. No government has issued a casualty figure, and Iran gave none. Any total circulating at this stage should be treated as unestablished."
+    },
+    {
+      "type": "h2",
+      "text": "A claim that did not hold up"
+    },
+    {
+      "type": "p",
+      "text": "On Sunday night President Trump posted on social media that Iran's oil export terminal at Kharg Island was being \"blown to smithereens\". The post carried a video clip. The Irish Times reported that there was no other evidence the terminal was under attack, and that Reuters, using AI-detection software, found the clip to be synthetically generated. Neither the US military nor Iran has said that Kharg Island was struck."
+    },
+    {
+      "type": "h2",
+      "text": "Arab governments object to being in the middle"
+    },
+    {
+      "type": "p",
+      "text": "The sharpest reaction came not from Washington or Tehran but from Arab capitals, several of which host or neighbour the bases involved. The Jordan Times reported condemnations from the Arab League, the UAE, Qatar, Kuwait, Egypt and Al-Azhar. The common thread was sovereignty rather than the merits of the wider war."
+    },
+    {
+      "type": "quote",
+      "text": "a blatant violation of Jordanian and Emirati sovereignty and territorial integrity",
+      "cite": "Statement attributed to the Arab League, via the Jordan Times"
+    },
+    {
+      "type": "p",
+      "text": "Qatar called the attacks a serious violation of the sovereignty and territorial integrity of both countries, and Kuwait's foreign ministry said they threatened regional security. Egypt said it was deeply concerned that the strikes were continuing. The UAE's foreign ministry, whose own territory Iran says it targeted, framed its statement around the violation of Jordan's sovereignty and the threat to Jordanian security and stability."
+    },
+    {
+      "type": "p",
+      "text": "That pattern matters for what happens next. Jordan and the UAE are not parties to the fighting, and both have spent the past year trying to stay out of it while hosting American forces. Their governments have so far described interceptions and denials rather than retaliation, which is the narrower of the available responses."
+    },
+    {
+      "type": "box",
+      "title": "What is not yet established",
+      "items": [
+        "Any casualty figure on either side",
+        "Whether damage was done at the bases in Jordan or the UAE",
+        "Whether the pause that held since 29 July has now ended for good"
+      ],
+      "variant": "warn"
+    },
+    {
+      "type": "p",
+      "text": "Iran's president, Masoud Pezeshkian, said his country would not stay silent in the face of aggression but was not seeking war. His remarks were rendered slightly differently by Al Jazeera and NPR, so they are paraphrased here rather than quoted. No talks have been announced, and neither Washington nor Tehran has said whether the exchange is closed."
+    }
+  ],
+  "uncertain": [
+    "No casualty figures have been issued by any government. Iran's armed forces say the US strike on Larak Island killed military personnel and civilians but have not given a number.",
+    "Iran's claim that its strikes destroyed infrastructure and aircraft areas at bases in Jordan and the UAE is unverified and has not been confirmed by the United States, Jordan or the UAE.",
+    "The UAE denies its territory was struck, while Iran says it attacked Al Minhad air base with drones. That contradiction is unresolved.",
+    "Jordan's military said it intercepted eight missiles but did not say whether any other projectiles reached the ground.",
+    "Iran's claim to have downed a US MQ-9 drone over the Strait of Hormuz has not been confirmed by the United States.",
+    "President Trump's claim that Kharg Island was being destroyed is unsupported; the video accompanying it was assessed by Reuters as AI-generated.",
+    "It is not known whether either side intends further strikes, or whether the pause observed since 29 July is now over."
+  ],
+  "sources": [
+    {
+      "outlet": "Al Jazeera",
+      "title": "Iran attacks Jordan, UAE after US bombs Larak Island: What's the latest?",
+      "url": "https://www.aljazeera.com/news/2026/8/31/iran-attacks-jordan-uae-after-us-bombs-larak-island-whats-the-latest"
+    },
+    {
+      "outlet": "NPR",
+      "title": "Attacks flare between the U.S. and Iran after a monthlong pause",
+      "url": "https://www.npr.org/2026/08/31/g-s1-141175/attacks-flare-us-iran"
+    },
+    {
+      "outlet": "The Irish Times",
+      "title": "Iran claims retaliatory attacks on US forces in UAE, Jordan",
+      "url": "https://www.irishtimes.com/world/middle-east/2026/08/31/iran-claims-retaliatory-attacks-on-us-forces-in-uae-jordan/"
+    },
+    {
+      "outlet": "The Jordan Times",
+      "title": "Arab states condemn renewed Iranian attacks on Jordan, UAE",
+      "url": "https://jordantimes.com/news/local/arab-states-condemn-renewed-iranian-attacks-on-jordan-uae",
+      "note": "regional reaction"
+    }
+  ],
+  "date": "2026-09-01",
+  "published_at": "2026-09-01T05:28:13+00:00",
+  "rank": 1
+}

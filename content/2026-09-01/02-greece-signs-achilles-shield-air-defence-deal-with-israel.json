@@ -1,0 +1,121 @@
+{
+  "slug": "greece-signs-achilles-shield-air-defence-deal-with-israel",
+  "category": "world",
+  "headline": "Greece signs a multi-layer air defence deal with Israel worth about three billion euros",
+  "dek": "The package Athens calls \"Achilles' Shield\" is Israel's largest defence export to Greece. The two governments and the trade press have published slightly different figures for it.",
+  "summary": "Greece and Israel signed an agreement on Monday for an integrated air and missile defence network, described by Israel's defence ministry as one of its largest export deals.",
+  "tags": [
+    "Greece",
+    "Israel",
+    "Defence procurement",
+    "NATO",
+    "Diplomacy"
+  ],
+  "image": {
+    "queries": [
+      "radar installation on a hillside",
+      "satellite dish array at dusk",
+      "aegean coastline rocky horizon"
+    ],
+    "alt": "A large radar dish and antenna mast installed on a bare hillside under a clear sky"
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "Greece and Israel signed an agreement on Monday for an integrated, multi-layer air and missile defence network that Athens has named \"Achilles' Shield\". Israel's defence ministry described it as the largest defence export deal in the history of relations between the two countries and one of the largest in Israel's history, according to the Times of Israel."
+    },
+    {
+      "type": "p",
+      "text": "The value has been reported inconsistently, and the difference is worth stating plainly rather than averaging away. The Times of Israel and Defense News both put the agreement at about €3 billion, or roughly $3.5 billion. GreekReporter, citing the Greek defence ministry, gave a total programme budget of €3.035 billion. Calcalist, reporting on 28 August before the signing, put it at €3.1 billion, or about $3.6 billion. Neither government has published a single authoritative figure that reconciles the three."
+    },
+    {
+      "type": "h2",
+      "text": "What Greece is buying"
+    },
+    {
+      "type": "p",
+      "text": "Defense News listed the components as Rafael Advanced Defense Systems' David's Sling interceptor and SPYDER short-range system, Israel Aerospace Industries' Barak MX medium-range system, multi-mission radars from IAI's ELTA subsidiary, Rafael's Drone Dome counter-drone systems under a supplementary agreement worth €26 million, and a national command-and-control system, also from Rafael."
+    },
+    {
+      "type": "p",
+      "text": "The Greek defence ministry describes the result as a five-layer architecture spanning sea, land, air, cyberspace and space, taking in anti-aircraft and anti-ballistic systems, counter-drone capability, microsatellites and a unified command-and-control layer, GreekReporter reported. Calcalist reported before the signing that the network is designed to fold in Greece's existing Patriot batteries and that the contract includes source-code transfer provisions intended to give Greek forces control over the software."
+    },
+    {
+      "type": "quote",
+      "text": "the transition from an aggregation of weapons systems to a holistic deterrence system",
+      "cite": "Nikos Dendias, Greek defence minister, via GreekReporter"
+    },
+    {
+      "type": "p",
+      "text": "Dendias said the name refers to the shield of Achilles in Homer, which was itself made of five overlapping layers."
+    },
+    {
+      "type": "h2",
+      "text": "Who signed, and what they said"
+    },
+    {
+      "type": "p",
+      "text": "The Times of Israel reported that the agreement was signed by Amir Baram, director-general of Israel's defence ministry, and Ioannis Bouras on the Greek side. GreekReporter identified the Greek signatory only as the Ministry of National Defence. Baram said the deal reflected Israel's technological edge and the record of its systems in the field, Defense News reported."
+    },
+    {
+      "type": "quote",
+      "text": "Israel and Greece share common strategic interests and face shared regional challenges.",
+      "cite": "Israel Katz, Israeli defence minister, via the Times of Israel"
+    },
+    {
+      "type": "h2",
+      "text": "The wider picture"
+    },
+    {
+      "type": "p",
+      "text": "The purchase sits inside a Greek rearmament programme that Defense News put at about €28 billion running to 2036, which also covers up to 40 F-35 fighters from the United States and frigates from France and Italy. Defense News noted that Greece spends around 3.5 per cent of GDP on defence, above most NATO members, and attributed that to its long-running territorial dispute with Turkey. Ankara had not issued a public response at the time of writing."
+    },
+    {
+      "type": "p",
+      "text": "There is a domestic industrial component as well, though the reported scale differs. GreekReporter said Greek firms will take more than a quarter of the work, about €750 million, with 19 companies involved. Calcalist, before the signing, said 12 companies and more than €700 million. The two figures are not reconciled in the published accounts."
+    },
+    {
+      "type": "p",
+      "text": "For Israel, the sale is a first: Defense News described it as Israel's first export of a complete multi-tiered air defence architecture rather than individual batteries. David's Sling, which Israel used against Iranian missiles during this year's fighting, has so far had only one other foreign customer, Finland. The agreement also builds on Greece's 2025 purchase of 36 Israeli rocket artillery systems for $739 million, the Times of Israel reported."
+    },
+    {
+      "type": "p",
+      "text": "On timing, the only figure published is Dendias's statement to Calcalist that the network is to reach operational status within 35 months, delivered in stages. Neither ministry restated a delivery schedule when the agreement was signed."
+    }
+  ],
+  "uncertain": [
+    "The headline value is reported as €3 billion (Times of Israel, Defense News), €3.035 billion (GreekReporter) and €3.1 billion (Calcalist). No single reconciled official figure has been published.",
+    "The scale of Greek industrial participation is given as 19 companies and about €750 million by GreekReporter, and 12 companies and more than €700 million by Calcalist.",
+    "The 35-month timeline to operational status was stated before the signing and has not been restated by either ministry since.",
+    "GreekReporter did not name the Greek official who signed; the Times of Israel names Ioannis Bouras. This is unconfirmed by a second source.",
+    "Turkey had made no public response at the time of writing.",
+    "It is not clear from the published reporting whether any further Greek parliamentary step is required."
+  ],
+  "sources": [
+    {
+      "outlet": "Defense News",
+      "title": "Israel signs $3.5 billion air defense deal with Greece",
+      "url": "https://www.defensenews.com/global/europe/2026/08/31/israel-signs-35-billion-air-defense-deal-with-greece/"
+    },
+    {
+      "outlet": "The Times of Israel",
+      "title": "Greece inks record $3.5 billion deal to buy comprehensive missile defense system from Israel",
+      "url": "https://www.timesofisrael.com/greece-inks-record-3-5-billion-deal-to-buy-comprehensive-missile-defense-system-from-israel"
+    },
+    {
+      "outlet": "GreekReporter",
+      "title": "Greece and Israel Sign Deal for \"Achilles' Shield\" Integrated Air Defense System",
+      "url": "https://greekreporter.com/2026/08/31/greece-israel-sign-deal-achilles-shield-integrated-air-defense-system/",
+      "note": "Greek defence ministry detail"
+    },
+    {
+      "outlet": "Calcalist (Ctech)",
+      "title": "Greece and Israel move ahead with €3.1 billion Achilles' Shield air defense network",
+      "url": "https://www.calcalistech.com/ctechnews/article/p8hi55ra9",
+      "note": "published 28 August, before signing"
+    }
+  ],
+  "date": "2026-09-01",
+  "published_at": "2026-09-01T05:28:13+00:00",
+  "rank": 2
+}
