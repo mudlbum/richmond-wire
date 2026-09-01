@@ -1,0 +1,131 @@
+{
+  "slug": "japan-factory-output-edges-up-in-july-as-retail-sales-beat-forecasts",
+  "category": "economy",
+  "headline": "Japan's factory output rises 0.1% in July, and retail sales climb 4% on the year",
+  "dek": "Preliminary trade ministry figures show semiconductor-making equipment carrying an otherwise flat month. Manufacturers told the ministry they expect a jump in August and a sharp fall in September.",
+  "summary": "Japan's industrial production rose 0.1 per cent in July against forecasts of a fall, on strength in semiconductor equipment, while retail sales rose 4 per cent year on year.",
+  "tags": [
+    "Japan",
+    "Manufacturing",
+    "Semiconductors",
+    "Retail",
+    "Economic data"
+  ],
+  "image": {
+    "queries": [
+      "silicon wafer semiconductor clean room equipment",
+      "automated factory assembly line robotics",
+      "supermarket aisle shelves"
+    ],
+    "alt": "A silicon wafer resting on an inspection stage inside a semiconductor clean room."
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "Japan's Ministry of Economy, Trade and Industry reported on Monday that industrial production rose **0.1 per cent** in July from June, in preliminary figures. The seasonally adjusted production index stood at 104.7 against a 2020 base of 100. Separate ministry data put retail sales 4.0 per cent higher than a year earlier."
+    },
+    {
+      "type": "p",
+      "text": "Both numbers came in above what economists had expected, though the outlets do not agree on what was expected. Reuters copy carried by Investing.com put the forecast for production at a 0.7 per cent fall; the market service ActionForex put it at a 0.6 per cent fall. On retail sales, Reuters gave a forecast of 3.2 per cent and ActionForex 3.0 per cent. On any of those figures, output was expected to shrink and did not."
+    },
+    {
+      "type": "h2",
+      "text": "Semiconductor equipment carried the month"
+    },
+    {
+      "type": "p",
+      "text": "The rise was narrow. Xinhua reported that ten of fifteen sectors grew, four contracted, and electric machinery and information and communications electronics were unchanged. Production machinery rose 5.1 per cent, which the ministry attributed to stronger exports of semiconductor and display manufacturing equipment. Inorganic and organic chemicals rose 6.0 per cent, following the completion of maintenance at naphtha facilities. Transport equipment excluding motor vehicles fell 4.7 per cent, on lower orders for aircraft components."
+    },
+    {
+      "type": "p",
+      "text": "Xinhua summarised the ministry's own assessment as stronger semiconductor-related production being offset by weakness in transport equipment. Shipments rose 2.2 per cent to an index of 103.5, and inventories rose 0.5 per cent to 98.1. The inventory ratio was 2.0 per cent lower than a year earlier."
+    },
+    {
+      "type": "box",
+      "title": "What manufacturers told the ministry to expect",
+      "items": [
+        "August: output up 6.4 per cent",
+        "September: output down 4.2 per cent",
+        "These are companies' own projections gathered in the ministry's survey, not ministry forecasts and not outcomes"
+      ],
+      "variant": "warn"
+    },
+    {
+      "type": "p",
+      "text": "The September figure was attributed to expected adjustments in production machinery, transport equipment and electronic parts. Survey-based projections of this kind are statements of intent collected before the month begins, and they are routinely revised; they should not be read as data."
+    },
+    {
+      "type": "h2",
+      "text": "Retail sales, and a figure that does not line up"
+    },
+    {
+      "type": "p",
+      "text": "Retail sales rose 4.0 per cent from a year earlier and 2.4 per cent from June, on the figures reported by ANI and by ActionForex. Reuters, via Investing.com, gave the previous month's year-on-year rate as 0.6 per cent, which would make July a sharp acceleration."
+    },
+    {
+      "type": "p",
+      "text": "One characterisation in the coverage does not sit with the rest, and this article does not resolve it. ActionForex described retail sales as rebounding after seven consecutive months of declines. The reports carried by ANI and its syndication partner attach that seven-month run of declines to *household spending* through June, which is a different series collected by a different agency. Retail sales and household spending are not interchangeable, and the seven-month claim is reported here as unverified rather than folded into the retail sales figure."
+    },
+    {
+      "type": "h2",
+      "text": "What the reporting attributes it to"
+    },
+    {
+      "type": "p",
+      "text": "Reuters, in the copy carried by Investing.com, attributed the resilience in manufacturing to export demand for cars, electronic components and semiconductors, and described it as holding up despite disruption from the conflict between the United States and Iran. It attributed the strength in spending to wage growth and government subsidies on utility bills, against what it called sticky inflation. Those are the wire's judgements about cause; the ministry's release, as reported, sets out the sector figures without making them."
+    },
+    {
+      "type": "p",
+      "text": "A second disagreement runs through the coverage. ANI described the July reading as extending output growth into a fourth consecutive **quarter**; ActionForex described it as a fourth consecutive **month**. Both cannot be a description of the same thing, and neither claim is settled here."
+    },
+    {
+      "type": "p",
+      "text": "All of these are preliminary figures. The trade ministry revises industrial production in a second release each month, and revisions to a reading this close to zero can change its sign."
+    }
+  ],
+  "uncertain": [
+    "Every production figure here is preliminary. The trade ministry publishes a revised estimate later in the month, and a 0.1 per cent reading can change direction on revision.",
+    "The forecasts the results were measured against differ by outlet: a 0.7 per cent fall in production (Reuters) against 0.6 per cent (ActionForex), and retail sales of 3.2 per cent (Reuters) against 3.0 per cent (ActionForex).",
+    "Whether July extends a fourth consecutive quarter of output growth (ANI) or a fourth consecutive month (ActionForex). The two accounts conflict and neither was confirmed against the ministry's release.",
+    "The claim that retail sales rebounded after seven months of declines appears only in ActionForex. Other coverage attaches a seven-month run of declines through June to household spending, a separate series. This is unresolved.",
+    "The August (+6.4 per cent) and September (-4.2 per cent) figures are manufacturers' own survey responses gathered by the ministry, not forecasts by the ministry and not results.",
+    "The year-on-year production figure of 4.1 per cent appears in ANI, its syndication partner and ActionForex; it was not present in the Xinhua or Reuters copy read for this article.",
+    "The attribution of manufacturing resilience to the conflict between the United States and Iran, and of consumer spending to wage growth and utility subsidies, is Reuters' analysis rather than a ministry statement.",
+    "ANI and Asianet Newsable carry closely matching copy and may not be independent of one another; they are treated here as a single account."
+  ],
+  "sources": [
+    {
+      "outlet": "Investing.com",
+      "title": "Japan industrial production unexpectedly grows in July, retail sales surge",
+      "url": "https://www.investing.com/news/economic-indicators/japan-industrial-production-unexpectedly-grows-in-july-retail-sales-surge-4882082",
+      "note": "Reuters-sourced; forecasts and prior-month figures"
+    },
+    {
+      "outlet": "Xinhua",
+      "title": "Japan's July industrial output up 0.1 pct on month",
+      "url": "https://english.news.cn/20260831/ea40b17f02e042fdb1fb1e9d801dedba/c.html",
+      "note": "sector breakdown and the ministry's assessment"
+    },
+    {
+      "outlet": "ANI",
+      "title": "Japan's industrial output rises for fourth consecutive quarter; up 0.1% MoM",
+      "url": "https://aninews.in/news/business/japans-industrial-output-rises-for-fourth-consecutive-quarter-up-01-mom20260831105722/",
+      "note": "index levels, shipments and inventories"
+    },
+    {
+      "outlet": "Asianet Newsable",
+      "title": "Semiconductors drive Japan's industrial output rise for 4th quarter",
+      "url": "https://newsable.asianetnews.com/business/semiconductors-drive-japan-s-industrial-output-rise-for-4th-quarter-articleshow-5qw6s97",
+      "note": "closely matching ANI copy; counted as the same account"
+    },
+    {
+      "outlet": "ActionForex",
+      "title": "Japan Industrial Production Beats Forecast as Retail Sales Rebound",
+      "url": "https://www.actionforex.com/live-comments/652321-japan-industrial-production-beats-forecast-as-retail-sales-rebound/",
+      "note": "market service; the differing forecast set"
+    }
+  ],
+  "date": "2026-09-01",
+  "published_at": "2026-09-01T05:28:28+00:00",
+  "rank": 9
+}

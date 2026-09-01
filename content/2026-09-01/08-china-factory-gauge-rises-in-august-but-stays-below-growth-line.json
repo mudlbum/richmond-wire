@@ -1,0 +1,136 @@
+{
+  "slug": "china-factory-gauge-rises-in-august-but-stays-below-growth-line",
+  "category": "economy",
+  "headline": "China's factory gauge rises to 49.8 in August but stays below the growth line",
+  "dek": "The National Bureau of Statistics reported a second month under 50, with new orders back in expansion and the services gauge unchanged at 49.0. Whether the reading beat expectations depends on which forecast you use.",
+  "summary": "China's official manufacturing PMI rose to 49.8 in August from 49.2, a second month below the 50 mark, while the non-manufacturing gauge held at 49.0.",
+  "tags": [
+    "China",
+    "Manufacturing",
+    "Economic data",
+    "Purchasing managers"
+  ],
+  "image": {
+    "queries": [
+      "shipping containers stacked port aerial view",
+      "industrial cranes harbour at dusk",
+      "empty factory floor machinery"
+    ],
+    "alt": "Rows of stacked shipping containers at a large container port, photographed from above."
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "China's National Bureau of Statistics reported on Monday that its manufacturing purchasing managers' index stood at **49.8** in August, up 0.6 points from 49.2 in July. The index is compiled by the bureau with the China Federation of Logistics and Purchasing from a monthly survey of purchasing managers."
+    },
+    {
+      "type": "p",
+      "text": "A reading above 50 indicates that more firms reported improving conditions than worsening ones; below 50 indicates the reverse. August was therefore an improvement that still sat on the contracting side of the line. The South China Morning Post and Trading Economics both described it as a second consecutive month below 50, following what the Post said was a four-month run of expansion that ended in July. The Reuters account carried by Business Standard did not state a count of consecutive months."
+    },
+    {
+      "type": "h2",
+      "text": "Orders turned up, employment did not"
+    },
+    {
+      "type": "p",
+      "text": "The movement was in demand. The new orders sub-index rose to 50.6 from 48.5 in July, crossing back above the threshold, and the output sub-index rose to 50.4 from 49.9, according to figures published by Trading Economics from the bureau's release. New export orders reached 50.1, from 49.6, the South China Morning Post reported. Employment moved the other way, easing to 48.7 from 49.0."
+    },
+    {
+      "type": "quote",
+      "text": "Both production and demand expanded in tandem.",
+      "cite": "Huo Lihui, statistician at the National Bureau of Statistics, via the South China Morning Post"
+    },
+    {
+      "type": "p",
+      "text": "Huo also said that 16 of 21 surveyed industries registered month-on-month gains. Prices moved sharply on both sides of the ledger: Trading Economics put the input cost index at 56.6, from 53.2, and output prices at 50.4, from 47.8 — the first month in that series above 50 in the readings given. Business sentiment slipped slightly, to 53.8 from 54.1."
+    },
+    {
+      "type": "h2",
+      "text": "The services side did not move at all"
+    },
+    {
+      "type": "p",
+      "text": "The non-manufacturing PMI, which covers services and construction, was 49.0 in August, unchanged from July. Reuters, in the copy carried by Business Standard, described that as the weakest reading since December 2022; that characterisation comes from Reuters rather than from the bureau's own published commentary as read for this article. Reuters also reported that equipment manufacturing and high-technology manufacturing were above 51, while consumer goods and high-energy-consuming industries remained in contraction."
+    },
+    {
+      "type": "quote",
+      "text": "Domestic demand seems to be coming back, although it's more likely to have been driven by AI and exports than by policy expansion.",
+      "cite": "Xu Tianchen, senior economist at the Economist Intelligence Unit, via Reuters"
+    },
+    {
+      "type": "p",
+      "text": "Other economists quoted by Reuters were more reserved. Zhiwei Zhang, president and chief economist at Pinpoint Asset Management, said it was too early to conclude that the economy had rebounded. Zhang Liqun, an analyst with the China Federation of Logistics and Purchasing, said business confidence remained unstable and argued for stronger government investment in public goods to lift orders."
+    },
+    {
+      "type": "h2",
+      "text": "Whether it beat forecasts depends on whose forecast"
+    },
+    {
+      "type": "p",
+      "text": "The same number produced three different verdicts, because the outlets used different consensus figures. The South China Morning Post cited a Wind survey median of 49.85, against which 49.8 was a narrow miss. Reuters put the median forecast at 49.6, against which it was a beat. FXStreet and Trading Economics both used 49.7, also a beat. None of the three is obviously wrong; they are different polls of different economists, and this article does not resolve them."
+    },
+    {
+      "type": "p",
+      "text": "Market reaction was slight. FXStreet, reporting shortly after the release, noted little effect on the Australian dollar, often traded as a proxy for Chinese demand, with AUD/USD down 0.04 per cent at 0.7162 at the time of writing."
+    },
+    {
+      "type": "p",
+      "text": "Lynn Song, chief economist for Greater China at ING, was quoted in both accounts. The South China Morning Post carried his view that the data came in a little stronger than market expectations. Reuters carried his observation that because China's services sector is primarily domestically focused, the flat non-manufacturing reading pointed to relatively sluggish domestic demand in August. The two remarks are not in conflict, but they point at different halves of the same release."
+    },
+    {
+      "type": "box",
+      "title": "The numbers, and who issued them",
+      "items": [
+        "Manufacturing PMI: 49.8 in August, 49.2 in July — National Bureau of Statistics",
+        "Non-manufacturing PMI: 49.0, unchanged",
+        "New orders 50.6; output 50.4; new export orders 50.1; employment 48.7",
+        "A reading of 50 separates expansion from contraction"
+      ],
+      "variant": "info"
+    }
+  ],
+  "uncertain": [
+    "How many consecutive months manufacturing has been in contraction. The South China Morning Post and Trading Economics say two; the Reuters copy read for this article gives no count.",
+    "Which consensus forecast the reading should be measured against. Three were published: 49.85 (Wind, via SCMP), 49.6 (Reuters) and 49.7 (FXStreet and Trading Economics).",
+    "That 49.0 is the weakest non-manufacturing reading since December 2022 is Reuters' statement; it was not confirmed against the bureau's own release for this article.",
+    "The sub-index figures for output, employment, inventories, delivery times, prices and sentiment are taken from Trading Economics' rendering of the bureau's release rather than from the release itself.",
+    "The composite PMI output index and the breakdown by enterprise size were not obtained and are not reported here.",
+    "Whether August's improvement continues. The economists quoted disagree, and one month of survey data does not settle it.",
+    "PMI is a diffusion index built from survey responses about direction, not a measure of the size of any change in output."
+  ],
+  "sources": [
+    {
+      "outlet": "South China Morning Post",
+      "title": "China's factory activity stays in contraction in August despite improvement",
+      "url": "https://www.scmp.com/economy/economic-indicators/article/3365785/chinas-factory-activity-stays-contraction-august-despite-improvement",
+      "note": "carries the NBS statistician's comments and the Wind consensus"
+    },
+    {
+      "outlet": "Business Standard",
+      "title": "China's factory activity improves in August but remains in contraction",
+      "url": "https://www.business-standard.com/world-news/china-s-factory-activity-improves-in-august-but-remains-in-contraction-126083100229_1.html",
+      "note": "Reuters copy; source of the economist quotations"
+    },
+    {
+      "outlet": "Xinhua",
+      "title": "China's manufacturing PMI at 49.8 in August",
+      "url": "https://english.news.cn/20260831/94fd032a2172462fbe82d0f68705eb63/c.html",
+      "note": "Chinese state news agency; confirms the headline figure"
+    },
+    {
+      "outlet": "FXStreet",
+      "title": "China's NBS Manufacturing PMI climbs to 49.8 in August, Non-Manufacturing PMI steadies at 49.0",
+      "url": "https://www.fxstreet.com/news/chinas-nbs-manufacturing-pmi-climbs-to-498-in-august-non-manufacturing-pmi-steadies-at-490-202608310132",
+      "note": "market data service; consensus figure and currency reaction"
+    },
+    {
+      "outlet": "Trading Economics",
+      "title": "China Manufacturing PMI, August 2026",
+      "url": "https://tradingeconomics.com/china/business-confidence/news/481587",
+      "note": "data service; full sub-index table"
+    }
+  ],
+  "date": "2026-09-01",
+  "published_at": "2026-09-01T05:28:28+00:00",
+  "rank": 8
+}
