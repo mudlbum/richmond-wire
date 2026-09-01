@@ -1,0 +1,117 @@
+{
+  "slug": "niger-says-it-has-retaken-base-101-after-weekend-mutiny",
+  "category": "world",
+  "headline": "Niger says it has retaken its main airbase after a weekend mutiny in the capital",
+  "dek": "State media reported dozens of soldiers killed or arrested at Base 101 in Niamey, a figure Reuters said it could not verify. Russia's Africa Corps and Algeria both said they were asked to help.",
+  "summary": "Niger's military government says it has regained control of Base 101 in Niamey after a mutiny that spread across the capital at the weekend, with Russian and Algerian assistance and no verified casualty count.",
+  "tags": [
+    "Niger",
+    "Sahel",
+    "Russia",
+    "Algeria",
+    "Mutiny"
+  ],
+  "image": {
+    "queries": [
+      "empty airport runway at dusk",
+      "airport control tower silhouette",
+      "dry sahel landscape horizon"
+    ],
+    "alt": "An empty airport runway stretching towards the horizon in fading evening light."
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "Niger's military government says it has regained control of Base 101, the main military installation inside the Diori Hamani International Airport complex in Niamey, after a mutiny that began at the weekend and spread into other parts of the capital. Russia's Africa Corps and the Algerian air force both took part in the response, according to accounts from Niger's presidency and Russia's ambassador."
+    },
+    {
+      "type": "p",
+      "text": "Niger has been ruled by a military government since the July 2023 coup that removed the elected president. General Abdourahamane Tiani, who has led the country since, was reported by Reuters to have been defended by the Presidential Guard through the fighting. He made no public appearance while the base was contested, and none of the reports we read placed him anywhere specific."
+    },
+    {
+      "type": "h2",
+      "text": "What happened, as far as it is established"
+    },
+    {
+      "type": "p",
+      "text": "Al Jazeera reported that the mutiny began shortly after midnight on Saturday at Base 101 and then extended to the state broadcaster and the area around the presidential palace. Reuters reported that the fighting at the base lasted several hours. Niger's state media described the mutineers as hundreds of disaffected soldiers, drawn from Niamey and from units based at Ouallam, Tera and Dosso."
+    },
+    {
+      "type": "p",
+      "text": "The accounts differ on when it ended. Al Jazeera reported that the authorities announced the mutiny had been contained by late Saturday. Reuters reported that government forces had regained control by Sunday. The two are not necessarily contradictory — an announcement can precede the last exchange of fire — but the sequence has not been reconciled, and neither version has been independently confirmed."
+    },
+    {
+      "type": "p",
+      "text": "Niger's state media said dozens of soldiers were killed or arrested. Reuters said it could not independently verify that. No authority has published a count of the dead, a count of those detained, or the names of anyone said to have led the mutiny. Defence minister General Salifou Mody said the detained soldiers had opened fire at sites the defence ministry described as sensitive."
+    },
+    {
+      "type": "h2",
+      "text": "What the army has been facing"
+    },
+    {
+      "type": "p",
+      "text": "The units named by state media come from parts of south-western Niger where the army has taken heavy losses fighting armed groups, including the regional affiliate of ISIL, according to Reuters. Reuters also reported that this was the third assault on the same base this year: one in January attributed to an ISIL affiliate, and one in June attributed to an al-Qaeda affiliate. The National reported that Russian and Italian personnel were stationed at the base."
+    },
+    {
+      "type": "p",
+      "text": "Analysts quoted by Al Jazeera linked the unrest to those battlefield losses rather than to any stated political programme. No mutineer statement of grievances has been published, and the mutineers' aims remain unclear."
+    },
+    {
+      "type": "quote",
+      "text": "These mass-casualty overrun attacks on the Nigerien military are becoming commonplace and will continue to fuel unrest.",
+      "cite": "Heni Nsaibia, senior researcher at the Armed Conflict Location and Event Data Project, via Al Jazeera"
+    },
+    {
+      "type": "h2",
+      "text": "Who helped, and who said what"
+    },
+    {
+      "type": "p",
+      "text": "Russia's ambassador to Niger, Viktor Voropaev, said Nigerien authorities had asked Africa Corps to help neutralise the mutineers. Al Jazeera reported that the Kremlin-backed force has between 200 and 300 personnel at Base 101 and provided ground and aerial support after government troops initially struggled to retake it. Rida Lyammouri of the Policy Center for the New South told Al Jazeera the force had been engaged to fight armed groups rather than to protect the government from its own soldiers."
+    },
+    {
+      "type": "p",
+      "text": "Niger's presidency said Algeria sent four fighter jets, a transport aircraft and a refuelling tanker, according to Reuters. Algeria expressed what Al Jazeera reported as full solidarity and firm support for Niger's government. The Alliance of Sahel States, the bloc Niger formed with Mali and Burkina Faso, called the mutiny a betrayal by a group of soldiers involved in a destabilisation plot. Turkey called for restraint and said it hoped calm would be restored as soon as possible."
+    },
+    {
+      "type": "p",
+      "text": "Niger's National Guard denied reports that its commander had been dismissed or had changed sides. We are not naming the officer: the claim is unverified and the denial is the only official word on it. None of the reports we read carried a statement from the Economic Community of West African States or the African Union, and Niger's airport had not been confirmed as operating normally again."
+    }
+  ],
+  "uncertain": [
+    "There is no verified casualty figure. The only count is Niger state media's statement that dozens of soldiers were killed or arrested, which Reuters said it could not verify.",
+    "No authority has published the number of people detained, or the identities or rank of anyone said to have led the mutiny.",
+    "Sources differ on when the base was secured: Al Jazeera reported the government said it was contained by late Saturday, Reuters that control was regained by Sunday. The National dated the start to 30 August, while Reuters and Al Jazeera place it on Saturday 29 August.",
+    "General Tiani's whereabouts during the mutiny were not confirmed, and we found no record of a public appearance by him during or immediately after it.",
+    "The mutineers issued no public statement of aims; the link to battlefield losses is an inference drawn by analysts quoted in the reporting, not an established motive.",
+    "The extent of Africa Corps' combat role is described by Russia's ambassador and by Al Jazeera's reporting, and has not been confirmed by an independent account from the ground.",
+    "Whether civilians were harmed, and whether the civilian side of the airport has resumed normal operations, was not stated in the sources we read.",
+    "We found no statement from ECOWAS or the African Union in the reports we read."
+  ],
+  "sources": [
+    {
+      "outlet": "Reuters, via TimesLIVE",
+      "title": "Niger regains control of airbase after soldiers mutiny",
+      "url": "https://www.timeslive.co.za/news/africa/2026-08-31-niger-regains-control-of-airbase-after-soldiers-mutiny/"
+    },
+    {
+      "outlet": "Al Jazeera",
+      "title": "Niger mutiny puts Russia's expanding role in the Sahel to the test",
+      "url": "https://www.aljazeera.com/news/2026/8/31/niger-mutiny-puts-russias-expanding-role-in-the-sahel-to-the-test"
+    },
+    {
+      "outlet": "Al Jazeera",
+      "title": "Niger's military-led government says it contained mutiny: What next?",
+      "url": "https://www.aljazeera.com/news/2026/8/30/nigers-military-led-government-says-it-contained-mutiny-what-next",
+      "note": "regional reaction and analyst comment"
+    },
+    {
+      "outlet": "The National",
+      "title": "Niger crushes mutiny attempt at key airbase",
+      "url": "https://www.thenationalnews.com/news/2026/08/30/niger-crushes-mutiny-attempt-at-key-airbase/"
+    }
+  ],
+  "date": "2026-09-01",
+  "published_at": "2026-09-01T05:28:50+00:00",
+  "rank": 15
+}
