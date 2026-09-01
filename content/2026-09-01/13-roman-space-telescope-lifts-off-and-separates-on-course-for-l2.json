@@ -1,0 +1,176 @@
+{
+  "slug": "roman-space-telescope-lifts-off-and-separates-on-course-for-l2",
+  "category": "science",
+  "headline": "Roman Space Telescope lifts off from Florida and separates on course for L2",
+  "dek": "NASA's wide-field observatory launched at 7:26 a.m. EDT on a Falcon Heavy, made contact with the ground seven minutes later and unfolded its solar panels within an hour and a half. Both side boosters flew back to Cape Canaveral.",
+  "summary": "NASA's Nancy Grace Roman Space Telescope launched from Kennedy Space Center on Sunday morning, separated from its rocket and deployed its solar panels, beginning a three-month journey to a point beyond the Moon's orbit.",
+  "tags": [
+    "NASA",
+    "Roman Space Telescope",
+    "SpaceX",
+    "Astronomy",
+    "Dark energy"
+  ],
+  "follow_up": {
+    "of": "nasa-roman-space-telescope-cleared-for-launch",
+    "whats_new": "The launch NASA cleared on Friday has now taken place. Roman lifted off at 7:26 a.m. EDT on Sunday, separated from the Falcon Heavy's second stage, and NASA says controllers at the Goddard Space Flight Center had telemetry from the observatory seven minutes after launch and confirmed solar panel deployment an hour and 23 minutes after it. Both side boosters were recovered. The weather forecast had tightened from 60 percent favourable on Friday to 50 percent on Sunday morning, and the rocket flew on time anyway."
+  },
+  "image": {
+    "queries": [
+      "starfield long exposure night sky",
+      "large telescope mirror optics laboratory",
+      "observatory dome at night"
+    ],
+    "alt": "A long-exposure photograph of a dense field of stars across a dark night sky"
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "NASA's Nancy Grace Roman Space Telescope left the ground at 7:26 a.m. EDT on Sunday, carried by a SpaceX Falcon Heavy from Launch Complex 39A at the Kennedy Space Center in Florida. The agency's launch commentary put the vehicle's 27 engines at more than five million pounds of thrust. In a news release issued after the flight, NASA said the observatory separated from the rocket 31 minutes after launch, that controllers at the Goddard Space Flight Center in Maryland received telemetry from it seven minutes after liftoff, and that its solar panels and lower instrument sun shade were deployed an hour and 23 minutes in."
+    },
+    {
+      "type": "p",
+      "text": "Space.com, following the flight live, reported that Roman reached its initial orbit at about 7:57 a.m. EDT and that SpaceX described the orbit insertion as nominal after the second stage's final burn. Both of the Falcon Heavy's side boosters flew back and landed at Cape Canaveral; the central core was expended, as planned for a flight that needed the extra performance."
+    },
+    {
+      "type": "p",
+      "text": "The weather had looked worse on Sunday than it did on Friday. NASA's launch-day blog put the chance of acceptable conditions at 50 percent, with cumulus cloud and the surface electric field as the concerns — down from the 60 percent forecast issued before the weekend. A backup window was held for Monday at 7:22 a.m. EDT. It was not needed."
+    },
+    {
+      "type": "h2",
+      "text": "A wide lens, not a deep one"
+    },
+    {
+      "type": "p",
+      "text": "Roman's primary mirror is 7.9 feet across, about 2.4 metres — the same size as Hubble's. Spaceflight Now reported that it was donated to NASA by the National Reconnaissance Office from a cancelled surveillance programme, which is what buys the mission its defining feature: a very wide field at Hubble-class sharpness. NPR reported the field of view as at least 100 times larger than Hubble's, a figure the Associated Press and Al Jazeera also carried. NASA's own news release puts the practical effect differently, describing Roman as surveying the sky about 1,000 times faster than Hubble."
+    },
+    {
+      "type": "p",
+      "text": "Behind the mirror sits a 300-megapixel infrared camera, which NASA describes as built from 18 detectors each roughly the size of a cracker. Its stated goals, as reported by NPR, include mapping the distribution of dark matter, measuring the expansion history of the universe using Type Ia supernovae as standard candles, and identifying more than 100,000 exoplanets — roughly 1,000 of them by microlensing, a technique that detects a planet by the way its gravity briefly brightens the light of a more distant star. Spaceflight Now reported three core surveys across a five-year primary mission, the widest of them running 520 days; Al Jazeera reported that the main survey is designed to take in more than two billion galaxies. A single frame will be at least a billion pixels, the mission's program scientist, Dominic Benford, told Space.com — more, he said, than any screen on Earth can display at once."
+    },
+    {
+      "type": "quote",
+      "text": "The scope is extraordinary. We will do a survey of our own Milky Way galaxy and find 20 billion stars.",
+      "cite": "Julie McEnery, Roman senior project scientist, NASA Goddard, via Space.com"
+    },
+    {
+      "type": "p",
+      "text": "Those are projections of what the instrument is designed to do, not measurements; Roman has not yet taken a science image, and the counts quoted by NASA officials vary depending on which survey they are describing. The observatory also carries a coronagraph — an instrument that uses deformable mirrors to blot out the glare of a star so that planets near it become visible. Spaceflight Now reported it is expected to detect Jupiter-sized planets orbiting Sun-like stars. It is carried as a technology demonstration, and whether it reaches its designed performance in flight is not yet known."
+    },
+    {
+      "type": "quote",
+      "text": "It's going to find thousands of supernovae, tens of thousands of planets, billions of galaxies and tens of billions of stars.",
+      "cite": "Nicky Fox, associate administrator, NASA Science Mission Directorate, via Al Jazeera and the Associated Press"
+    },
+    {
+      "type": "h2",
+      "text": "Months before the first picture"
+    },
+    {
+      "type": "p",
+      "text": "Roman is heading for the second Sun-Earth Lagrange point, L2, a gravitationally convenient spot about a million miles from Earth on the night side, where the James Webb Space Telescope also operates. NASA's post-launch news release states a three-month journey to that orbit, and the agency's mission page describes the same three-month, million-mile transit. That is the consolidated agency figure that was missing before the launch, and it does not match everything published around it."
+    },
+    {
+      "type": "box",
+      "title": "The timeline, and where accounts still differ",
+      "items": [
+        "NASA, in its post-launch news release and on its mission page: three months to reach the final orbit, with first images expected in early 2027.",
+        "Space.com's launch report: a cruise of roughly 90 days, which agrees with NASA. Its live coverage of the same flight said about 30 days, followed by around three months of checkout, and put first images in January 2027.",
+        "The Associated Press and Al Jazeera: more than three months for the journey itself.",
+        "Spaceflight Now: three to four months of commissioning before science operations begin.",
+        "The accounts converge on first images in the opening weeks of 2027, and on NASA's three months for the transit. The one clear outlier is the 30-day cruise figure in Space.com's live coverage, which its own launch report does not repeat."
+      ],
+      "variant": "warn"
+    },
+    {
+      "type": "p",
+      "text": "NASA puts the total cost of the mission at $4.3 billion, covering construction, launch and five years of primary operations; the Associated Press and Al Jazeera report the same figure, and Space.com describes development as having cost more than $4 billion. Al Jazeera reported that the mission could run a further five years if refuelling becomes possible, and the Associated Press said the observatory was designed to be refuelled — no mission to do so currently exists. Once observations begin, NASA expects Roman to return about 1.4 terabytes of raw data a day; NPR reported that it will be released to researchers and to the public through a cloud service called Roman Nexus. NASA held a post-launch briefing at 9:30 a.m. EDT with the administrator, Jared Isaacman, science chief Nicky Fox, project manager Jackie Townsend, McEnery and launch director Denton Gibson; this account rests on the agency's written material and on outlets reporting the flight, not on a transcript of that briefing."
+    },
+    {
+      "type": "quote",
+      "text": "I very much hope, and in fact, expect that the most exciting science of Roman will be a surprise.",
+      "cite": "Julie McEnery, Roman senior project scientist, NASA Goddard, via Space.com"
+    }
+  ],
+  "uncertain": [
+    "First images are given as early 2027 by NASA and January 2027 by Space.com. Neither is a committed date, and both depend on commissioning going to plan.",
+    "The transit to L2 is three months in NASA's post-launch release and on its mission page, roughly 90 days in Space.com's launch report, more than three months in Associated Press and Al Jazeera copy, and about 30 days in Space.com's live coverage. The last of those is not repeated in Space.com's own launch report and is left unreconciled here.",
+    "NASA has confirmed separation, telemetry at Goddard and solar panel deployment. Beyond that, no detailed assessment of the observatory's health has been published in the material read.",
+    "The exoplanet, galaxy and star counts are pre-launch design projections issued by NASA, not observations, and figures quoted by different officials describe different surveys. Roman has returned no science data.",
+    "The coronagraph is a technology demonstration. Whether it achieves its designed contrast in flight is unproven.",
+    "NASA's 9:30 a.m. EDT post-launch news conference was not read in full for this article. The Fox remarks quoted here are as carried by the Associated Press and Al Jazeera, which do not state the setting; any figures or corrections issued at the briefing itself are not reflected.",
+    "The $4.3 billion cost is NASA's own figure for build, launch and the five-year primary mission, repeated by the Associated Press and Al Jazeera; no independent audit figure was located.",
+    "Any extension beyond the five-year primary mission depends on a refuelling capability that does not yet exist."
+  ],
+  "sources": [
+    {
+      "outlet": "NASA",
+      "title": "NASA's Dark Universe-Seeking Nancy Grace Roman Space Telescope Launches",
+      "url": "https://www.nasa.gov/news-release/nasas-dark-universe-seeking-nancy-grace-roman-space-telescope-launches/",
+      "note": "primary source — post-launch news release; separation, telemetry, solar panel deployment, three-month transit, early 2027 first images, 1.4 TB/day"
+    },
+    {
+      "outlet": "NASA",
+      "title": "NASA's Roman Space Telescope Launches",
+      "url": "https://science.nasa.gov/blogs/roman/2026/08/30/nasas-roman-space-telescope-launches/",
+      "note": "primary source — agency mission blog, posted at launch"
+    },
+    {
+      "outlet": "NASA",
+      "title": "NASA Concludes Roman Space Telescope Launch Coverage",
+      "url": "https://science.nasa.gov/blogs/roman/2026/08/30/nasa-concludes-roman-space-telescope-launch-coverage/",
+      "note": "primary source — confirms separation; lists post-launch briefing participants"
+    },
+    {
+      "outlet": "NASA",
+      "title": "NASA's Roman Space Telescope: Launch Updates",
+      "url": "https://science.nasa.gov/blogs/roman/2026/08/30/nasas-roman-space-telescope-launch-updates/",
+      "note": "primary source — launch-morning weather forecast and backup window"
+    },
+    {
+      "outlet": "NASA",
+      "title": "Nancy Grace Roman Space Telescope",
+      "url": "https://science.nasa.gov/mission/roman-space-telescope/",
+      "note": "primary source — three-month, million-mile transit; field of view"
+    },
+    {
+      "outlet": "Space.com",
+      "title": "Liftoff! NASA's Roman Space Telescope soars to the stars on a SpaceX Falcon Heavy rocket in spectacular launch (video)",
+      "url": "https://www.space.com/space-exploration/launches-spacecraft/nasa-roman-space-telescope-launch-success-on-a-spacex-falcon-heavy-rocket-spectacular-launch-video",
+      "note": "separation timing, booster landings, roughly 90-day cruise, Benford and McEnery quotations"
+    },
+    {
+      "outlet": "Space.com",
+      "title": "Roman Space Telescope launch updates: NASA, SpaceX celebrate",
+      "url": "https://www.space.com/news/live/nancy-grace-roman-telescope-live-updates-nasa-readies-roman-for-launch-august-30-2026",
+      "note": "live coverage — orbit insertion, McEnery quotation, 30-day cruise and January 2027 expectation"
+    },
+    {
+      "outlet": "Spaceflight Now",
+      "title": "Roman Space Telescope, NASA's next 'great observatory,' poised for Sunday launch",
+      "url": "https://spaceflightnow.com/2026/08/29/roman-space-telescope-nasas-next-great-observatory-poised-for-sunday-launch/",
+      "note": "mirror provenance, coronagraph, survey plan, commissioning duration"
+    },
+    {
+      "outlet": "NPR",
+      "title": "'A glorious dawn launch': NASA's newest space telescope has left the Earth",
+      "url": "https://www.npr.org/2026/08/30/nx-s1-5948814/launch-nancy-grace-roman-space-telescope-nasa",
+      "note": "field of view comparison, science goals, Roman Nexus public data release"
+    },
+    {
+      "outlet": "Al Jazeera",
+      "title": "NASA launches $4.3bn Roman Telescope to uncover universe's hidden secrets",
+      "url": "https://www.aljazeera.com/news/2026/8/30/nasa-launches-4-3bn-roman-telescope-to-uncover-universes-hidden-secrets",
+      "note": "survey scale, five-year mission and possible extension, Fox quotation"
+    },
+    {
+      "outlet": "Fortune / Associated Press",
+      "title": "SpaceX launches NASA's newest crown-jewel telescope, which will look for 'the weird, the rare and the unusual'",
+      "url": "https://fortune.com/2026/08/30/spacex-nasa-roman-space-telescope-dark-matter-energy/",
+      "note": "AP copy — mirror size, refuelling, cruise duration, Fox quotation; Al Jazeera carries the same wire material"
+    }
+  ],
+  "date": "2026-09-01",
+  "published_at": "2026-09-01T05:28:41+00:00",
+  "rank": 13
+}
