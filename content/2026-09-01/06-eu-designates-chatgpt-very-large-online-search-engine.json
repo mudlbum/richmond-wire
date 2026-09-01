@@ -1,0 +1,137 @@
+{
+  "slug": "eu-designates-chatgpt-very-large-online-search-engine",
+  "category": "technology",
+  "headline": "European Commission designates ChatGPT a very large online search engine under the DSA",
+  "dek": "Reddit and Roblox were designated very large online platforms on the same day. All three now face the Digital Services Act's heaviest obligations, including annual independent audits and access to their data for vetted researchers.",
+  "summary": "The European Commission has designated ChatGPT a very large online search engine under the Digital Services Act, alongside Reddit and Roblox as very large online platforms, triggering the regime's strictest obligations.",
+  "tags": [
+    "European Union",
+    "Digital Services Act",
+    "OpenAI",
+    "Content moderation"
+  ],
+  "image": {
+    "queries": [
+      "european union institutional building brussels flags",
+      "server room data centre racks",
+      "office window glass facade blue sky"
+    ],
+    "alt": "The glass facade of a European institutional building, with rows of flagpoles outside."
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "The European Commission announced on 31 August 2026 that it has designated ChatGPT as a **Very Large Online Search Engine** under the European Union's Digital Services Act, and Reddit and Roblox as **Very Large Online Platforms**. The three services now fall into the top tier of the DSA, the category the law reserves for services large enough that the Commission supervises them directly."
+    },
+    {
+      "type": "p",
+      "text": "The threshold for that tier is 45 million average monthly users in the European Union. In its announcement the Commission said the three services had themselves declared that they reach at least that many, and therefore meet the condition for designation. The Commission's notice says the three have four months from notification to comply with the additional obligations, and gives January 2027 as the point at which compliance is required."
+    },
+    {
+      "type": "h2",
+      "text": "What the designation requires"
+    },
+    {
+      "type": "p",
+      "text": "Designation is not a finding of wrongdoing. It changes what a service has to do. According to the Commission's announcement, a designated service must identify and mitigate systemic risks arising from its service and its algorithmic systems, in a list of areas the law sets out."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "the spread of illegal content",
+        "negative effects on minors",
+        "users' physical and mental well-being",
+        "fundamental rights",
+        "electoral processes",
+        "public security"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Search Engine Journal, reporting on the same decision, listed the further duties that attach at this tier: annual independent audits, data sharing with authorities, access to platform data for vetted researchers, a recommender-system option that does not rely on profiling, and a public advertising repository where a service carries advertising. Engadget reported that the platforms must also submit to independent audits and open their data to researchers, and said it had asked OpenAI, Reddit and Roblox for comment without receiving a response before publication."
+    },
+    {
+      "type": "p",
+      "text": "Gizmodo reported that companies which fail to comply face fines of up to 6 per cent of annual global revenue. That is the statutory ceiling written into the Digital Services Act, not a penalty that has been proposed against any of the three services."
+    },
+    {
+      "type": "h2",
+      "text": "Why a chatbot is being treated as a search engine"
+    },
+    {
+      "type": "p",
+      "text": "The distinction between the two labels matters. Reddit and Roblox were designated as platforms, which is the category for services that host and distribute content posted by users. ChatGPT was designated as a search engine. Search Engine Journal reported that the Commission described ChatGPT as a hybrid service which qualifies as an online search engine because it responds to users' prompts and queries, including by searching the web."
+    },
+    {
+      "type": "p",
+      "text": "The user figure behind that designation comes from OpenAI's own disclosure. Search Engine Journal reported that OpenAI declared approximately 159.1 million average monthly active recipients for ChatGPT search in the European Union over the six months ending 31 March 2026 — more than three times the 45 million threshold. The Commission's own announcement does not publish a per-service figure; it says only that the three services declared they reach at least 45 million."
+    },
+    {
+      "type": "quote",
+      "text": "These new designations mean that ChatGPT, Reddit and Roblox will now be held to a higher standard of scrutiny and accountability in the European Union, in line with their large impact on our citizens and society.",
+      "cite": "Henna Virkkunen, Executive Vice-President of the European Commission, via Gizmodo and Search Engine Journal"
+    },
+    {
+      "type": "h2",
+      "text": "What is not settled"
+    },
+    {
+      "type": "p",
+      "text": "The deadline is reported two different ways in the material we read. The Commission's announcement gives four months from notification and states that compliance is required by January 2027; Engadget and Gizmodo both describe the period as four months from the 31 August notification, which would fall at the end of December. We could not establish from the sources we opened whether the difference reflects the formal notification date, a rounding of the period, or something else."
+    },
+    {
+      "type": "p",
+      "text": "Engadget reported that the decision brings the total number of designated very large services under the DSA to 28, and that WhatsApp received a designation earlier in 2026, joining Facebook and Instagram. The Commission's announcement, as we read it, does not carry that running total, and we have not verified it independently."
+    },
+    {
+      "type": "p",
+      "text": "None of the three companies had commented publicly in any of the reports we read. A designated service may contest a designation before the EU courts; whether any of the three intends to is not known."
+    },
+    {
+      "type": "box",
+      "title": "How the tiers work",
+      "items": [
+        "The Digital Services Act applies to all online intermediaries in the EU, with lighter duties at the bottom.",
+        "Services with at least 45 million average monthly EU users move into the top tier, supervised by the Commission rather than by a national regulator.",
+        "Platforms host user content; search engines return results to queries. The two tiers carry overlapping but not identical duties."
+      ],
+      "variant": "note"
+    }
+  ],
+  "uncertain": [
+    "Whether the compliance deadline falls at the end of December 2026 or in January 2027 — the Commission's announcement says January 2027, while Engadget and Gizmodo describe four months from a 31 August notification.",
+    "The EU user figures for Reddit and Roblox. None of the sources we opened published a number for either service.",
+    "Whether the designation covers ChatGPT as a whole or only its search function. The Commission is reported as describing it as a hybrid service, and we could not establish from the sources we read where the boundary of the designation is drawn.",
+    "Engadget's figure of 28 designated very large services in total, which we did not find in the Commission's own announcement.",
+    "Whether OpenAI, Reddit or Roblox will challenge the designation in the EU courts. None had commented in any report we read.",
+    "What, in practice, an audit or a systemic-risk assessment of a general-purpose chatbot will consist of. The obligations are written for platforms and search engines and have not previously been applied to a service of this kind.",
+    "The 6 per cent revenue figure is the maximum fine the Act allows. No penalty has been proposed against any of the three services."
+  ],
+  "sources": [
+    {
+      "outlet": "European Commission",
+      "title": "Commission designates ChatGPT, Reddit, Roblox under Digital Services Act",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-designates-chatgpt-reddit-roblox-under-digital-services-act",
+      "note": "primary source"
+    },
+    {
+      "outlet": "Engadget",
+      "title": "ChatGPT, Reddit and Roblox to face the EU's strictest platform rules",
+      "url": "https://www.engadget.com/2247513/chatgpt-reddit-and-roblox-to-face-the-eus-strictest-platform-rules/"
+    },
+    {
+      "outlet": "Search Engine Journal",
+      "title": "ChatGPT Is Now A \"Very Large Online Search Engine\" In The EU",
+      "url": "https://www.searchenginejournal.com/chatgpt-is-now-a-very-large-online-search-engine-in-the-eu/587801/",
+      "note": "carries the OpenAI user disclosure and the full obligation list"
+    },
+    {
+      "outlet": "Gizmodo",
+      "title": "The EU Has Officially Decided ChatGPT Is a Search Engine",
+      "url": "https://gizmodo.com/the-eu-has-officially-decided-chatgpt-is-a-search-engine-2000805030"
+    }
+  ],
+  "date": "2026-09-01",
+  "published_at": "2026-09-01T05:28:24+00:00",
+  "rank": 6
+}
