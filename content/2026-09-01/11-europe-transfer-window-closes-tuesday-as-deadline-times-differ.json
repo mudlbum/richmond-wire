@@ -1,0 +1,120 @@
+{
+  "slug": "europe-transfer-window-closes-tuesday-as-deadline-times-differ",
+  "category": "sport",
+  "headline": "Europe's football transfer window closes on Tuesday, but published deadline times disagree",
+  "dek": "The Premier League and the Bundesliga's own pages both put the German deadline on 1 September; Sky Sports and Al Jazeera list it as Monday evening. Clubs confirmed a handful of deals on Monday.",
+  "summary": "Europe's five biggest football leagues close their summer transfer windows on 1 September according to their own pages, though several outlets list an earlier Bundesliga deadline; a few deals were confirmed on Monday.",
+  "tags": [
+    "Football",
+    "Transfer window",
+    "Premier League",
+    "Bundesliga"
+  ],
+  "image": {
+    "queries": [
+      "empty football stadium seats",
+      "football boots on grass",
+      "clock face close up"
+    ],
+    "alt": "Rows of empty seats in a football stadium."
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "The summer transfer window for Europe's biggest football leagues shuts this week, ending three months in which clubs can register players signed from other clubs. The Premier League, in its own deadline-day explainer published on 30 August, says the English window closes at 23:00 BST on Tuesday 1 September."
+    },
+    {
+      "type": "p",
+      "text": "English clubs that have submitted a deal sheet before that moment get a two-hour grace period to complete the paperwork, which is why signings are sometimes announced after the deadline has formally passed."
+    },
+    {
+      "type": "h2",
+      "text": "When each league actually shuts"
+    },
+    {
+      "type": "p",
+      "text": "This is where the published information stops agreeing. The Premier League's explainer says the EFL, the Bundesliga, Serie A, LaLiga and Ligue 1 all close on the same date as the English window. The Bundesliga's own transfer centre page, last updated on 28 August, states its window runs to a specific time on that date."
+    },
+    {
+      "type": "quote",
+      "text": "The Bundesliga's summer transfer window is open from 1 July until 8pm CEST on 1 September 2026.",
+      "cite": "Official Bundesliga transfer centre, bundesliga.com"
+    },
+    {
+      "type": "p",
+      "text": "Two other outlets give a different answer. A Sky Sports dates page, last updated on 15 June, lists the Bundesliga as closing on 31 August at 19:00 UK time. Al Jazeera's deadline-day guide, published on 31 August, also places the German and French windows on Monday evening, at 20:00 local time. We could not reconcile the two accounts, and we are not treating either as settled. The leagues' own pages are the more direct authority on their own deadlines, and both of those point to 1 September."
+    },
+    {
+      "type": "p",
+      "text": "On the leagues where the sources broadly agree, Sky Sports gives Serie A closing at 20:00 on 1 September and LaLiga at 22:59 UK time the same day; Al Jazeera gives LaLiga as 23:59 local. The Women's Super League window stays open until 3 September at 23:00, and the Scottish window until 17:00 the same day, according to Sky Sports."
+    },
+    {
+      "type": "h2",
+      "text": "What was confirmed on Monday"
+    },
+    {
+      "type": "p",
+      "text": "The specialist site FootballTransfers, in a running list timestamped 13:15 BST on Monday, recorded a small number of moves as officially completed that day. It listed the Colombian defender Daniel Muñoz going from Crystal Palace to Nottingham Forest at a reported €25.7m, the Brazilian midfielder Allan joining Manchester City from Palmeiras at a reported €40m, and Sergio Martínez moving from Racing Santander to Real Madrid at a reported €3m. Two Italian loans were also listed: Jan Ziółkowski from Roma to Monza, and Yanis Massolin from Inter to Cagliari."
+    },
+    {
+      "type": "p",
+      "text": "Every one of those fees is a reported figure rather than a disclosed one. English and Spanish clubs almost never publish what they paid, so the numbers that circulate on deadline day come from journalists and transfer databases, and they routinely differ between outlets. Readers are safer treating them as estimates with an error bar than as accounts."
+    },
+    {
+      "type": "h2",
+      "text": "The scale of the window"
+    },
+    {
+      "type": "p",
+      "text": "Sports Illustrated, working from Transfermarkt data updated on 28 August, put Chelsea's summer outlay at about $476m, Tottenham Hotspur's at about $414m and Manchester City's at about $319m. Al Jazeera's deadline-day summary lists Morgan Rogers's move from Aston Villa to Chelsea among the window's largest, at £117m; Sports Illustrated gives the same transfer as roughly $160m. No accounting firm has yet published an audited total for this window, so the aggregate remains an estimate drawn from databases."
+    },
+    {
+      "type": "p",
+      "text": "After the top five leagues close, players can still move to leagues whose windows run later, and clubs can sign players who are not under contract. The next English window opens on 1 January 2027 and closes on 1 February, Sky Sports reports."
+    }
+  ],
+  "uncertain": [
+    "The Bundesliga's closing time is genuinely unresolved in the sources we read: bundesliga.com and the Premier League both indicate 1 September, while Sky Sports and Al Jazeera list 31 August. We have not been able to reconcile them.",
+    "Ligue 1's exact closing time was not stated consistently across the sources we read.",
+    "All transfer fees given here are as reported by FootballTransfers, Al Jazeera or Transfermarkt via Sports Illustrated. We did not find any of them confirmed by the clubs involved.",
+    "Deals described elsewhere as agreed but not yet announced are not confirmed and may not complete before the deadline.",
+    "No audited total for this window's spending has been published; per-club figures cited here are database estimates as of 28 August and will have moved since."
+  ],
+  "sources": [
+    {
+      "outlet": "Premier League",
+      "title": "Summer 2026 Transfer Deadline Day: Everything you need to know",
+      "url": "https://www.premierleague.com/en/news/4698998/summer-2026-transfer-deadline-day-everything-you-need-to-know",
+      "note": "primary source"
+    },
+    {
+      "outlet": "Bundesliga",
+      "title": "Official Bundesliga transfer centre: Summer 2026",
+      "url": "https://www.bundesliga.com/en/bundesliga/news/official-bundesliga-transfer-centre-summer-2026-37051",
+      "note": "primary source"
+    },
+    {
+      "outlet": "Sky Sports",
+      "title": "Summer transfer window 2026 dates: When is Deadline Day for Premier League and EFL clubs to sign players?",
+      "url": "https://www.skysports.com/football/news/11095/13546220/summer-transfer-window-2026-dates-when-is-deadline-day-for-premier-league-and-efl-clubs-to-sign-players"
+    },
+    {
+      "outlet": "Al Jazeera",
+      "title": "Transfer day: What and when is the deadline for club football signings?",
+      "url": "https://www.aljazeera.com/sports/2026/8/31/transfer-deadline-day-2026-football-summer-signing-window-barcola-gakpo-alvarez"
+    },
+    {
+      "outlet": "FootballTransfers",
+      "title": "Done Deals: Every official completed transfer around Europe today",
+      "url": "https://www.footballtransfers.com/en/transfer-news/uk-premier-league/2026/08/transfer-news-every-done-deal-official-confirmed-completed-signing-europe-today-31-august-2026"
+    },
+    {
+      "outlet": "Sports Illustrated",
+      "title": "Premier League Transfers: Total Money Spent by Clubs in 2026 Summer Window",
+      "url": "https://www.si.com/soccer/premier-league-transfers-total-money-spent-by-clubs-2026-summer-window"
+    }
+  ],
+  "date": "2026-09-01",
+  "published_at": "2026-09-01T05:28:32+00:00",
+  "rank": 11
+}
