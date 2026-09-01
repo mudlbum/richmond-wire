@@ -1,0 +1,134 @@
+{
+  "slug": "meta-agrees-default-limits-on-teen-accounts-in-state-settlement",
+  "category": "technology",
+  "headline": "Meta agrees to default two-hour limits on teen accounts in settlement with US states",
+  "dek": "Instagram and Facebook accounts held by under-18s would switch off overnight and mute notifications during school hours. The sums involved, and the state of the court's approval, are reported differently by different outlets.",
+  "summary": "Meta has settled US state claims over harm to young users, agreeing to default time limits, overnight lockouts and muted school-hours notifications on teen Instagram and Facebook accounts.",
+  "tags": [
+    "Meta",
+    "Instagram",
+    "Online safety",
+    "Regulation"
+  ],
+  "image": {
+    "queries": [
+      "smartphone on bedside table at night",
+      "empty school corridor lockers",
+      "phone screen glowing in dark room"
+    ],
+    "alt": "A smartphone lying face-up on a bedside table in a darkened room."
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "Meta agreed on 26 August to settle claims brought by a coalition of United States state attorneys general over the effect of Instagram and Facebook on young users, and to change what those apps do by default for account holders under 18. The case was before the US District Court for the Northern District of California, in Oakland, and Judge Yvonne Gonzalez Rogers."
+    },
+    {
+      "type": "p",
+      "text": "The suits argued that the design of social media products — endless feeds, notifications, visible approval counts — was built to hold the attention of children in ways their makers understood and did not disclose. Al Jazeera reported that Meta settled while denying wrongdoing."
+    },
+    {
+      "type": "h2",
+      "text": "What would change on the apps"
+    },
+    {
+      "type": "p",
+      "text": "The settlement sets defaults rather than bans. An under-18 account would arrive with restrictions already switched on, which a parent can then loosen. Drawing on reporting by NPR, Al Jazeera and The New York Times, the package includes:"
+    },
+    {
+      "type": "ul",
+      "items": [
+        "A two-hour daily limit on use, which a parent can extend through the account's settings, and which NPR and Al Jazeera reported would fall to one hour if rival platforms adopt the same framework",
+        "The apps blocked between midnight and 6am",
+        "Notifications silenced overnight, and between 8am and 3pm on school days during term",
+        "Like and reaction counts hidden on minors' posts",
+        "Cosmetic-surgery and extreme makeup filters withdrawn for minors",
+        "An option to use a feed that is not personalised by recommendation software",
+        "Stronger age checks, expanded parental supervision tools, independent audits, and a commitment to answer 90 per cent of reports of harmful content within six hours"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "The New York Times reported that most of the features are to arrive within six months and that the age-verification work may take up to a year. No feature-by-feature schedule has been published that this wire has been able to read, so the date on which any individual change reaches any individual account is not established."
+    },
+    {
+      "type": "quote",
+      "text": "Meta has agreed to make massive transformations that will reduce the risk of harm from its platforms.",
+      "cite": "Rob Bonta, Attorney General of California, via NPR"
+    },
+    {
+      "type": "h2",
+      "text": "The sum involved is reported differently"
+    },
+    {
+      "type": "p",
+      "text": "There is no single agreed figure in circulation. NPR reported $17bn in penalties over ten years, with the amount rising if YouTube, TikTok and Snap adopt similar frameworks. Al Jazeera reported a maximum of $16.68bn over ten years, plus legal fees. CBS News reported a total of up to $17.1bn, of which $12.1bn is guaranteed over ten years and a further $5bn would be paid only if YouTube and TikTok settle claims of their own. A later NPR account also described a separate settlement with Texas alongside the multi-state one."
+    },
+    {
+      "type": "p",
+      "text": "The spread appears to reflect what each outlet counts — guaranteed money, contingent money, legal costs, the Texas agreement — rather than a dispute about the terms. This wire has not reconciled the versions against the settlement document and does not adopt any one number as the figure. The descriptions of what Meta must actually do are consistent across all of them."
+    },
+    {
+      "type": "p",
+      "text": "The size of the coalition is also described differently: NPR referred to 51 states' cases consolidated into the settlement and named California, Colorado, Kentucky and New Jersey as leading it, while Al Jazeera reported 52 attorneys general signing and other accounts describe 47 states together with the District of Columbia and US territories. The status of the court's approval is unresolved in the reporting too: NPR wrote that Judge Gonzalez Rogers approved the settlement within hours of its filing, while Al Jazeera, on the same day, described her as inclined to approve it but not yet final. This wire has not established which is correct."
+    },
+    {
+      "type": "h2",
+      "text": "What the settlement does not settle"
+    },
+    {
+      "type": "p",
+      "text": "Whether any of this reduces the harm alleged is untested. The measures are new, and the strongest of them — the two-hour default — can be lifted by a parent, so the effect will depend on how many parents do. Mitch Prinstein, a psychologist quoted by NPR, said about half of children report at least one symptom of clinical dependency on social media. That is a description of the problem, not evidence that these particular defaults address it, and the researchers NPR spoke to made the same point: what matters now is the implementation."
+    },
+    {
+      "type": "quote",
+      "text": "This settlement isn't perfect, but I do think it's a critical first step.",
+      "cite": "Julie Scelfo, Mothers Against Media Addiction, via NPR"
+    },
+    {
+      "type": "p",
+      "text": "Meta has said the standard only works if its competitors adopt it, and part of the money it would pay is tied to whether they settle claims of their own. None has. For the moment the agreement changes the default settings on two apps, in one country's courts — a narrower thing than the headline sums suggest, and a larger one than any regulator has so far obtained."
+    }
+  ],
+  "uncertain": [
+    "The headline value of the settlement. The outlets we read give $17bn over ten years (NPR), a maximum of $16.68bn plus legal fees (Al Jazeera), and up to $17.1bn including $5bn contingent on other companies settling (CBS News). We have not reconciled these against the settlement document.",
+    "Whether the court has given final approval. NPR reported that Judge Yvonne Gonzalez Rogers approved the settlement hours after it was filed; Al Jazeera, the same day, reported that she was inclined to approve it but had not finalised it. We have not resolved the difference.",
+    "The exact dates each change takes effect. The New York Times reported six months for most features and up to a year for age verification; no per-feature schedule has been published that we could read.",
+    "Whether the contingent portion of the money is ever paid. It depends on rival platforms settling separate claims, which has not happened.",
+    "The precise composition of the state coalition, described variously as 51 consolidated state cases, 52 attorneys general, and 47 states plus the District of Columbia and territories.",
+    "Whether default time limits, overnight lockouts and hidden like counts reduce compulsive use. No evidence on these specific measures at this scale exists yet.",
+    "The terms of the separate settlement with Texas that NPR reported alongside the multi-state agreement."
+  ],
+  "sources": [
+    {
+      "outlet": "NPR",
+      "title": "Meta, states agree to $17 billion settlement in child safety trial",
+      "url": "https://www.npr.org/2026/08/26/nx-s1-5944781/meta-settlement-child-safety-lawsuit"
+    },
+    {
+      "outlet": "NPR",
+      "title": "Lights out, Instagram off? The changes to Meta for teens could be a big deal",
+      "url": "https://www.npr.org/2026/08/29/nx-s1-5947960/instagram-meta-social-media-teens",
+      "note": "most recent of the sources read"
+    },
+    {
+      "outlet": "Al Jazeera",
+      "title": "Meta agrees to settlement, platform changes in youth addiction case",
+      "url": "https://www.aljazeera.com/economy/2026/8/26/meta-agrees-to-settlement-platform-changes-in-youth-addiction-case"
+    },
+    {
+      "outlet": "CBS News",
+      "title": "Meta settles social media addiction suit with states for up to $17.1 billion",
+      "url": "https://www.cbsnews.com/news/meta-settles-social-media-addiction-lawsuit/"
+    },
+    {
+      "outlet": "The Philadelphia Inquirer",
+      "title": "Here's what is changing for teens on Instagram and Facebook",
+      "url": "https://www.inquirer.com/news/nation-world/meta-facebook-instagram-changes-teens-20260827.html",
+      "note": "New York Times News Service copy"
+    }
+  ],
+  "date": "2026-09-01",
+  "published_at": "2026-09-01T05:28:46+00:00",
+  "rank": 14
+}
