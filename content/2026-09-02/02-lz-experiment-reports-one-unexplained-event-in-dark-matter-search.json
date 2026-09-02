@@ -1,0 +1,126 @@
+{
+  "slug": "lz-experiment-reports-one-unexplained-event-in-dark-matter-search",
+  "category": "science",
+  "headline": "Xenon detector a mile underground reports one unexplained event in its dark matter search",
+  "dek": "The LUX-ZEPLIN collaboration says a single interaction in 220 days of data cannot be accounted for by known backgrounds. At 2.6 sigma it is far below the threshold physicists require, and the team says plainly it is not claiming a detection.",
+  "summary": "Physicists at an underground detector in South Dakota report a single unexplained particle interaction in 220 days of data, well short of the statistical strength needed to claim a dark matter discovery.",
+  "tags": [
+    "Dark matter",
+    "Physics",
+    "LUX-ZEPLIN",
+    "South Dakota"
+  ],
+  "image": {
+    "queries": [
+      "underground mine tunnel rock walls",
+      "stainless steel laboratory tank",
+      "night sky stars long exposure"
+    ],
+    "alt": "A rock-walled tunnel deep underground, lit by overhead lamps"
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "A dark matter experiment operating nearly a mile below the Black Hills of South Dakota has reported a single particle interaction it cannot explain with known sources of background noise. The LUX-ZEPLIN collaboration presented the result on Tuesday at the 2026 TeV Particle Astrophysics conference in Japan, and its own scientists were unusually direct about what it is not: a discovery."
+    },
+    {
+      "type": "quote",
+      "text": "We are not claiming to have seen dark matter.",
+      "cite": "Rick Gaitskell, Brown University professor and LZ spokesperson, via UCLA and South Dakota Searchlight"
+    },
+    {
+      "type": "p",
+      "text": "Dark matter is the name physicists give to the roughly five-sixths of the universe's matter that has never been observed directly, and whose existence is inferred from how galaxies rotate and how light bends around them. Experiments like LZ look for the rare occasion on which one of those hypothetical particles collides with an ordinary atomic nucleus. The detector, at the Sanford Underground Research Facility in the former Homestake gold mine at Lead, South Dakota, uses about 10 tonnes of ultrapure liquid xenon as its target, according to the University of Bristol, one of the collaborating institutions. The rock above it screens out cosmic rays that would otherwise swamp the signal."
+    },
+    {
+      "type": "h2",
+      "text": "One event, and why one is not enough"
+    },
+    {
+      "type": "p",
+      "text": "The collaboration reports one candidate interaction in 220 live days of data collected between March 2023 and April 2024, according to press releases issued by Bristol and by the University of California, Los Angeles. Both give the statistical significance as 2.6 sigma, which they describe as roughly a 0.5 per cent chance — about one in 200 — that known backgrounds produced it. Particle physics conventionally requires 5 sigma before a result is called a discovery, a threshold corresponding to odds far longer than that."
+    },
+    {
+      "type": "p",
+      "text": "The energy of the interaction, both releases say, would be consistent with a weakly interacting massive particle of at least 200 GeV/c², more than 200 times the mass of a proton. Researchers spent months looking for a mundane explanation, according to UCLA, and did not find one that fit — which is not the same as establishing that none exists."
+    },
+    {
+      "type": "box",
+      "title": "What 2.6 sigma means here",
+      "items": [
+        "It is a statement about how often background alone would produce something this unusual, not about how likely it is that dark matter caused it.",
+        "Results at this significance appear regularly in physics and most of them fade as more data arrives.",
+        "The figure is the collaboration's own, and the preprint describing it has not yet been peer reviewed."
+      ],
+      "variant": "warn"
+    },
+    {
+      "type": "h2",
+      "text": "How other physicists are reading it"
+    },
+    {
+      "type": "p",
+      "text": "ABC News in Australia spoke to physicists who are not part of the collaboration, and their reaction was interested rather than convinced. Nicole Bell, a theoretical physicist at the University of Melbourne, framed the test that matters next."
+    },
+    {
+      "type": "quote",
+      "text": "If it's really dark matter, we'll see more events soon, and that would be a huge breakthrough.",
+      "cite": "Nicole Bell, theoretical physicist, University of Melbourne, via ABC News Australia"
+    },
+    {
+      "type": "p",
+      "text": "Theresa Fruth of the University of Sydney told the same outlet that an ultra-rare background could still turn out to be responsible. Jaden Newstead, also at Melbourne, noted that the event does not match the form a dark matter signal was expected to take, and came out of an analysis extended to higher energies than the search usually covers. None of the three dismissed the result; none treated it as settled."
+    },
+    {
+      "type": "h2",
+      "text": "What happens next"
+    },
+    {
+      "type": "p",
+      "text": "The answer is more data, and time. LZ continues to run, and the collaboration expects to be able to say whether the signal strengthens or fades as the exposure grows. A second event of the same kind would move the significance sharply; a long run without one would push it back towards noise. The experiment is managed by Lawrence Berkeley National Laboratory on a budget the South Dakota Searchlight reports as $60 million, and draws on about 250 scientists and engineers at 39 institutions in six countries, according to Bristol. Funding comes from the US Department of Energy and from research agencies in the United Kingdom, Portugal, Switzerland, Australia and South Korea, the Searchlight reports."
+    },
+    {
+      "type": "p",
+      "text": "The collaboration has posted a preprint for other physicists to examine and has submitted the work to a journal, Bristol says. This article is written from the institutional releases and from independent reporting; the preprint itself was not read, so the limitations the authors state in their own paper are not summarised here. Readers should treat the result as what the physicists involved say it is — one interesting event, in an experiment designed to find out whether there will be a second."
+    }
+  ],
+  "uncertain": [
+    "The preprint was not read for this article. The limitations the authors state in their own paper are therefore not reported here, and no arXiv identifier was found in the sources read.",
+    "The work has not been peer reviewed. Bristol says it has been submitted to a journal; no journal, and no acceptance, has been named.",
+    "ABC News Australia dates the event to 16 June 2023. That date does not appear in the Bristol or UCLA releases read, and no other source consulted gave it.",
+    "The 0.5 per cent figure is the collaboration's own rendering of 2.6 sigma. It describes how often background would produce such an event, not the probability that dark matter caused this one.",
+    "Whether every background explanation has been excluded. UCLA reports months of investigation without finding a fit; Theresa Fruth of the University of Sydney told ABC an ultra-rare background could still be responsible.",
+    "The Berkeley Lab press release, which would be the release from the laboratory that manages the experiment, could not be retrieved — the page returned a redirect loop. The primary material used here is the Bristol and UCLA releases from collaborating institutions.",
+    "The $60 million budget figure comes from the South Dakota Searchlight alone and was not confirmed elsewhere.",
+    "No timetable has been given for when the collaboration expects enough additional data to settle the question."
+  ],
+  "sources": [
+    {
+      "outlet": "University of Bristol",
+      "title": "New research reveals surprising result in search for dark matter",
+      "url": "https://www.bristol.ac.uk/news/2026/september/new-research-reveals-surprising-result-in-search-for-dark-matter.html",
+      "note": "release from a collaborating institution; counts as the collaboration's own account, with UCLA"
+    },
+    {
+      "outlet": "UCLA Newsroom",
+      "title": "Dark matter surprise has scientists scrambling for explanations",
+      "url": "https://newsroom.ucla.edu/releases/dark-matter-surprise-has-scientists-scrambling-for-explanations",
+      "note": "release from a collaborating institution"
+    },
+    {
+      "outlet": "ABC News (Australia)",
+      "title": "'Exciting hint' of dark matter spotted by LUX-ZEPLIN detector, physicists report",
+      "url": "https://www.abc.net.au/news/science/2026-09-02/dark-matter-lux-zeplin-discovery-cautious-results/107097774",
+      "note": "independent reporting, including physicists outside the collaboration"
+    },
+    {
+      "outlet": "South Dakota Searchlight",
+      "title": "Underground experiment in South Dakota's Black Hills reports 'compelling hint of dark matter'",
+      "url": "https://southdakotasearchlight.com/2026/09/01/underground-experiment-in-south-dakotas-black-hills-reports-compelling-hint-of-dark-matter/",
+      "note": "independent reporting"
+    }
+  ],
+  "date": "2026-09-02",
+  "published_at": "2026-09-02T02:27:12+00:00",
+  "rank": 2
+}

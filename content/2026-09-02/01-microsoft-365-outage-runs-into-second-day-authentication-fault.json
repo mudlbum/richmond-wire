@@ -1,0 +1,139 @@
+{
+  "slug": "microsoft-365-outage-runs-into-second-day-authentication-fault",
+  "category": "technology",
+  "headline": "Microsoft 365 outage runs into a second day after an authentication configuration fault",
+  "dek": "Mail flow largely recovered overnight, but search, calendars and Copilot were still degraded through Tuesday. Microsoft has not published a user count, and the accounts of when the disruption began differ.",
+  "summary": "A fault in a shared authentication configuration knocked out Exchange Online and other Microsoft 365 services from Monday, with search and calendar problems persisting into Tuesday.",
+  "tags": [
+    "Microsoft",
+    "Cloud computing",
+    "Outages",
+    "Enterprise software"
+  ],
+  "image": {
+    "queries": [
+      "server racks data centre aisle",
+      "network cables patch panel",
+      "empty office desk laptop keyboard"
+    ],
+    "alt": "Rows of server racks in a data centre aisle, with cabling running along the floor"
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "A disruption to Microsoft 365 that began on Monday ran into a second working day on Tuesday, with the company saying the cause was a problem in a core authentication configuration shared by several of its cloud services. Mail delivery had largely recovered by Tuesday morning, but search, calendars and parts of Microsoft's Copilot assistant were still behaving unreliably for some customers."
+    },
+    {
+      "type": "p",
+      "text": "Microsoft tracked the incident under the identifiers EX1464935 and MO1465074, according to BleepingComputer, which reported the first of those codes alongside Cybersecurity News. The company's own updates, as relayed by the outlets that followed the incident through the night, describe a misconfiguration that stopped authentication components deploying properly to part of its infrastructure, rather than an attack or a hardware failure."
+    },
+    {
+      "type": "h2",
+      "text": "What stopped working"
+    },
+    {
+      "type": "p",
+      "text": "The services named in Microsoft's updates widened over the course of Monday. Exchange Online was affected first, and the list later grew to include SharePoint Online, OneDrive for Business, Microsoft Teams, Microsoft Purview, Microsoft Defender XDR and Microsoft 365 Copilot, according to Computerworld, IT Pro and BleepingComputer, which each published their own accounts."
+    },
+    {
+      "type": "ul",
+      "items": [
+        "Email delays, delivery failures and repeated authentication prompts in Outlook and Exchange Online",
+        "Files failing to open, load or synchronise in SharePoint Online and OneDrive for Business",
+        "Search returning no results, and calendar and presence problems in Teams",
+        "Copilot prompts failing where they needed to reach Microsoft 365 data"
+      ]
+    },
+    {
+      "type": "p",
+      "text": "Symptoms varied by customer and by service, and several outlets noted that recovery was uneven: mail connectivity came back well before search did. Computerworld reported that Microsoft described widespread recovery of Exchange Online mail connectivity by late Monday, while search remediation was still described as making progress in the early hours of Tuesday."
+    },
+    {
+      "type": "h2",
+      "text": "When it started depends on which marker you use"
+    },
+    {
+      "type": "p",
+      "text": "The four accounts read for this article do not give the same starting time, because they are measuring different things. Computerworld dates the first reports of Exchange Online problems to 11:55 UTC on Monday. IT Pro puts a surge in reports on the outage-tracking site Downdetector at around 15:00 on Monday. The Stack says Microsoft acknowledged the Exchange Online problems at 17:00 BST, which is 16:00 UTC, and BleepingComputer gives 17:30 UTC for Microsoft beginning to investigate."
+    },
+    {
+      "type": "p",
+      "text": "Those figures are not necessarily in conflict — a first user report, a spike in third-party reports and an official acknowledgement are three separate events — but they mean any single duration figure should be treated with care. The Stack described the disruption as running more than 18 hours as of Tuesday morning; BleepingComputer described Microsoft reporting positive recovery trends about 22 hours in. Richmond International Newswire could not establish an authoritative start time, because Microsoft's own service-health messages are visible only to administrators of affected tenants."
+    },
+    {
+      "type": "box",
+      "title": "Figures we are not reporting",
+      "items": [
+        "No count of affected users or organisations has been published by Microsoft. BleepingComputer described tens of thousands of reports on Downdetector, which measures self-reported complaints and is not a measure of how many accounts were affected.",
+        "None of the accounts read gave a geographic breakdown of the disruption."
+      ],
+      "variant": "warn"
+    },
+    {
+      "type": "h2",
+      "text": "What Microsoft has said, and what it has not"
+    },
+    {
+      "type": "p",
+      "text": "Microsoft's public updates through the incident were incremental and framed around telemetry rather than user numbers. In an update quoted by BleepingComputer early on Tuesday, the company said it had seen search functionality improving."
+    },
+    {
+      "type": "quote",
+      "text": "We've observed improvement reflected in the service telemetry associated with search functionality.",
+      "cite": "Microsoft service update, via BleepingComputer"
+    },
+    {
+      "type": "p",
+      "text": "By Tuesday afternoon in Europe, TechCrunch reported that Microsoft had entered a period of extended monitoring to confirm a full resolution, and IT Pro reported the company saying availability was increasing across the services that had been affected. The latest update this wire could confirm was published in the middle of Tuesday; whether Microsoft has since declared the incident closed could not be established from any source available at the time of writing, and readers should check Microsoft's service health dashboard for the current position."
+    },
+    {
+      "type": "p",
+      "text": "Microsoft has not published a post-incident review, which is where the detailed account of the cause would normally appear. Until it does, the description of a configuration problem in a shared authentication component is the company's own, and has not been independently verified. No source read reported any evidence of a security incident, and Microsoft did not describe one."
+    }
+  ],
+  "uncertain": [
+    "Whether the incident has been fully resolved. The most recent update this wire could confirm was published around the middle of Tuesday 1 September; no later source was found.",
+    "The number of users or organisations affected. Microsoft has published no figure, and the Downdetector reports cited by BleepingComputer measure complaints, not affected accounts.",
+    "The exact start time. Four outlets give four different markers — first reports, a Downdetector surge, Microsoft's acknowledgement and the start of its investigation — and this wire did not attempt to reconcile them.",
+    "The full technical cause. Microsoft's description of a misconfiguration in a core authentication configuration is the company's own account; no post-incident review has been published.",
+    "Whether an update Microsoft was reverting was the trigger. Computerworld reported the company exploring a revert of an update to affected infrastructure; that is not the same as Microsoft naming it as the cause.",
+    "Which regions were worst affected. None of the accounts read gave a geographic breakdown.",
+    "Microsoft's service-health messages were not read directly for this article, as they are visible only to administrators of affected tenants. Every statement attributed to Microsoft here is as relayed by a named outlet."
+  ],
+  "sources": [
+    {
+      "outlet": "TechCrunch",
+      "title": "Microsoft 365 outage drags on, but things are improving",
+      "url": "https://techcrunch.com/2026/09/01/microsoft-365-outage-drags-on-but-things-are-improving/"
+    },
+    {
+      "outlet": "Computerworld",
+      "title": "Microsoft 365 outage enters second day as search disruptions persist",
+      "url": "https://www.computerworld.com/article/4216867/microsoft-365-outage-enters-second-day-as-search-disruptions-persist.html"
+    },
+    {
+      "outlet": "The Stack",
+      "title": "Microsoft 365 outages run into second day",
+      "url": "https://www.thestack.technology/microsoft-365-outages-run-into-second-day/"
+    },
+    {
+      "outlet": "IT Pro",
+      "title": "The Microsoft 365 outage explained: What happened, what apps are affected, and is a fix available?",
+      "url": "https://www.itpro.com/software/microsoft/the-microsoft-365-outage-explained-what-happened-what-apps-are-affected-and-is-a-fix-available"
+    },
+    {
+      "outlet": "BleepingComputer",
+      "title": "Massive Microsoft 365 outage causes auth issues, service failures",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-online-outage-causes-email-failures-auth-issues/",
+      "note": "source of the incident identifiers and the quoted Microsoft update"
+    },
+    {
+      "outlet": "Cybersecurity News",
+      "title": "Microsoft Investigating New Exchange Online Outage Tracked as EX1464935",
+      "url": "https://cybersecuritynews.com/microsof-new-exchange-online/"
+    }
+  ],
+  "date": "2026-09-02",
+  "published_at": "2026-09-02T02:27:12+00:00",
+  "rank": 1
+}

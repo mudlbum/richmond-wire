@@ -1,0 +1,116 @@
+{
+  "slug": "nasa-roman-space-telescope-cleared-for-launch",
+  "category": "science",
+  "headline": "NASA clears the Roman Space Telescope for a Sunday morning launch",
+  "dek": "The observatory is set to lift off on a Falcon Heavy at 7:26 a.m. EDT on 30 August. Air force forecasters put the chance of acceptable weather at 60 percent.",
+  "summary": "NASA and SpaceX have cleared the Nancy Grace Roman Space Telescope for launch on 30 August from Kennedy Space Center, sending a wide-field infrared observatory to a point 1.5 million kilometres from Earth.",
+  "tags": [
+    "NASA",
+    "Roman Space Telescope",
+    "SpaceX",
+    "Astronomy",
+    "Dark energy"
+  ],
+  "image": {
+    "queries": [
+      "night sky full of stars long exposure",
+      "large telescope mirror in a clean room",
+      "rocket launch pad at dawn silhouette"
+    ],
+    "alt": "A dark sky dense with stars above a low horizon, of the kind a wide-field survey telescope is built to photograph."
+  },
+  "body": [
+    {
+      "type": "p",
+      "text": "NASA said on Friday that the Nancy Grace Roman Space Telescope is cleared to launch. A Launch Readiness Review held with SpaceX at the Kennedy Space Center in Florida found the rocket, the observatory, the weather and the teams ready, and the mission was declared go for a lift-off on Sunday 30 August at 7:26 a.m. EDT from Launch Complex 39A."
+    },
+    {
+      "type": "p",
+      "text": "The launch vehicle is a SpaceX Falcon Heavy. NASA put the chance of acceptable weather at 60 percent, a forecast issued by the U.S. Space Force's Space Launch Delta 45 weather squadron; cloud and lightning are the concerns, and conditions are expected to get worse later in the day, which is part of why the window is early. Space.com reported a backup window on Monday 31 August at 7:22 a.m. EDT. Both figures are forecasts and the date can still move."
+    },
+    {
+      "type": "h2",
+      "text": "A wide lens rather than a deep one"
+    },
+    {
+      "type": "p",
+      "text": "Roman is not a successor to Hubble or to the James Webb Space Telescope in the sense of seeing fainter or sharper. NASA describes its sensitivity and image quality as broadly comparable to Hubble's. What differs is how much sky it takes in at once: NASA says Roman's field of view is at least 100 times larger than Hubble's. The point of the mission is coverage — mapping large areas of sky repeatedly rather than staring at single objects."
+    },
+    {
+      "type": "quote",
+      "text": "That one month of observations to survey our Milky Way galaxy would take about a century with Hubble.",
+      "cite": "Julie McEnery, Roman project scientist, via NPR"
+    },
+    {
+      "type": "p",
+      "text": "Two of the science goals depend directly on that width. One is dark energy, the name given to whatever is causing the expansion of the universe to speed up; Roman is meant to find and measure large numbers of Type Ia supernovae, whose known brightness makes them usable as distance markers. The other is planet-finding by gravitational microlensing, a method that catches the brief brightening of a background star as an unseen planet passes in front of it. Microlensing turns up planets on wide orbits and far from Earth that other techniques cannot reach, but it needs a telescope watching millions of stars at once to catch enough of them."
+    },
+    {
+      "type": "h2",
+      "text": "Cost and origins"
+    },
+    {
+      "type": "p",
+      "text": "NPR put the project cost at $4.3 billion. It also reported that the observatory was built around hardware given to NASA by the National Reconnaissance Office, originally made for a surveillance satellite. The telescope is named after Nancy Grace Roman, NASA's first chief astronomer."
+    },
+    {
+      "type": "h2",
+      "text": "What happens after Sunday"
+    },
+    {
+      "type": "p",
+      "text": "Roman is bound for the Sun-Earth Lagrange Point 2, which Space.com describes as lying about 1.5 million kilometres (930,000 miles) from Earth — the same broad region James Webb occupies. Getting there and commissioning the instruments takes months, so the first science images will not follow immediately after launch, and the dark energy measurements the mission is built for will take years of repeated surveys to accumulate."
+    },
+    {
+      "type": "p",
+      "text": "Speaking to NPR, McEnery described the mission's data as reaching everyone at once, putting it in terms of a high-school class in Kentucky having the same access to Roman observations at the same time as a professor at Princeton. NPR did not spell out the release terms behind that, and the material reviewed for this article did not set out a data policy in detail."
+    },
+    {
+      "type": "p",
+      "text": "A launch is not a result. What Roman is being sent to settle — whether the standard cosmological picture of dark energy holds up when measured against a much larger sample of supernovae — remains open, and will stay open until the surveys are done."
+    }
+  ],
+  "uncertain": [
+    "The launch date depends on weather; NASA's 60 percent favourable forecast is a prediction, with a backup window reported for 31 August.",
+    "The $4.3 billion project cost is as reported by NPR; it was not stated in the NASA launch material reviewed for this article.",
+    "The account of the observatory's hardware originating with the National Reconnaissance Office comes from NPR's reporting.",
+    "No commissioning timeline or date for first science images was given in the material reviewed.",
+    "Whether Roman's measurements will confirm or contradict the current model of dark energy is the open question the mission exists to address; nothing about it is settled by the launch."
+  ],
+  "sources": [
+    {
+      "outlet": "NASA",
+      "title": "NASA's Roman Space Telescope 'Go' for Launch",
+      "url": "https://science.nasa.gov/blogs/roman/2026/08/28/nasas-roman-space-telescope-go-for-launch/",
+      "note": "primary source"
+    },
+    {
+      "outlet": "NPR",
+      "title": "NASA's Nancy Grace Roman Space Telescope launches on an eye opening mission",
+      "url": "https://www.npr.org/2026/08/28/nx-s1-5905370/nasa-nancy-grace-roman-space-telescope-dark-energy-supernova"
+    },
+    {
+      "outlet": "Space.com",
+      "title": "Nancy Grace Roman Telescope live updates: SpaceX readying Roman for launch aboard Falcon Heavy rocket",
+      "url": "https://www.space.com/news/live/nancy-grace-roman-telescope-live-updates-nasa-readies-roman-for-launch-august-28-2026"
+    },
+    {
+      "outlet": "NASA Science",
+      "title": "Nancy Grace Roman Space Telescope — mission page",
+      "url": "https://science.nasa.gov/mission/roman-space-telescope/",
+      "note": "field of view figure"
+    }
+  ],
+  "date": "2026-09-02",
+  "published_at": "2026-09-02T04:08:30+00:00",
+  "rank": 4,
+  "_duplicate_of": {
+    "prior_day": "2026-08-29",
+    "prior_slug": "nasa-roman-space-telescope-cleared-for-launch",
+    "prior_headline": "NASA clears the Roman Space Telescope for a Sunday morning launch",
+    "text": 1.0,
+    "sources": 1.0,
+    "reason": "identical slug"
+  },
+  "_dropped_because": "not declared as a follow-up"
+}
