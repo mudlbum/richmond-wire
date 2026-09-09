@@ -21,6 +21,13 @@ jobs:
           for d in content/*/; do
             [ -d "$d" ] || continue
             echo "── $d"
+            # A cycle where every candidate was a duplicate leaves an edition
+            # folder holding only edition.json and _duplicates/. That is a valid
+            # quiet day, not a broken build, so there is nothing to validate.
+            if [ -z "$(find "$d" -maxdepth 1 -name '*.json' ! -name 'edition.json' -print -quit)" ]; then
+              echo "   no articles filed — skipping"
+              continue
+            fi
             python3 pipeline/validate.py "$d" || fail=1
           done
           exit $fail
